@@ -1,0 +1,78 @@
+{include theme=com/head}
+<div class="page-compare">
+  <article>
+    <div class="tips">
+      左滑动滚动条对比更多
+    </div>
+    <div class="scroll-box table">
+      <?php
+        $listArr = Array(0, 1, 2, 3, 4);
+        $ids = substr($G['path']['quest'], 4);
+        $idsArr = explode(',', $ids);
+      ?>
+      <!-- 产品列表-->
+      <div class="row product-list" id="product-list">
+        <div class="col item item-first fast-nav-title">产品名称</div>
+        {foreach data=$listArr value=$index}
+        <div class="col item">
+          {if:($idsArr[$index])} {group class=one id=$idsArr[$index] type=3
+          data=$item}{/group}
+          <a href="{$item.url}" title="{$item.name}" {$item.target} class="pic"
+            ><img
+              {$item._image}
+              src="{$item.image|thumb=$item.width,$item.height}"
+              alt="{$item.name}"
+              class="img-contain"
+          /></a>
+          <div class="name two-line-overflow">
+            {items class=one id=$item.items data=$c}
+            <a href="{$c.url}" title="{$c.name}" {$c.target} {$c._name}
+              >【{$c.name}】</a
+            >
+            {/items}<a href="{$item.url}" title="{$item.name}" {$item.target}
+              >{$item.name}</a
+            >
+          </div>
+          <div class="del-btn" data-id="{$item.id}">删除</div>
+          {else/} {items class=one id=16 data=$items}
+          <a href="{$items.url}" class="pic">添加产品</a>
+          {/items} {/if}
+        </div>
+        {/foreach}
+      </div>
+      <!-- 基本概况 -->
+      <div class="baseInfo-list">
+        <div class="n-title"><b>基本概况</b></div>
+        {complex class=list extent=3 items=0 name=params parent=0 value=$c}
+        {if:($c.description==='概况')}
+        <ul class="row">
+          <li class="col item" {$c._title}>{$c.title}</li>
+          {foreach data=$listArr value=$index}
+          <li class="col item">
+            {if:($idsArr[$index])} {group class=one id=$idsArr[$index] type=3}
+            {foreach data=$v.complex} {if:($c.id == $v.id)} {$v.value} {/if}
+            {/foreach} {/group} {/if}
+          </li>
+          {/foreach}
+        </ul>
+        {/if} {/complex}
+        <ul class="row">
+          <li class="col item">价格</li>
+          {foreach data=$listArr value=$index}
+          <li class="col item">
+            {if:($idsArr[$index])} {group class=one id=$idsArr[$index]
+            type=3}{$v.price} {/group} {/if}
+          </li>
+          {/foreach}
+        </ul>
+      </div>
+      <!-- 营养成分 -->
+      <?php $isComparePage = true; ?>
+      {include theme=com/product/nutrients}
+      <!-- 产品提示 -->
+      {include theme=com/product/productTips}
+    </div>
+  </article>
+</div>
+
+{include theme=com/foot}

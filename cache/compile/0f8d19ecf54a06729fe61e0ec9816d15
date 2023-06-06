@@ -1,0 +1,22 @@
+<section class="product-catetory">
+  <article>
+    <?php $items1 = page::items_list( 16, 0, '*', true, null ); ?><?php foreach( $items1 as $v2 ){ ?>
+    <div class="list clearfix">
+      <div class="parent item <?php echo $v2['on']; ?> <?php  if( $v2['children'] ){ ?>has<?php } ?>">
+        <a <?php echo $v2['_name']; ?> href="<?php echo $v2['url']; ?>" title="<?php echo $v2['name']; ?>" <?php echo $v2['target']; ?>><?php echo $v2['name']; ?></a>
+      </div>
+      <?php  if( $v2['children'] ){ ?>
+      <div class="children">
+        <ul class="clearfix">
+          <?php $items2 = page::items_list( $v2['id'], 0, '*', true, null ); ?><?php foreach( $items2 as $v3 ){ ?>
+          <li class="item <?php echo $v3['on']; ?>">
+            <a <?php echo $v3['_name']; ?> href="<?php echo $v3['url']; ?>" title="<?php echo $v3['name']; ?>" <?php echo $v3['target']; ?>><?php echo $v3['name']; ?></a>
+          </li>
+          <?php } ?>
+        </ul>
+      </div>
+      <?php } ?>
+    </div>
+    <?php } ?>
+  </article>
+</section>

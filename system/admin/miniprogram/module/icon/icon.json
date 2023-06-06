@@ -1,0 +1,118 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "3",
+				"title": "单排数量",
+				"name": "row",
+				"value": "4",
+				"description": "",
+				"param": {
+					"3": "三列",
+					"4": "四列",
+					"5": "五列"
+				}
+			},
+			{
+				"style": "16",
+				"title": "字体大小",
+				"name": "size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 22
+				}
+			},
+			{
+				"style": "16",
+				"title": "图片宽度",
+				"name": "imgwidth",
+				"value": "88",
+				"description": "",
+				"param": {
+					"min": 18,
+					"max": 128
+				}
+			},
+			{
+				"style": "16",
+				"title": "图片圆角",
+				"name": "imgradius",
+				"value": "0",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 50
+				}
+			},
+			{
+				"style": "31",
+				"title": "图片列表",
+				"name": "list_reset",
+				"value": [
+					{
+						"img": "",
+						"name": "标题",
+						"url": ""
+					},
+					{
+						"img": "",
+						"name": "标题",
+						"url": ""
+					},
+					{
+						"img": "",
+						"name": "标题",
+						"url": ""
+					},
+					{
+						"img": "",
+						"name": "标题",
+						"url": ""
+					}
+				],
+				"description": "",
+				"param": {
+					"item": "图片[item]"
+				},
+				"ctrl": [
+					{
+						"style": "6",
+						"title": "图片",
+						"name": "img",
+						"value": "",
+						"description": "",
+						"param": []
+					},
+					{
+						"style": "0",
+						"title": "",
+						"name": "name",
+						"value": "标题",
+						"description": "",
+						"param": [],
+						"attribute": {
+							"dlwidth": "40%",
+							"placeholder": "请输入标题"
+						}
+					},
+					{
+						"style": "40",
+						"title": "",
+						"name": "url",
+						"value": "",
+						"description": "",
+						"param": [],
+						"attribute": {
+							"dlwidth": "60%",
+							"placeholder": "请输入链接"
+						}
+					}
+				]
+			}
+		]
+	}
+]

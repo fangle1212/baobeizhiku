@@ -1,0 +1,13 @@
+{group class=list items=$product.items rows=10 order=notice data=$data}{/group}
+{if:($data.list)}
+<section class="hot-products module">
+  <div class="n-title"><em>热门产品</em><strong><a href="/product">更多 ></a></strong></div>
+  <ul>
+    {foreach data=$data.list}
+    <li class="clearfix">
+      {include theme=com/relatedProItem}
+    </li>
+    {/foreach}
+  </ul>
+</section>
+{/if}

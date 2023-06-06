@@ -1,0 +1,82 @@
+.imagedetail{background:{$imagedetail.back_color}; }
+.imagedetail h1{text-align:center; margin-bottom:8px;}
+
+.imagedetail .top{text-align:center; opacity:.68; margin-bottom:18px;}
+.imagedetail .top b{font-weight:inherit;}
+.imagedetail .top i{font-style:inherit; margin-right:18px;}
+.imagedetail .top i:last-child{margin:0;}
+
+.imagedetail .sub{float:left;}
+.imagedetail .sub>dl{padding-bottom:8px;}
+.imagedetail .sub>dl:after{display:block; content:''; clear:both;}
+.imagedetail .sub>dl>dt{float:left; opacity:.88;}
+.imagedetail .sub>dl>dd{float:left;}
+.imagedetail .sub>a{margin-top:18px;}
+
+.imagedetail .sub+.content{border-left:1px solid #f0f0f0;}
+
+.imagedetail aside{margin-bottom:18px;}
+
+.imagedetail dir{padding-top:18px; border-top:1px solid #f0f0f0;}
+.imagedetail dir:after{display:block; content:''; clear:both;}
+.imagedetail dir>dl{ }
+.imagedetail dir>dl:after{display:block; content:''; clear:both;}
+.imagedetail dir>dl:first-child{}
+.imagedetail dir>dl:last-child{}
+.imagedetail dir>dl>dt{float:left; margin-right:8px; opacity:.88;}
+.imagedetail dir>dl>dt b{font-weight:inherit;}
+.imagedetail dir>dl>dd{float:left;}
+.imagedetail dir>dl>dd i{font-style:inherit;}
+.imagedetail dir>dl>dd a{ }
+.imagedetail dir>dl>dd a:hover{ }
+
+.imagedetail .images{width:100%; overflow:hidden; margin-bottom:18px; position:relative;}
+.imagedetail .images .imgs{width:10000%;}
+.imagedetail .images .imgs:after{display:block; content:''; clear:both;}
+.imagedetail .images .imgs .img{width:1%; float:left;}
+.imagedetail .images .imgs .img img{display:block; max-width:100%; margin:0 auto;}
+
+.imagedetail .tag{margin-bottom:18px;}
+.imagedetail .tag a{display:inline-block; margin-right:8px; border:1px solid #f0f0f0; padding:2px 8px; border-radius:3px;}
+@media(max-width:767px){
+.imagedetail .tag{margin-bottom:8px;}
+.imagedetail .tag a{margin-right:4px; padding:2px 8px;}
+}
+
+@media(min-width:1200px){
+.imagedetail .sub{width:268px; padding-right:28px;}
+.imagedetail .sub+.content{margin-left:268px; padding-left:28px;}
+
+.imagedetail .images dl{visibility:hidden; opacity:0; transition:.3s;}
+.imagedetail .images:hover>dl{visibility:visible; opacity:1;}
+.imagedetail .images dl>*{position:absolute; top:50%; width:40px; height:40px; margin-top:-20px; transform:rotate(45deg);
+cursor:pointer; transition:.3s; border-style:solid; border-color:{$common.ftcolor};}
+.imagedetail .images dl>dt{left:30px; border-width:0 0 2px 2px;}
+.imagedetail .images dl>dd{right:30px; border-width:2px 2px 0 0;}
+.imagedetail .images dl>dt:hover,
+.imagedetail .images dl>dd:hover{border-color:{$common.hrcolor};}
+}
+@media(max-width:1199px){
+.imagedetail .sub{width:248px; padding-right:18px;}
+.imagedetail .sub+.content{margin-left:248px; padding-left:18px;}
+}
+@media(min-width:992px){
+.imagedetail{padding-top:28px; padding-bottom:28px;} 
+}
+@media(max-width:991px){
+.imagedetail{padding-top:18px; padding-bottom:18px;} 
+.imagedetail .sub{width:auto; padding-right:0; float:none;}
+.imagedetail .sub>a{margin-top:8px;}
+.imagedetail .sub+.content{margin-left:0; padding-left:0; border-left:none;}
+.imagedetail .content{padding-top:18px; margin-top:18px; border-top:1px solid #f0f0f0;}
+}
+@media(max-width:767px){
+.imagedetail h1{font-size:24px; margin-bottom:4px;}
+.imagedetail .top{margin-bottom:8px;}
+.imagedetail aside{margin-bottom:8px;}  
+.imagedetail dir{padding-top:8px;}
+.imagedetail .sub>dl{padding-bottom:4px;}
+.imagedetail .sub>a{margin-top:4px;}
+.imagedetail .content{padding-top:8px; margin-top:8px;}
+.imagedetail .images{margin-bottom:8px;}
+}

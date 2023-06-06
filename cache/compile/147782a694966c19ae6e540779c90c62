@@ -1,0 +1,37 @@
+<footer class="foot" bosscms="foot" link>
+  <article>
+    <?php $items_foot = page::items_foot( ); ?><?php if(false){ ?><?php } ?>
+	<?php  if( $items_foot ){ ?>
+    <ol>
+      <?php foreach( $items_foot as $v ){ ?>
+      <li>
+        <a <?php echo $v['_name']; ?> href="<?php echo $v['url']; ?>" title="<?php echo $v['name']; ?>" <?php echo $v['target']; ?>><?php echo $v['name']; ?></a>
+      </li>
+	  <?php } ?>
+    </ol>
+	<?php } ?>
+    <?php $link = page::link_list( null, null, '*', null, null ); ?><?php if(false){ ?><?php } ?>
+	<?php  if( $link ){ ?>
+    <ul>
+      <li <?php echo $G['config']['_link_title']; ?>>
+        <span ><?php echo $G['config']['link_title']; ?></span>
+      </li>
+      <?php foreach( $link as $v ){ ?>
+	  <?php  if( $v['type'] ){ ?>
+      <li>
+        <a href="<?php echo $v['link']; ?>" title="<?php echo $v['name']; ?>" <?php echo $v['nofollow']; ?> <?php echo $v['target']; ?>>
+          <img <?php echo $v['_image']; ?> src="<?php echo $v['image']; ?>" alt="<?php echo $v['name']; ?>" />
+        </a>
+      </li>
+	  <?php }else{ ?>
+      <li <?php echo $v['_name']; ?>>
+        <a href="<?php echo $v['link']; ?>" title="<?php echo $v['name']; ?>" <?php echo $v['nofollow']; ?> <?php echo $v['target']; ?>><?php echo $v['name']; ?></a>
+      </li>
+	  <?php } ?>
+	  <?php } ?>
+    </ul>
+	<?php } ?>
+    <aside <?php echo $G['config']['_foot']; ?>><?php echo $G['config']['foot']; ?></aside>
+  </article>
+</footer>
+<?php include(load::common('footer')); ?>

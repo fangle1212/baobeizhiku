@@ -1,0 +1,39 @@
+/*
+ * Copyright (c) Huyin Information Technology Co., Ltd. All Rights Reserved.
+ * BOSSCMS Content Management System (https://www.bosscms.net/)
+ */
+header.topnav{height:50px; background:#273539; white-space:nowrap; box-shadow:0 0 16px rgb(0,0,0,.04);
+position:absolute; z-index:2; top:0; left:0; right:0;}
+header.topnav a{color:#f3f4f4;}
+header.topnav:after{display:block; content:''; clear:both;}
+header.topnav>ul{}
+header.topnav>ul>li{float:left; margin-left:30px; position:relative; line-height:50px;}
+header.topnav>ul>li>ul{position:absolute; top:100%; background:#013; box-shadow:0 5px 10px rgba(0,0,0,.35);}
+header.topnav>ul>li>ul>li{padding:5px 15px; border-top:1px solid #135; line-height:30px; display:none;}
+header.topnav>ul>li>ul>li.on{background:#f0f1f3;}
+header.topnav>ul>li>ul>li.on a{color:#013;}
+header.topnav>ul>li:hover>ul>li{display:block;}
+header.topnav>ul>li img.lang{vertical-align:middle;margin-right:5px;height:18px;}
+header.topnav em{width:22px; text-align:center; color:#b6bbbc;}
+
+
+section.page{width:100%; height:100%; padding-top:50px;}
+section.page iframe{width:100%; height:100%; overflow:auto; border:none; background:#fff;}
+
+
+section.bosscms{}
+section.bosscms ul{clear:both;}
+section.bosscms ul li{display:block; float:left;}
+
+section.fixed>div.box{position:fixed; left:0; top:0;
+width:1090px; height:790px; z-index:9999; background:rgba(39,53,57,.95); 
+padding:48px 5px 5px 5px; box-shadow:0 0 12px rgba(255,255,255,.4); 
+overflow:hidden; border-radius:3px; visibility:hidden; opacity:0; transition:opacity .3;}
+section.fixed>div.box>span.close{position:absolute; top:0; right:8px; width:38px; height:28px; line-height:25px; text-align:center; 
+background:#76b9ed; color:#f3f4f4; z-index:9; cursor:pointer; border-radius:0 0 5px 5px; font-size:22px; transition:.3s;}
+section.fixed>div.box>span.close:hover{background:#50a3e4;}
+section.fixed>div.box>span.move{position:absolute; top:0; left:0; right:0; height:40px; cursor:move; z-index:5;}
+section.fixed>div.box>iframe{width:100%; height:100%; position:relative; z-index:1; overflow:auto; border:none;}
+section.fixed.active>div.box{visibility:visible; opacity:1;}
+section.fixed.mouse>div.box:before{position:absolute; top:0; right:0; bottom:0; left:0; background:rgba(255,255,255,.001); content:''; z-index:2;}
+section.fixed.mouse:after{position:fixed; top:0; right:0; bottom:0; left:0; z-index:9998; background:rgba(0,0,0,.001); content:'';}

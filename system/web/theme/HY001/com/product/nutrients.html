@@ -1,0 +1,71 @@
+<div class="nutrients module">
+  <h4 class="n-title fast-nav-title"><b>营养成分</b></h4>
+  <ul class="row">
+    <li class="col item th plr10">
+      <ul class="row">
+        <li class="col item">成分</li>
+        <li class="col item">单位</li>
+      </ul>
+    </li>
+    {foreach data=$listArr value=$index}
+    <li class="col item th">
+      {if:($idsArr[$index])} {group class=one id=$idsArr[$index] type=3}<?php $val = $v; $product = $v;?>{include
+      theme=com/product/contentUnit} {/group} {/if}
+    </li>
+    {/foreach}
+  </ul>
+  <?php
+    $zIndex = 99;
+  ?>
+  {complex class=list extent=3 items=$G['group']['items'] name=params parent=0
+  value=$c} {if:($c.description==='营养')}
+  <?php
+  $isShow = true;
+  if ($isComparePage != true && $ids) {
+    $type = 3;
+    $pro = page::group_one($ids, $type);
+    $complex = $pro["complex"];
+    foreach($complex as $item){
+      if ($item["id"] == $c["id"]) {
+        if (empty($item["value"])) {
+          $isShow = false;
+        }
+      }
+    }
+  }
+  ?>
+  {if:($isShow)}
+  <?php
+    $zIndex--;
+  ?>
+  <ul class="row">
+    <li class="col item plr10" style="z-index: {$zIndex}">
+      <ul class="row">
+        <?php
+        $list = '';
+        $item = '';
+        ?>
+        {group class=list items=108 rows=1 where='"name='{$c["title"]???}'"'
+        value=$cc data=$list} {if:($list)} {group class=one id=$cc.id type=2
+        $data=$item} {/group}{/if}{/group}
+        <li class="col item jieshao" {$c._title}>
+          {$c.title} {if:($item.content)}
+          <div class="jieshao-right">
+            <div class="tips-text">说明：</div>
+            <div class="tips-content">{$item.content}</div>
+          </div>
+          {/if}
+        </li>
+        <li class="col item">{if:($item.text)}{$item.text}{/if}</li>
+      </ul>
+    </li>
+    {foreach data=$listArr value=$index}
+    <li class="col item">
+      {if:($idsArr[$index])}{group class=one id=$idsArr[$index] type=3}{foreach
+      data=$v.complex}{if:($c.id ==
+      $v.id)}{$v.value}{/if}{/foreach}{/group}{/if}
+    </li>
+    {/foreach}
+  </ul>
+  {/if} {/if} {/complex}
+</div>

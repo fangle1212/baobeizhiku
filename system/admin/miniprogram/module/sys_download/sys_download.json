@@ -1,0 +1,179 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "21",
+				"title": "默认栏目",
+				"name": "items_reset",
+				"value": "",
+				"description": "当前页面没有指定栏目时调用该默认栏目",
+				"param": {
+					"type": "5"					
+				}
+			},
+			{
+				"style": "16",
+				"title": "显示数量",
+				"name": "rows_reset",
+				"value": "8",
+				"description": "",
+				"param": {
+					"min": 4,
+					"max": 28
+				}
+			},	
+			{
+				"style": "16",
+				"title": "内容间距",
+				"name": "li_tmargin",
+				"value": "10",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 50
+				}
+			},
+			{
+				"style": "12",
+				"title": "标题颜色",
+				"name": "name_color",
+				"value": "rgb(68,68,68)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "标题大小",
+				"name": "name_size",
+				"value": "16",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 30
+				}
+			},
+			{
+				"style": "16",
+				"title": "标题行距",
+				"name": "name_lheight",
+				"value": "22",
+				"description": "",
+				"param": {
+					"min": 20,
+					"max": 30
+				}
+			},
+			{
+				"style": "12",
+				"title": "日期颜色",
+				"name": "ctime_color",
+				"value": "rgb(158,158,158)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "描述颜色",
+				"name": "desc_color",
+				"value": "rgb(108,108,108)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "描述大小",
+				"name": "desc_size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 20
+				}
+			},
+			{
+				"style": "16",
+				"title": "描述行距",
+				"name": "desc_lheight",
+				"value": "20",
+				"description": "",
+				"param": {
+					"min": 18,
+					"max": 28
+				}
+			},
+			{
+				"style": "0",
+				"title": "按钮文字",
+				"name": "btn_text",
+				"value": "下载",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "按钮颜色",
+				"name": "btn_color",
+				"value": "rgb(255,255,255)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "按钮背景色",
+				"name": "btn_bgcolor",
+				"value": "rgb(32,86,187)",
+				"description": "",
+				"param": []
+			},
+			
+			{
+				"style": "0",
+				"title": "加载中文字",
+				"name": "loading",
+				"value": "加载中...",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "0",
+				"title": "加载完文字",
+				"name": "loaded",
+				"value": "已全部加载",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "加载字颜色",
+				"name": "load_color",
+				"value": "rgb(68,68,68)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "加载字行高",
+				"name": "load_lheight",
+				"value": "26",
+				"description": "",
+				"param": {
+					"min": 20,
+					"max": 50
+				}
+			},
+			{
+				"style": "16",
+				"title": "加载字大小",
+				"name": "load_size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 30
+				}
+			}
+		]
+	}
+]

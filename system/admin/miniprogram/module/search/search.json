@@ -1,0 +1,73 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "23",
+				"title": "搜索栏目",
+				"name": "items",
+				"value": "",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "0",
+				"title": "提示文字",
+				"name": "placeholder",
+				"value": "请输入搜索关键词",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "字体大小",
+				"name": "input_size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 20
+				}
+			},
+			{
+				"style": "12",
+				"title": "字体颜色",
+				"name": "input_color",
+				"value": "rgb(18,18,18)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "文本框圆角",
+				"name": "input_radius",
+				"value": "19",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 25
+				}
+			},
+			{
+				"style": "16",
+				"title": "文本框高度",
+				"name": "input_height",
+				"value": "38",
+				"description": "",
+				"param": {
+					"min": 25,
+					"max": 50
+				}
+			},
+			{
+				"style": "12",
+				"title": "文本框背景色",
+				"name": "input_bgcolor",
+				"value": "rgb(255,255,255)",
+				"description": "",
+				"param": []
+			}
+		]
+	}
+]

@@ -1,0 +1,20 @@
+<div class="mob-tabbar">
+  <ul class="num{if:($list)}{$list|count}{/if}" style="background-color:{$backgroundColor}; border-top:1px solid {if:($borderStyle=='black')}#d8d8d8{else}#ffffff{/if};">
+	{if:($list)}
+	{foreach data=$list key=$k}
+	<li>
+	  <a url="{$v.pagePath}">
+		{if:($v.iconPath)}
+		<img class="icon" src="{$v.iconPath}">
+		<img class="selected" src="{$v.selectedIconPath}">
+		{/if}
+		<ins class="text" style="color:{$color};">{$v.text}</ins>
+		<ins class="selected" style="color:{$selectedColor};">{$v.text}</ins>
+	  </a>
+	</li>
+	{/foreach}
+	{else}
+	<li></li>
+	{/if}
+  </ul>
+</div>

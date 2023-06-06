@@ -1,0 +1,70 @@
+section.member{padding:58px 0; background:{$sys_member.back_color};}
+section.member>article:after{display:block; content:''; clear:both;}
+section.member>article>.sidebar{float:left; width:22%; padding-right:28px;}
+section.member>article>.sidebar dl{background:#fff; padding:8px 0;}
+section.member>article>.sidebar dl+dl{border-top:1px solid #e8e8e8;}
+section.member>article>.sidebar dl>dt{}
+section.member>article>.sidebar dl>dt>h3{padding:8px 0 8px 38px;}
+section.member>article>.sidebar dl>dd{}
+section.member>article>.sidebar ul{}
+section.member>article>.sidebar ul>li{padding:8px 0 8px 38px; margin-top:4px;}
+section.member>article>.sidebar ul>li.on{background:#fafafa; margin-bottom:8px;}
+section.member>article>.sidebar ul>li.on a{color:{$common.hrcolor};}
+section.member>article>.sidebar dl.mnav>dt i,
+section.member>article>.sidebar dl.mnav>dt a{display:none;}
+section.member>article>.container{float:left; width:78%; background:#fff; padding:28px;}
+
+.portrait{width:98px; height:98px; float:left;}
+.portrait>img{display:block; width:98px; height:98px;}
+
+.information{}
+.information>h3{display:block; font-size:18px;}
+.information dl{margin-top:28px; line-height:38px;}
+.information dl:after{display:block; content:''; clear:both;}
+.information dl dt{float:left; width:128px; color:#888;}
+.information dl dd{padding-left:128px;}
+.information dl.avatar dt{line-height:88px;}
+.information dl.avatar div{width:88px; height:88px; position:relative; cursor:pointer; border-radius:50%; overflow:hidden; font-size:14px; transition:.3s;}
+.information dl.avatar div:hover{box-shadow:0 0 8px rgba(0,0,0,.08);}
+.information dl.avatar div span{position:absolute; bottom:0; left:0; right:0; line-height:24px; font-size:12px; background:rgba(0,0,0,.68); color:#fff; text-align:center;}
+.information dl.avatar div img{display:block; width:88px; height:88px; object-fit:cover; border-radius:50%;}
+.information dl.avatar div ins{display:block; width:100%; height:100%; position:absolute; z-index:8; top:0; left:0;}
+.information dl.avatar div ins>input[type="file"]{display:block; width:100%; height:100%; cursor:pointer; opacity:0;}
+
+.information dl dd input[type=text],
+.information dl dd input[type=password],
+.information dl dd input[type=number],
+.information dl dd input[type=tel],
+.information dl dd input[type=email]{width:268px; max-width:100%; margin:0; line-height:36px; padding:0 12px; border-color:#d8d8d8; height:38px;}
+
+.information dl dd button{width:88px; padding:8px; border:none; border-radius:3px; cursor:pointer; transition:.3s; color:#fff; background:{$common.hrcolor};}
+.information dl dd button:hover{opacity:.88;}
+
+@media(max-width:1199px){
+section.member{padding:38px 0;}
+section.member>article>.sidebar{width:25%; padding-right:18px;}
+section.member>article>.container{width:75%; padding:18px;}
+}
+@media(max-width:992px){
+section.member>article>.sidebar{float:none; width:100%; margin-bottom:18px; padding:0;}
+section.member>article>.container{float:none; width:100%;}
+section.member>article>.sidebar dl>dt>h3{padding-left:18px;}
+section.member>article>.sidebar ul>li{padding-left:18px;}
+section.member>article>.sidebar dl.mnav>dt h3{line-height:28px;}
+section.member>article>.sidebar dl.mnav>dt i{display:block; float:right; font-size:18px; padding:8px; margin-right:8px; line-height:28px;}
+section.member>article>.sidebar dl.mnav>dt a{display:block; float:right; font-size:18px; padding:8px; line-height:28px;}
+section.member>article>.sidebar dl.mnav>dd{display:none;}
+section.member>article>.sidebar dl.mnav>dd.on{display:block;}
+section.member>article>.sidebar dl.logout{display:none;}
+}
+@media(max-width:767px){
+section.member{padding:18px 0;}
+section.member>article>.sidebar{margin-bottom:8px;}
+section.member>article>.sidebar dl{padding:4px 0;}
+.information dl dt{width:88px;}
+.information dl dd{padding-left:88px;}
+section.member>article>.sidebar dl>dt>h3{padding-left:8px;}
+section.member>article>.container{padding:8px;}
+.information dl{margin-top:12px;}
+
+}

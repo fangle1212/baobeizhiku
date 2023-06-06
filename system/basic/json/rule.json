@@ -1,0 +1,10 @@
+{
+    "1": "index",	
+    "2": "[folder]\/index",	
+    "3": "[folder]\/list[items]",	
+    "4": "[folder]\/list[items]",	
+    "5": "[folder]\/[id]",
+    "6": "[folder]\/tag\/[tag]",	
+    "7": "[folder]\/[static]",
+	"8": "[folder]\/[action]"
+}

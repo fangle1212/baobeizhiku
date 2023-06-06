@@ -1,0 +1,102 @@
+<section class="check bosscms">
+  <div class="server table">
+    <h2>服务器检测</h2>
+    <table>
+      <tbody>
+        <tr>
+          <th>环境名称</th>
+          <th>环境参数</th>
+          <th>支持/不支持</th>
+        </tr>
+        <tr>
+          <td>运行平台</td>
+          <td><?php echo $_SERVER["SERVER_SOFTWARE"]; ?></td>
+          <td><em class="fa fa-check"></em></td>
+        </tr>
+        <tr>
+          <td>PHP版本</td>
+          <td><?php echo PHP_VERSION; ?></td>
+          <td><?php if(PHP_VERSION>=5.5 && PHP_VERSION<8.2){ ?><em class="fa fa-check"></em><?php }else{ ?><em class="fa fa-times"></em><?php } ?></td>
+        </tr>
+        <tr>
+          <td>mysqli扩展</td>
+          <td><?php if(function_exists("mysqli_connect")){ echo '已开启'; }else{ echo '未开启'; } ?></td>
+          <td><?php if(function_exists("mysqli_connect")){ ?><em class="fa fa-check"></em><?php }else{ ?><em class="fa fa-times"></em><?php } ?></td>
+        </tr>
+        <tr>
+          <td>zip扩展</td>
+          <td><?php if(class_exists("ZipArchive")){ echo '已开启'; }else{ echo '未开启'; } ?></td>
+          <td><?php if(class_exists("ZipArchive")){ ?><em class="fa fa-check"></em><?php }else{ ?><em class="fa fa-times"></em><?php } ?></td>
+        </tr>
+        <tr>
+          <td>curl扩展</td>
+          <td><?php if(function_exists('curl_init')){ echo '已开启'; }else{ echo '未开启'; } ?></td>
+          <td><?php if(function_exists('curl_init')){ ?><em class="fa fa-check"></em><?php }else{ ?><em class="fa fa-times"></em><?php } ?></td>
+        </tr>
+        <tr>
+          <td>gd库扩展</td>
+          <td><?php if(function_exists('gd_info')){ echo '已开启'; }else{ echo '未开启'; } ?></td>
+          <td><?php if(function_exists('gd_info')){ ?><em class="fa fa-check"></em><?php }else{ ?><em class="fa fa-times"></em><?php } ?></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="folder table">
+    <h2>目录检测</h2>
+    <table>
+      <tbody>
+        <tr>
+          <th>目录名称</th>
+          <th>目录权限</th>
+          <th>支持/不支持</th>
+        </tr>
+        <?php
+		$arr = array(
+			'cache'  => '../cache/',
+			'upload'  => '../upload/',
+			'system/backup' => '../system/backup/',
+			'system/plugin' => '../system/plugin/',
+			'system/web/theme'  => '../system/web/theme/'
+		);
+		foreach($arr as $k=>$v){
+			$fa = '<em class="fa fa-times"></em>';
+			$txt = '';
+            if(!is_dir($v)){
+            	mkdir($v);
+            }
+			if(is_dir($v)){
+				$file = $v.'install.'.time().'.check.txt';
+				@file_put_contents($file, 'ok');
+				if(is_file($file)){
+					$txt = '只可写';
+					if(file_get_contents($file) == 'ok'){
+						$txt = '可读写';
+						$fa = '<em class="fa fa-check"></em>';
+					}
+					unlink($file);
+				}else if(is_readable($v)){
+                	$txt = '只可读';
+                }else{
+                	$txt = '不可读写';
+                }
+			}else{
+				$txt = '<span>文件夹不存在</span>';
+			}
+		?>
+        <tr>
+          <td><?php echo $k; ?></td>
+          <td><?php echo $txt; ?></td>
+          <td><?php echo $fa; ?></td>
+        </tr>
+        <?php
+		}
+		?>
+      </tbody>
+    </table>
+  </div>
+  <div class="both">
+    <a class="button blue prev" href="?page=license">上一步</a>
+    <a class="button green next not" url="?page=database">下一步</a>
+    <a class="button green next" hide href="?page=check">重新检测</a>
+  </div>
+</section>

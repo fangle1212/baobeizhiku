@@ -1,0 +1,24 @@
+[
+    {
+		"title": "基础设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "12",
+				"title": "背景色",
+				"name": "bgcolor",
+				"value": "#f8f8f8",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "字体颜色",
+				"name": "color",
+				"value": "#181818",
+				"description": "",
+				"param": []
+			}
+		]
+	}
+]

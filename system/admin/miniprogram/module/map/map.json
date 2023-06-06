@@ -1,0 +1,54 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "0",
+				"title": "地图坐标",
+				"name": "map_point",
+				"value": "",
+				"description": "坐标拾取地址：<a href=https://lbs.qq.com/getPoint/ target=_blank>https://lbs.qq.com/getPoint/</a>",
+				"param": []
+			},
+			{
+				"style": "1",
+				"title": "介绍内容",
+				"name": "map_description",
+				"value": "",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "地图高度",
+				"name": "map_height",
+				"value": "300",
+				"description": "",
+				"param": {
+					"min": 200,
+					"max": 500
+				}
+			},
+			{
+				"style": "16",
+				"title": "地图比例尺",
+				"name": "map_scale",
+				"value": "12",
+				"description": "",
+				"param": {
+					"min": 3,
+					"max": 20
+				}
+			},
+			{
+				"style": "6",
+				"title": "演示图片",
+				"name": "map_img",
+				"value": "",
+				"description": "地图只有小程序里可展示，演示时以图片替代。",
+				"param": []
+			}
+		]
+	}
+]

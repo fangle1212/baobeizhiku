@@ -1,0 +1,64 @@
+.title{ padding-bottom:10px; color: {$common.mcolor}; border-bottom: {$common.mcolor} 2px solid; position: relative; }
+.title i, .title h2, .title p { display: inline-block; vertical-align: middle; }
+.title i { margin: 0 5px 0 0; }
+.title h2{ font-size: 18px; margin: 0 5px 0 0; }
+.title p{opacity:.68; font-size:16px; font-family:Times, serif, Microsoft Yahei}
+.title em { font-style: normal; position: absolute; right: 0; }
+.title em a { color: #999; }
+@media(max-width:767px){}
+
+{if:($product.display)}
+.product{background:{$product.back_color}; overflow:hidden; }
+.product .title { color: {$product.t_color}; border-color: {$product.t_color};}
+.product .product-list-box > ul { padding: 20px 0; }
+@media(min-width:992px){
+.product .product-list-box > ul { margin-right: -2% }
+.product .product-list-box > ul > li{ width:48%; float: left; margin-right: 2%;}
+}
+{/if}
+
+
+
+{if:($introduce.display)}
+.introduce{background:{$introduce.back_color}; overflow:hidden; }
+.introduce .content{margin-top:18px;}
+.introduce .content:after{display:block; content:''; clear:both;}
+@media(min-width:992px){
+.introduce .content>img{float:left; width:33.333%;}
+.introduce .content>img+aside{float:left; width:66.6666%; padding-left:28px;}
+.introduce{padding-top:28px; padding-bottom:28px;}
+}
+@media(max-width:991px){
+.introduce{padding-top:18px; padding-bottom:18px;}
+}
+@media(max-width:767px){
+.introduce aside{margin-top:8px;}
+}
+{/if}
+
+
+
+{if:($news.display)}
+{$p=ceil($common.ftsize*$common.liheight*2)}
+.news{background:{$news.back_color}; overflow:hidden; }
+.news .title { color: {$news.t_color}; border-color: {$news.t_color};}
+.news .list-box { padding: 20px 0 10px 20px; }
+/* .news .list-box ul li { list-style-type: disc; } */
+/* .related-news-item a:hover {color: {$news.t_color};} */
+{/if}
+
+.hot-news .n-title em, .hot-tags .n-title em {
+  font-size: 18px;
+  font-weight: normal;
+}
+.hot-tags {
+  padding: 0 15px 15px 15px;
+}
+.hot-tags .n-title {
+  border-bottom: #e2e2e2 1px solid;
+  margin-bottom: 16px;
+  padding: 20px 0 8px 0;
+}
+.hot-news .n-title, .hot-tags .n-title {
+  padding-top: 5px;
+}

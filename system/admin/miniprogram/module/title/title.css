@@ -1,0 +1,31 @@
+.mob-title{overflow:hidden;}
+.mob-title:after{display:block; content:''; clear:both;}
+.mob-title h2{}
+.mob-title h2 span{position:relative; display:block;}
+.mob-title h2 span b{display:block; font-weight:normal;}
+.mob-title h2 span i,
+.mob-title h2 span u{display:none;}
+.mob-title h2 p{display:block;}
+.mob-title a{display:block;}
+
+.mob-title h2 b[title=""],
+.mob-title h2 p[title=""],
+.mob-title a[title=""]{display:none;}
+
+.mob-title.type1 h2,
+.mob-title.type2 h2{float:left;}
+.mob-title.type1 h2 span{padding-left:12px;}
+.mob-title.type1 h2 span[color=""]{padding-left:0;}
+.mob-title.type1 h2 span i{position:absolute; top:50%; left:0; display:block; transform:translateY(-50%); width:4px; border-radius:2px;}
+.mob-title.type1 h2 span[color=""] i{display:none;}
+.mob-title.type1 h2 span b{background:none !important;}
+.mob-title.type1 a,
+.mob-title.type2 a{float:right;}
+.mob-title.type2 h2 span b{display:inline-block; padding:0 18px 0 48px; margin-left:-48px; border-radius:0 18px 18px 0;}
+
+.mob-title.type3{text-align:center;}
+.mob-title.type3 h2{}
+.mob-title.type3 h2 span{display:inline-block;}
+.mob-title.type3 h2 span u{display:block; width:80%; max-width:80px; margin:2px auto; height:4px; border-radius:2px;}
+.mob-title.type3 h2 span b{background:none !important;}
+.mob-title.type3 h2 span[color=""] u{display:none;}

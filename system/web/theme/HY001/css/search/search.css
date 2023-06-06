@@ -1,0 +1,59 @@
+.searchform {
+}
+.searchform article {
+  max-width: 888px;
+}
+.searchform form {
+  position: relative;
+}
+.searchform button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  width: 50px;
+}
+@media (min-width: 992px) {
+  .searchform {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
+@media (max-width: 991px) {
+  .searchform {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+.searchlist {
+  border-top: 1px solid #f0f0f0;
+}
+
+.searchlist .null-box {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .searchlist {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
+@media (max-width: 991px) {
+  .searchlist {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .product-list-box > ul > li {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+  }
+}

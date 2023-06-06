@@ -1,0 +1,16 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "2",
+				"title": "编辑内容",
+				"name": "contents",
+				"value": "<p>内容<\/p>",
+				"description": "",
+				"param": []
+			}
+		]
+	}
+]

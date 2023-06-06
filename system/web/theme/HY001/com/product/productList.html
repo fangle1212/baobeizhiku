@@ -1,0 +1,64 @@
+<div class="product-list-box">
+  {if:(!isset($data))} {group class=list items=$product.items
+  rows=$product.number data=$data}{/group} {/if} {if:($data.list)}
+  <ul class="clearfix">
+    {foreach data=$data.list value=$c}
+    <li class="clearfix is-hover-shadow">
+      <?php
+      $c["name"] = isset($c["name"]) ? $c["name"] : $c["title"];
+      ?>
+      <a href="{$c.url}" title="{$c.name}" {$c.target} class="cover">
+        <img
+          {$c._image}
+          src="{$c.image|thumb=$c.width,$c.height}"
+          alt="{$c.name}"
+          class="img-contain"
+      /></a>
+      <div class="info">
+        <h4 {$c._name}>
+          <a
+            href="{$c.url}"
+            title="{$c.name}"
+            {$c.target}
+            class="text-overflow"
+          >
+            {$c.name}
+          </a>
+          <div class="compare_btn" data-id="{$c.id}" data-parentId="{$c.items}">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>添加对比
+          </div>
+        </h4>
+        {$item = $c} {if:(!isset($item["price"]))} {group class=one id=$c.id
+        type=3 data=$item}{/group} {/if}
+        <div class="price" {$item._price}>
+          <span>参考价：</span> {if:($item.price)}{$item.price}{else/}暂无{/if}
+        </div>
+
+        <ol class="other clearfix">
+          {foreach data=$item.complex}{if:($v.title=='产地')}
+          <li><span>产地：</span>{if:($v.value)}{$v.value}{else/}暂无{/if}</li>
+          {/if}{if:($v.title=='适用年龄')}
+          <li>
+            <span>适用年龄：</span>{if:($v.value)}{$v.value}{else/}暂无{/if}
+          </li>
+          {/if}{/foreach}
+        </ol>
+        {foreach data=$item.complex}{if:($v.title=='优点' || $v.title=='注意')}
+        <dl>
+          <dt>{$v.title}：</dt>
+          {if:($v.value)}<?php
+          $vals = $v['value'];
+          $valArr = explode(',', $vals);
+          ?>{foreach data=$valArr value=$val}
+          <dd>{$val}</dd>
+          {/foreach}{else/}
+          <dd class="none">暂无</dd>
+          {/if}
+        </dl>
+        {/if}{/foreach}
+      </div>
+    </li>
+    {/foreach}
+  </ul>
+  {/if}
+</div>

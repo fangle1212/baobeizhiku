@@ -1,0 +1,320 @@
+[
+    {
+        "name": "项目",
+        "icon": "fa-book",
+        "child": [
+            {
+                "name": "项目管理",
+                "icon": "fa-book",
+                "child": [
+                    {
+                        "name": "站点设置",
+                        "mold": "site",
+                        "check": "RM",
+                        "tag": "site"
+                    },
+                    {
+                        "name": "SEO设置",
+                        "mold": "seo",
+                        "check": "RM",
+                        "tag": "seo"
+                    },
+                    {
+                        "name": "代码配置",
+                        "mold": "site",
+                        "part": "code",
+                        "check": "RM",
+                        "tag": "site_code"
+                    },
+                    {
+                        "name": "手机菜单",
+                        "mold": "menu",
+                        "check": "RAMD",
+                        "tag": "menu"
+                    },
+                    {
+                        "name": "锚文本",
+                        "mold": "anchor",
+                        "check": "RAMD",
+                        "tag": "anchor"
+                    },
+                    {
+                        "name": "TAG标签",
+                        "mold": "tag",
+                        "check": "RAMD",
+                        "tag": "tag"
+                    },
+                    {
+                        "name": "友情链接",
+                        "mold": "link",
+                        "check": "RAMD",
+                        "tag": "link"
+                    },
+                    {
+                        "name": "模板参数",
+                        "mold": "template",
+                        "part": "params",
+                        "check": "RM",
+                        "tag": "template_params"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "内容",
+        "icon": "fa-pie-chart",
+        "child": [
+            {
+                "name": "网站内容",
+                "icon": "fa-pie-chart",
+                "child": [
+                    {
+                        "name": "内容管理",
+                        "mold": "content",
+                        "check": "RAMD",
+                        "tag": "items_content content group"
+                    },
+                    {
+                        "name": "栏目管理",
+                        "mold": "items",
+                        "check": "RAMD",
+                        "tag": "items"
+                    },
+                    {
+                        "name": "轮播管理",
+                        "mold": "banner",
+                        "check": "RAMD",
+                        "tag": "banner"
+                    },
+                    {
+                        "name": "反馈管理",
+                        "mold": "feedback",
+                        "check": "RAMD",
+                        "tag": "feedback"
+                    },
+                    {
+                        "name": "搜索管理",
+                        "mold": "search",
+                        "check": "RM",
+                        "tag": "search"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "软件",
+        "icon": "fa-hourglass",
+        "child": [
+            {
+                "name": "软件",
+                "icon": "fa-hourglass",
+                "child": [
+                    {
+                        "name": "软件产品",
+                        "mold": "software",
+                        "check": "R",
+                        "tag": "software"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "赋能",
+        "icon": "fa-suitcase",
+        "child": [
+            {
+                "name": "赋能营销",
+                "icon": "fa-suitcase",
+                "child": [
+                    {
+                        "name": "客服管理",
+                        "mold": "consult",
+                        "check": "RAMD",
+                        "tag": "consult"
+                    },
+                    {
+                        "name": "违禁词",
+                        "mold": "seo",
+                        "part": "violation",
+                        "check": "RAMD",
+                        "tag": "seo_violation"
+                    },
+                    {
+                        "name": "城市分站",
+                        "mold": "area",
+                        "check": "RAMD",
+                        "tag": "area"
+                    },
+                    {
+                        "name": "小程序",
+                        "mold": "miniprogram",
+                        "check": "RAMD",
+                        "tag": "miniprogram"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "商城",
+        "icon": "fa-tachometer",
+        "child": [
+            {
+                "name": "软件商城",
+                "icon": "fa-tachometer",
+                "child": [
+                    {
+                        "name": "网站模板",
+                        "mold": "template",
+                        "part": "market",
+                        "check": "RAMD",
+                        "tag": "template"
+                    },
+                    {
+                        "name": "应用软件",
+                        "mold": "plugin",
+                        "part": "market",
+                        "check": "RAMD",
+                        "tag": "plugin"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "用户",
+        "icon": "fa-user",
+        "child": [
+            {
+                "name": "用户管理",
+                "icon": "fa-user",
+                "child": [
+                    {
+                        "name": "管理员组",
+                        "mold": "manager",
+                        "check": "RAMD",
+                        "tag": "manager"
+                    },
+                    {
+                        "name": "会员列表",
+                        "mold": "member",
+                        "check": "RAMD",
+                        "tag": "member"
+                    },
+                    {
+                        "name": "会员设置",
+                        "mold": "member",
+                        "part": "config",
+                        "check": "RM",
+                        "tag": "member_config"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "系统",
+        "icon": "fa-cog",
+        "child": [
+            {
+                "name": "系统安全",
+                "icon": "fa-cog",
+                "child": [
+                    {
+                        "name": "安全设置",
+                        "mold": "safe",
+                        "check": "RM",
+                        "tag": "safe"
+                    },
+                    {
+                        "name": "数据备份",
+                        "mold": "safe",
+                        "part": "backup",
+                        "check": "RAMD",
+                        "tag": "safe_backup"
+                    },
+                    {
+                        "name": "版本更新",
+                        "mold": "update",
+                        "check": "RM",
+                        "tag": "update"
+                    },
+                    {
+                        "name": "系统检测",
+                        "mold": "detect",
+                        "check": "RM",
+                        "tag": "detect"
+                    },
+                    {
+                        "name": "系统体检",
+                        "mold": "examine",
+                        "check": "RM",
+                        "tag": "examine"
+                    }
+                ]
+            },
+            {
+                "name": "接口设置",
+                "icon": "fa-envelope",
+                "child": [
+                    {
+                        "name": "邮箱设置",
+                        "mold": "site",
+                        "part": "email",
+                        "check": "RM",
+                        "tag": "site_email"
+                    },
+                    {
+                        "name": "短信接口",
+                        "mold": "site",
+                        "part": "sms",
+                        "check": "RM",
+                        "tag": "site_sms"
+                    },
+                    {
+                        "name": "存储设置",
+                        "mold": "store",
+                        "check": "RM",
+                        "tag": "store"
+                    },
+                    {
+                        "name": "图形验证",
+                        "mold": "site",
+                        "part": "captcha",
+                        "check": "RM",
+                        "tag": "site_captcha"
+                    }
+                ]
+            },
+            {
+                "name": "其他设置",
+                "icon": "fa-globe",
+                "child": [
+                    {
+                        "name": "站点语言",
+                        "mold": "language",
+                        "check": "RAMD",
+                        "tag": "language"
+                    },
+                    {
+                        "name": "伪静态",
+                        "mold": "seo",
+                        "part": "rewrite",
+                        "check": "RM",
+                        "tag": "seo_rewrite seo_rule"
+                    },
+                    {
+                        "name": "网站状态",
+                        "mold": "site",
+                        "part": "state",
+                        "check": "RM",
+                        "tag": "site_state"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,260 @@
+{
+    "sys_member": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "rgb(248,248,248)",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            },
+            "2": {
+                "title": "注册配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "0",
+                        "title": "标题文字",
+                        "name": "register_name",
+                        "value": "注册会员",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "链接文本",
+                        "name": "register_link_text",
+                        "value": "已有账号？马上登录",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            },
+            "3": {
+                "title": "登录配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "0",
+                        "title": "标题文字",
+                        "name": "login_name",
+                        "value": "登录会员",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "链接文本",
+                        "name": "login_link_text",
+                        "value": "没有账号？马上注册",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            },
+            "4": {
+                "title": "会员配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "0",
+                        "title": "大标题",
+                        "name": "member_name",
+                        "value": "会员中心",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "标题文字",
+                        "name": "member_information_title",
+                        "value": "我的信息",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "登出文字",
+                        "name": "member_logout",
+                        "value": "退出登录",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "头像文字",
+                        "name": "member_avatar",
+                        "value": "头像",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "账号文字",
+                        "name": "member_username",
+                        "value": "账号",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "密码文字",
+                        "name": "member_password",
+                        "value": "密码",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "邮箱文字",
+                        "name": "member_email",
+                        "value": "邮箱",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "手机文字",
+                        "name": "member_phone",
+                        "value": "手机",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "按钮文字",
+                        "name": "member_save",
+                        "value": "保存",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "sys_area": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "0",
+                        "title": "标题文字",
+                        "name": "title_noarea",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "rgb(24,24,24)",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "12",
+                        "title": "文字色",
+                        "name": "font_color",
+                        "value": "rgb(248,248,248)",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "最大高度",
+                        "name": "max_height",
+                        "value": "100",
+                        "description": "单位：px",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "上方距离",
+                        "name": "padding_top",
+                        "value": "8",
+                        "description": "单位：px",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "下方距离",
+                        "name": "padding_bottom",
+                        "value": "8",
+                        "description": "单位：px",
+                        "param": []
+                    },
+                    {
+                        "style": "5",
+                        "title": "水平对齐",
+                        "name": "text_align",
+                        "value": "center",
+                        "description": "",
+                        "param": {
+                            "left": "左对齐",
+                            "center": "居中对齐",
+                            "right": "右对齐"
+                        }
+                    },
+                    {
+                        "style": "5",
+                        "title": "字体大小",
+                        "name": "font_size",
+                        "value": "14",
+                        "description": "单位：px",
+                        "param": {
+                            "12": "12",
+                            "13": "13",
+                            "14": "14",
+                            "15": "15",
+                            "16": "16",
+                            "17": "17",
+                            "18": "18"
+                        }
+                    },
+                    {
+                        "style": "5",
+                        "title": "文本行距",
+                        "name": "line_height",
+                        "value": "2",
+                        "description": "",
+                        "param": {
+                            "1": "1",
+                            "1.2": "1.2",
+                            "1.3": "1.3",
+                            "1.4": "1.4",
+                            "1.5": "1.5",
+                            "1.6": "1.6",
+                            "1.7": "1.7",
+                            "1.8": "1.8",
+                            "1.9": "1.9",
+                            "2": "2",
+                            "2.1": "2.1",
+                            "2.2": "2.2",
+                            "2.3": "2.3",
+                            "2.4": "2.4",
+                            "2.5": "2.5",
+                            "2.6": "2.6",
+                            "2.7": "2.7",
+                            "2.8": "2.8"
+                        }
+                    }
+                ]
+            }
+		}
+	]
+}

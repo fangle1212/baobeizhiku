@@ -1,0 +1,152 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "3",
+				"title": "选择样式",
+				"name": "style",
+				"value": "1",
+				"description": "",
+				"param": {
+					"1": "样式一",
+					"2": "样式二",
+					"3": "样式三"
+				}
+			},
+			{
+				"style": "12",
+				"title": "修饰条色",
+				"name": "hrcolor",
+				"value": "rgb(108,148,255)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "0",
+				"title": "标题文字",
+				"name": "title",
+				"value": "标题",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "标题颜色",
+				"name": "title_color",
+				"value": "rgb(18,18,18)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "标题大小",
+				"name": "title_size",
+				"value": "18",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 28
+				}
+			},
+			{
+				"style": "16",
+				"title": "标题行高",
+				"name": "title_height",
+				"value": "24",
+				"description": "",
+				"param": {
+					"min": 18,
+					"max": 38
+				}
+			},
+			
+			{
+				"style": "0",
+				"title": "描述文字",
+				"name": "description",
+				"value": "Title Name",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "描述颜色",
+				"name": "description_color",
+				"value": "rgb(108,108,108)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "描述大小",
+				"name": "description_size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 18
+				}
+			},
+			{
+				"style": "16",
+				"title": "描述行高",
+				"name": "description_height",
+				"value": "22",
+				"description": "",
+				"param": {
+					"min": 14,
+					"max": 28
+				}
+			},
+			
+			{
+				"style": "0",
+				"title": "链接文字",
+				"name": "more",
+				"value": "更多>",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "40",
+				"title": "链接地址",
+				"name": "more_url",
+				"value": "",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "链接颜色",
+				"name": "more_color",
+				"value": "rgb(68,68,68)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "链接大小",
+				"name": "more_size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 18
+				}
+			},
+			{
+				"style": "16",
+				"title": "链接行高",
+				"name": "more_height",
+				"value": "38",
+				"description": "",
+				"param": {
+					"min": 14,
+					"max": 48
+				}
+			}
+		]
+	}
+]

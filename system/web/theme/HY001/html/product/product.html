@@ -1,0 +1,10 @@
+{include theme=com/head}
+<section class="productlist" bosscms="productlist" groups>
+  {include theme=com/productCatetory} 
+  <article>
+    <?php $product = $G["group"]; ?>
+    {include theme=com/product/productList}
+    {pages class=html set=groups.pages display=true}{/pages}
+  </article>
+</section>
+{include theme=com/foot}

@@ -1,0 +1,22 @@
+<section class="product-catetory">
+  <article>
+    {items class=list id=16 value=$v2}
+    <div class="list clearfix">
+      <div class="parent item {$v2.on} {if:($v2.children)}has{/if}">
+        <a href="{$v2.url}" title="{$v2.name}" {$v2.target}>{$v2.name}</a>
+      </div>
+      {if:($v2.children)}
+      <div class="children">
+        <ul class="clearfix">
+          {items class=list id=$v2.id value=$v3}
+          <li class="item {$v3.on}">
+            <a href="{$v3.url}" title="{$v3.name}" {$v3.target}>{$v3.name}</a>
+          </li>
+          {/items}
+        </ul>
+      </div>
+      {/if}
+    </div>
+    {/items}
+  </article>
+</section>

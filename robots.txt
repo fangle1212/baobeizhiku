@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /install/
+Disallow: /page/
+Disallow: /search/
+Disallow: /system/
+Sitemap: http://localhost/sitemap.xml

@@ -1,0 +1,136 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "16",
+				"title": "组件高度",
+				"name": "height",
+				"value": "220",
+				"description": "",
+				"param": {
+					"min": 100,
+					"max": 600
+				}
+			},
+			{
+				"style": "3",
+				"title": "自动切换",
+				"name": "autoplays",
+				"value": "0",
+				"description": "",
+				"param": {
+					"1": "开启",
+					"0": "关闭"
+				}
+			},
+			{
+				"style": "16",
+				"title": "切换时间",
+				"name": "interval",
+				"value": "5000",
+				"description": "",
+				"param": {
+					"min": 1000,
+					"max": 8000,
+					"step": 100
+				}
+			},
+			{
+				"style": "16",
+				"title": "动画时长",
+				"name": "duration",
+				"value": "500",
+				"description": "",
+				"param": {
+					"min": 100,
+					"max": 2000,
+					"step": 100
+				}
+			},
+			{
+				"style": "3",
+				"title": "指示点",
+				"name": "indicator_dots",
+				"value": "1",
+				"description": "",
+				"param": {
+					"1": "开启",
+					"0": "关闭"
+				}
+			},
+			{
+				"style": "12",
+				"title": "指示点颜色",
+				"name": "indicator_color",
+				"value": "rgba(0,0,0,0.3)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "指示点选中",
+				"name": "indicator_active_color",
+				"value": "#000000",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "图片圆角",
+				"name": "imgradius",
+				"value": "0",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 30
+				}
+			},
+			{
+				"style": "31",
+				"title": "海报图列表",
+				"name": "list_reset",
+				"value": [
+					{
+						"img": "",
+						"url": ""
+					},
+					{
+						"img": "",
+						"url": ""
+					},
+					{
+						"img": "",
+						"url": ""
+					}
+				],
+				"description": "",
+				"param": {
+					"item": "图片[item]"
+				},
+				"ctrl": [
+					{
+						"style": "6",
+						"title": "图片",
+						"name": "img",
+						"value": "",
+						"description": "",
+						"param": []
+					},
+					{
+						"style": "40",
+						"title": "链接",
+						"name": "url",
+						"value": "",
+						"description": "",
+						"param": [],
+						"attribute": {
+							"placeholder": "请输入链接"
+						}
+					}
+				]
+			}
+		]
+	}
+]

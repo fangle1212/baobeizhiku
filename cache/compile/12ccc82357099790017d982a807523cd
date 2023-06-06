@@ -1,0 +1,19 @@
+<?php
+  $type = $G["group"]["type"];
+  $className = $type == "3" ? "related-products module" : "related-news module";
+  $title = $type == "3" ? "同类产品" : "其他测评";
+  $icon = $type == "3" ? "fa fa-fire" : "fa fa-file-text";
+?>
+<?php $data = page::group_list( $G['group']['items'], 10, null, null, null, 'pages', '*', "id!='{$G["group"]["id"]}'", notice ); ?><?php if(false){ ?><?php } ?>
+<?php  if( $data['list'] ){ ?>
+<section class="<?php echo $className; ?>">
+  <div class="n-title"><em><?php echo $title; ?></em></div>
+  <ul>
+    <?php foreach( $data['list'] as $v ){ ?>
+    <li>
+      <?php  if( $type == 3 ){ ?> <?php include(load::theme('com/relatedProItem')); ?> <?php }else{ ?> <?php include(load::theme('com/relatedNewsItem')); ?> <?php } ?>
+    </li>
+    <?php } ?>
+  </ul>
+</section>
+<?php } ?>

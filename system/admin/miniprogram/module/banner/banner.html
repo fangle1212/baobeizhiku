@@ -1,0 +1,14 @@
+<div class="mob-banner" style="height:{$height}px; padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  <div class="mob-banner-swiper" autoplays="{$autoplays}" interval="{$interval}" duration="{$duration}">
+    <div class="mob-banner-wrapper">
+      {foreach data=$list_reset}
+	  <div class="mob-banner-slide">
+	    <a url="{$v.url}">
+		  <img src="{$v.img}" style="border-radius:{$imgradius}px;" />
+	    </a>
+      </div>
+      {/foreach}
+    </div>
+    <div class="mob-banner-pagination" indicator-dots="{$indicator_dots}" indicator-color="{$indicator_color}" indicator-active-color="{$indicator_active_color}"></div>
+  </div>
+</div>

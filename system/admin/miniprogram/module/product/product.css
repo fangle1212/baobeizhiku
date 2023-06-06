@@ -1,0 +1,15 @@
+.mob-product ul:after{display:block; content:''; clear:both;}
+.mob-product ul>li{float:left;}
+.mob-product ul>li>a{display:block; position:relative;}
+.mob-product ul>li>a>img{display:block; width:100%;}
+.mob-product ul>li>a>span{display:block; padding:5px; text-align:center;}
+.mob-product ul>li>a>span>b{display:block; font-weight:normal; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.mob-product ul>li>a>span>u{display:block; text-decoration:none;}
+.mob-product ul>ol{display:none;}
+.mob-product.type1 ul>li{width:100%;}
+.mob-product.type2 ul>li{width:50%;}
+.mob-product.type3 ul>li{width:33.333%;}
+.mob-product.type4 ul>li{width:25%;}
+.mob-product.type2 ul>ol:nth-child(4n),
+.mob-product.type3 ul>ol:nth-child(6n),
+.mob-product.type4 ul>ol:nth-child(8n){float:left; display:block; clear:both;}

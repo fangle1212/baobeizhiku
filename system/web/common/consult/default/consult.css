@@ -1,0 +1,27 @@
+.consult-online{font-style:normal; position:fixed; z-index:99999; top:{config.consult_top}%; width:60px; padding-left:0; padding-right:0;}
+.consult-online.left{left:{config.consult_right}px;}
+.consult-online.right{right:{config.consult_right}px;}
+.consult-online .list{color:{config.consult_color};}
+.consult-online .list ul{}
+.consult-online .list ul li{margin-top:1px; position:relative; background:{config.consult_bgcolor};}
+.consult-online .list ul li:hover{background:{config.consult_hrcolor};}
+.consult-online .list ul li:first-child{margin:0;}
+.consult-online .list ul li>a{display:block; text-align:center; overflow:hidden; padding:5px; transition:.3s; color:{config.consult_color};}
+.consult-online .list ul li>a>em{display:block; font-size:20px; margin:5px 0;}
+.consult-online .list ul li>a>strong{display:block; line-height:1; margin:5px 0; font-weight:normal;}
+.consult-online .list ul li>span{position:absolute; top:50%; visibility:hidden; opacity:0; transition:.3s;
+transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%); -o-transform:translateY(-50%); -webkit-transform:translateY(-50%);}
+.consult-online.left .list ul li>span{left:100%; padding-left:10px;}
+.consult-online.right .list ul li>span{right:100%; padding-right:10px;}
+.consult-online .list ul li:hover>span{visibility:visible; opacity:1;}
+.consult-online .list ul li>span>b{display:block; font-weight:normal; white-space:nowrap; font-family:sans; letter-spacing:.5px;
+padding:10px 15px; font-size:18px; line-height:22px; transition:.3s;
+background:{config.consult_hrcolor}; color:{config.consult_color};}
+.consult-online .list ul li>span>img{display:block; max-height:200px; border:5px solid {config.consult_bgcolor}; border-color:; border-color:{config.consult_hrcolor};}
+.consult-online .list ul li>span:before{position:absolute; content:''; top:50%; margin-top:-8px; transition:.3s; visibility:hidden; opacity:0;
+border-color:transparent; border-style:solid;}
+.consult-online.left .list ul li>span:before{border-width:8px 10px 7px 0; border-right-color:{config.consult_hrcolor}; left:0;}
+.consult-online.right .list ul li>span:before{border-width:8px 0 7px 10px; border-left-color:{config.consult_hrcolor}; right:0;}
+.consult-online .list ul li:hover>span:before{visibility:visible; opacity:1;}
+.consult-online .list ul li.top{visibility:hidden; opacity:0; transition:.3s;}
+.consult-online .list ul li.top.on{visibility:visible; opacity:1;}

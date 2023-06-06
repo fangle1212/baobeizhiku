@@ -1,0 +1,21 @@
+{include theme=com/head}
+
+<section class="imagelist" bosscms="imagelist" groups>
+  <article>
+    <div class="list-box">
+      <ul>
+        {foreach data=groups.list}
+        <li>
+          <a href="{$v.url}" title="{$v.name}" {$v.target}>
+            <span><img {$v._image} src="{$v.image|thumb=$v.width,$v.height}" alt="{$v.name}" /></span>
+            <h4 {$v._name}>{$v.name}</h4>
+          </a>
+        </li>
+		{/foreach}
+      </ul>
+    </div>
+    {pages class=html set=groups.pages display=true}{/pages}
+  </article>
+</section>
+
+{include theme=com/foot}

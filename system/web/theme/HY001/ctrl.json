@@ -1,0 +1,788 @@
+{
+    "common": [
+        {
+            "1": {
+                "title": "公共设置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "5",
+                        "title": "字体大小",
+                        "name": "ftsize",
+                        "value": "14",
+                        "description": "网站的默认字体大小；单位：px",
+                        "param": {
+                            "12": "12",
+                            "13": "13",
+                            "14": "14",
+                            "15": "15",
+                            "16": "16",
+                            "17": "17",
+                            "18": "18"
+                        }
+                    },
+                    {
+                        "style": "5",
+                        "title": "字体粗细",
+                        "name": "ftweight",
+                        "value": "400",
+                        "description": "",
+                        "param": {
+                            "100": "100",
+                            "200": "200",
+                            "300": "300",
+                            "400": "400",
+                            "500": "500",
+                            "600": "600",
+                            "700": "700",
+                            "800": "800",
+                            "900": "900"
+                        }
+                    },
+                    {
+                        "style": "5",
+                        "title": "文本行距",
+                        "name": "liheight",
+                        "value": "1.75",
+                        "description": "",
+                        "param": {
+                            "1": "1",
+                            "1.2": "1.2",
+                            "1.25": "1.25",
+                            "1.3": "1.3",
+                            "1.35": "1.35",
+                            "1.4": "1.4",
+                            "1.45": "1.45",
+                            "1.5": "1.5",
+                            "1.55": "1.55",
+                            "1.6": "1.6",
+                            "1.65": "1.65",
+                            "1.7": "1.7",
+                            "1.75": "1.75",
+                            "1.8": "1.8",
+                            "1.85": "1.85",
+                            "1.9": "1.9",
+                            "1.95": "1.95",
+                            "2": "2"
+                        }
+                    },
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "bycolor",
+                        "value": "rgb(255,255,255)",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "12",
+                        "title": "主颜色",
+                        "name": "mcolor",
+                        "value": "rgb(0,165,235)",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "12",
+                        "title": "字体颜色",
+                        "name": "ftcolor",
+                        "value": "rgb(33,33,33)",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "12",
+                        "title": "触发颜色",
+                        "name": "hrcolor",
+                        "value": "rgb(0,165,235)",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "head": [
+        {
+            "1": {
+                "title": "板块设置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "23",
+                        "title": "搜索框栏目",
+                        "name": "search_items",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "nav": [
+        {
+            "1": {
+                "title": "板块设置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "12",
+                        "title": "选中背景色",
+                        "name": "select_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "5",
+                        "title": "一级栏目字体大小",
+                        "name": "font_size",
+                        "value": "16",
+                        "description": "",
+                        "param": {
+                            "14": "14",
+                            "15": "15",
+                            "16": "16",
+                            "17": "17",
+                            "18": "18",
+                            "19": "19",
+                            "20": "20"
+                        }
+                    },
+                    {
+                        "style": "0",
+                        "title": "更多栏目",
+                        "name": "more",
+                        "value": "更多",
+                        "description": "当栏目超出屏幕时会被整理到“更多栏目”中，这里命名该栏目的名称",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "banner": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "product": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "3",
+                        "title": "板块开关",
+                        "name": "display",
+                        "value": "1",
+                        "description": "",
+                        "param": {
+                            "1": "开启",
+                            "0": "关闭"
+                        }
+                    },
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "标题文字",
+                        "name": "title",
+                        "value": "标题",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "12",
+                        "title": "标题颜色",
+                        "name": "t_color",
+                        "value": "rgb(0,165,235)",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "描述文字",
+                        "name": "text",
+                        "value": "EN - TITLE",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "13",
+                        "title": "图标",
+                        "name": "icon",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "20",
+                        "title": "栏目选择",
+                        "name": "items",
+                        "value": "",
+                        "description": "显示选择的栏目的子栏目",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "显示数量",
+                        "name": "number",
+                        "value": "8",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "introduce": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "3",
+                        "title": "板块开关",
+                        "name": "display",
+                        "value": "1",
+                        "description": "",
+                        "param": {
+                            "1": "开关",
+                            "0": "关闭"
+                        }
+                    },
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "标题文字",
+                        "name": "title",
+                        "value": "公司简介",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "12",
+                        "title": "标题颜色",
+                        "name": "t_color",
+                        "value": "rgb(0,165,235)",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "描述文字",
+                        "name": "text",
+                        "value": "EN - TITLE",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "13",
+                        "title": "图标",
+                        "name": "icon",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "6",
+                        "title": "左侧图片",
+                        "name": "image",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "2",
+                        "title": "编辑内容",
+                        "name": "content",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "news": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "3",
+                        "title": "板块开关",
+                        "name": "display",
+                        "value": "1",
+                        "description": "",
+                        "param": {
+                            "1": "开启",
+                            "0": "关闭"
+                        }
+                    },
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "标题文字",
+                        "name": "title",
+                        "value": "标题",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "12",
+                        "title": "标题颜色",
+                        "name": "t_color",
+                        "value": "rgb(0,165,235)",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "描述文字",
+                        "name": "text",
+                        "value": "EN - TITLE",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "13",
+                        "title": "图标",
+                        "name": "icon",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "更多文字",
+                        "name": "more",
+                        "value": "更多 >",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "21",
+                        "title": "栏目选择",
+                        "name": "items",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "显示数量",
+                        "name": "number",
+                        "value": "8",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "foot": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "1",
+                        "title": "底部信息",
+                        "name": "foot_text",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "subnav": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "5",
+                        "title": "主导航字体大小",
+                        "name": "font_size",
+                        "value": "15",
+                        "description": "",
+                        "param": {
+                            "13": "13",
+                            "14": "14",
+                            "15": "15",
+                            "16": "16",
+                            "17": "17",
+                            "18": "18",
+                            "19": "19",
+                            "20": "20"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "about": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "feedback": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "回复标题",
+                        "name": "reply",
+                        "value": "管理员回复：",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "newslist": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "左侧图片宽度",
+                        "name": "width",
+                        "value": "220",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "productlist": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "5",
+                        "title": "电脑端列数",
+                        "name": "pc_rows",
+                        "value": "4",
+                        "description": "",
+                        "param": {
+                            "2": "2",
+                            "3": "3",
+                            "4": "4",
+                            "5": "5",
+                            "6": "6",
+                            "7": "7",
+                            "8": "8"
+                        }
+                    },
+                    {
+                        "style": "5",
+                        "title": "手机端列数",
+                        "name": "mobile_rows",
+                        "value": "2",
+                        "description": "",
+                        "param": {
+                            "1": "1",
+                            "2": "2",
+                            "3": "3",
+                            "4": "4"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "downloadlist": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "下载按钮文字",
+                        "name": "btn_text",
+                        "value": "下载附件",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "imagelist": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "5",
+                        "title": "电脑端列数",
+                        "name": "pc_rows",
+                        "value": "4",
+                        "description": "",
+                        "param": {
+                            "2": "2",
+                            "3": "3",
+                            "4": "4",
+                            "5": "5",
+                            "6": "6",
+                            "7": "7",
+                            "8": "8"
+                        }
+                    },
+                    {
+                        "style": "5",
+                        "title": "手机列数",
+                        "name": "mobile_rows",
+                        "value": "2",
+                        "description": "",
+                        "param": {
+                            "1": "1",
+                            "2": "2",
+                            "3": "3",
+                            "4": "4"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "newsdetail": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "downloaddetail": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "imagedetail": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ],
+    "productdetail": [
+        {
+            "1": {
+                "title": "板块配置",
+                "description": "",
+                "parent": "",
+                "ctrl": [
+                    {
+                        "style": "12",
+                        "title": "背景色",
+                        "name": "back_color",
+                        "value": "",
+                        "description": "",
+                        "param": []
+                    },
+                    {
+                        "style": "0",
+                        "title": "价格文字",
+                        "name": "price",
+                        "value": "产品价格：",
+                        "description": "",
+                        "param": []
+                    }
+                ]
+            }
+        }
+    ]
+}

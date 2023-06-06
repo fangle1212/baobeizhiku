@@ -1,0 +1,130 @@
+/*弹出对话框页面样式组件
+*/
+
+/*reset
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*module
+*/
+body {
+    background-color: #fafafa;
+    font: 14px/1.5 Microsoft Yahei, Arial, Helvetica, sans-serif;
+    color: #181818;
+}
+
+/*tab*/
+.tabhead {
+	font-size:0;
+    position: relative;
+    z-index: 10;
+	white-space: nowrap;
+	overflow:hidden;
+	overflow-x:auto;
+}
+.tabhead::-webkit-scrollbar{width:4px; height:4px;}
+.tabhead::-webkit-scrollbar-thumb{width:4px; height:4px; border-radius:4px; background:#fff;}
+.tabhead::-webkit-scrollbar-thumb:hover{background:#1880fe;}
+.tabhead::-webkit-scrollbar-track-piece{width:4px; height:4px; background:#fff;}
+
+.tabhead span {
+    display: inline-block;
+    padding: 7px 15px; 
+    border: 1px solid #e8e8e8;
+    background: #fff;
+	color:#686868;
+    text-align: center; 
+    cursor: pointer;
+	border-radius:3px 3px 0 0;
+	font-size:14px;
+    margin-right: 6px;
+}
+.tabhead span:last-child {
+	margin-right: 0;
+}
+.tabhead span.focus {  
+	border-bottom-color:#fff;
+	color:#181818;
+    background: #fff;
+}
+
+.tabbody {
+	background: #fff;
+    position: relative;
+    top: -1px;
+    margin: 0 auto;
+    border: 1px solid #e8e8e8;
+}
+
+/*button*/
+a.button {
+    display: block;
+    text-align: center;
+    line-height: 24px;
+    text-decoration: none;
+    height: 24px;
+    width: 95px;
+    border: 0;
+    color: #838383;
+    background: url(../../themes/default/images/icons-all.gif) no-repeat;
+}
+
+a.button:hover {
+    background-position: 0 -30px;
+}
+
+:focus-visible{outline:none;}
+
+/*
+li[folder] i{position:relative; z-index:3; display:block; width:70px; height:70px; color:#965209; font-style:normal; background-image:url('../../../../extend/ueditor/dialogs/attachment/images/file-icons.png'); margin:0 auto;}
+li[folder] i.dir{background-position:-3px 0; padding-top:5px; line-height:65px;}
+li[folder] i.folder{background-position:-74px 0; line-height:25px; padding-top:10px; padding-right:15px;}
+li[folder] i.code{background-position:-143px 0;}
+li[folder] i.file{background-position:-213px 0;}
+li[folder] i.zip{background-position:-278px 0;}
+li[folder] i.excel{background-position:-356px 0;}
+li[folder] i.word{background-position:-425px 0;}
+li[folder] i.powerpoint{background-position:-495px 0;}
+li[folder] i.pdf{background-position:-635px 0;}
+li[folder] i.text{background-position:-704px 0;}
+li[folder] i.movie{background-position:-982px 0;}
+li[folder] i.audio{background-position:-1050px 0;}
+*/

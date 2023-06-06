@@ -1,0 +1,1 @@
+<div class="relation-page"><?php $both1 = html::both( $G['group']['id'], $G['items']['id'], null ); if( $both1 ){ $html = $both1; ?><?php echo $html; ?><?php } ?></div>

@@ -1,0 +1,93 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "12",
+				"title": "标题颜色",
+				"name": "name_color",
+				"value": "rgb(18,18,18)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "标题大小",
+				"name": "name_size",
+				"value": "18",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 36
+				}
+			},
+			{
+				"style": "16",
+				"title": "标题行高",
+				"name": "name_lheight",
+				"value": "24",
+				"description": "",
+				"param": {
+					"min": 18,
+					"max": 48
+				}
+			},
+			
+			{
+				"style": "12",
+				"title": "描述颜色",
+				"name": "desc_color",
+				"value": "rgb(168,168,168)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "描述大小",
+				"name": "desc_size",
+				"value": "12",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 24
+				}
+			},
+			{
+				"style": "16",
+				"title": "描述行高",
+				"name": "desc_lheight",
+				"value": "18",
+				"description": "",
+				"param": {
+					"min": 16,
+					"max": 38
+				}
+			},
+			
+			{
+				"style": "3",
+				"title": "时间开关",
+				"name": "ctime_display_reset",
+				"value": "1",
+				"description": "",
+				"param": {
+					"1": "开启",
+					"0": "关闭"
+				}
+			},
+			
+			{
+				"style": "3",
+				"title": "阅读数开关",
+				"name": "notice_display_reset",
+				"value": "1",
+				"description": "",
+				"param": {
+					"1": "开启",
+					"0": "关闭"
+				}
+			}
+		]
+	}
+]

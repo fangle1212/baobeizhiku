@@ -1,0 +1,389 @@
+{
+    "anchor": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "old": "varchar(255) NOT NULL DEFAULT ''",
+        "new": "varchar(255) NOT NULL DEFAULT ''",
+        "title": "varchar(255) NOT NULL DEFAULT ''",
+        "link": "text NOT NULL",
+        "nofollow": "int(1) NOT NULL DEFAULT '1'",
+        "open": "int(1) NOT NULL DEFAULT '1'",
+        "target": "int(1) NOT NULL DEFAULT '1'",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "area": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "sign": "varchar(255) NOT NULL DEFAULT ''",
+        "parent": "varchar(255) NOT NULL DEFAULT ''",
+        "name": "varchar(255) NOT NULL DEFAULT ''",
+        "display": "int(1) NOT NULL DEFAULT '1'",
+        "title": "varchar(255) NOT NULL DEFAULT ''",
+        "prefix": "varchar(255) NOT NULL DEFAULT ''",
+        "keywords": "varchar(255) NOT NULL DEFAULT ''",
+        "description": "text NOT NULL",
+        "content": "text NOT NULL"
+    },
+    "banner": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "name": "varchar(255) NOT NULL DEFAULT ''",
+        "image": "text NOT NULL",
+        "screen": "int(1) NOT NULL DEFAULT '0'",
+        "site": "int(1) NOT NULL DEFAULT '0'",
+        "type": "varchar(255) NOT NULL DEFAULT ''",
+        "items": "varchar(255) NOT NULL DEFAULT ''",
+        "link": "text NOT NULL",
+        "display": "int(1) NOT NULL DEFAULT '1'",
+        "target": "int(1) NOT NULL DEFAULT '0'",
+        "sort": "int(11) NOT NULL DEFAULT '0'",
+        "content": "text NOT NULL",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "complex": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "extent": "int(11) NOT NULL DEFAULT '3'",
+        "items": "int(11) NOT NULL DEFAULT '0'",
+        "parent": "int(11) NOT NULL DEFAULT '0'",
+        "style": "int(11) NOT NULL DEFAULT '0'",
+        "core": "varchar(50) NOT NULL DEFAULT ''",
+        "name": "varchar(50) NOT NULL DEFAULT ''",
+        "param": "text NOT NULL",
+        "title": "varchar(255) NOT NULL DEFAULT ''",
+        "description": "varchar(255) NOT NULL DEFAULT ''",
+        "sort": "int(11) NOT NULL DEFAULT '0'",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "config": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "name": "varchar(255) NOT NULL DEFAULT ''",
+        "value": "text NOT NULL",
+        "parent": "int(11) NOT NULL DEFAULT '0'",
+        "type": "int(1) NOT NULL DEFAULT '0'",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "consult": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "type": "int(11) NOT NULL DEFAULT '0'",
+        "name": "varchar(255) NOT NULL DEFAULT ''",
+        "value": "text NOT NULL",
+        "display": "int(1) NOT NULL DEFAULT '1'",
+        "sort": "int(11) NOT NULL DEFAULT '0'",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "feedback": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "param": "text NOT NULL",
+        "parent": "int(11) NOT NULL DEFAULT '0'",
+        "reply": "text NOT NULL",
+        "manager": "int(11) NOT NULL DEFAULT '0'",
+        "ip": "varchar(255) NOT NULL DEFAULT ''",
+        "ctime": "int(11) NOT NULL DEFAULT '0'", /* 创建时间 */
+        "mtime": "int(11) NOT NULL DEFAULT '0'", /* 修改时间 */
+        "reading": "int(1) NOT NULL DEFAULT '0'",
+        "display": "int(1) NOT NULL DEFAULT '1'",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "form": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "parent": "int(11) NOT NULL DEFAULT '0'",
+        "style": "varchar(50) NOT NULL DEFAULT ''",
+        "title": "varchar(255) NOT NULL DEFAULT ''",
+        "description": "varchar(255) NOT NULL DEFAULT ''",
+        "prompt": "varchar(255) NOT NULL DEFAULT ''",
+        "param": "text NOT NULL",
+        "must": "int(1) NOT NULL DEFAULT '0'",
+        "sort": "int(11) NOT NULL DEFAULT '0'",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "news": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "name": "varchar(255) NOT NULL DEFAULT ''", /* 名称 */
+        "sort": "int(11) NOT NULL DEFAULT '0'", /* 排序 */
+        "items": "int(11) NOT NULL DEFAULT '0'", /* 所属栏目 */
+        "theme": "varchar(50) NOT NULL DEFAULT ''", /* 主题风格 */
+        "title": "varchar(255) NOT NULL DEFAULT ''", /* 页面标题 */
+        "keywords": "varchar(255) NOT NULL DEFAULT ''", /* 页面关键词 */
+        "description": "text NOT NULL", /* 页面描述 */
+        "alt": "varchar(255) NOT NULL DEFAULT ''", /* 页面图片默认alt */
+        "recommend": "int(1) NOT NULL DEFAULT '0'",
+		"top": "int(1) NOT NULL DEFAULT '0'",
+		"ctime": "int(11) NOT NULL DEFAULT '0'", /* 创建时间 */
+        "mtime": "int(11) NOT NULL DEFAULT '0'", /* 修改时间 */
+        "target": "int(1) NOT NULL DEFAULT '0'", /* 是否新窗口 */
+        "display": "int(11) NOT NULL DEFAULT '1'", /* 是否显示 */
+        "link": "text NOT NULL", /* 自定义链接 */
+        "notice": "int(11) NOT NULL DEFAULT '0'", /* 查看次数 */
+        "static": "varchar(255) NOT NULL DEFAULT ''", /* 静态文件名 */
+        "lang": "int(11) NOT NULL DEFAULT '0'",
+		/* 固定字段 */
+        "image": "text NOT NULL",
+        "text": "text NOT NULL",
+        "content": "longtext NOT NULL",
+		/* 预留字段 */
+        "text1": "text NOT NULL",
+        "text2": "text NOT NULL",
+        "text3": "text NOT NULL",
+        "image1": "text NOT NULL",
+        "image2": "text NOT NULL",
+        "image3": "text NOT NULL",
+        "images": "text NOT NULL",
+        "container": "text NOT NULL"
+    },
+    "product": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "name": "varchar(255) NOT NULL DEFAULT ''", /* 名称 */
+        "sort": "int(11) NOT NULL DEFAULT '0'", /* 排序 */
+        "items": "int(11) NOT NULL DEFAULT '0'", /* 所属栏目 */
+        "theme": "varchar(50) NOT NULL DEFAULT ''", /* 主题风格 */
+        "title": "varchar(255) NOT NULL DEFAULT ''", /* 页面标题 */
+        "keywords": "varchar(255) NOT NULL DEFAULT ''", /* 页面关键词 */
+        "description": "text NOT NULL", /* 页面描述 */
+        "alt": "varchar(255) NOT NULL DEFAULT ''", /* 页面图片默认alt */
+        "recommend": "int(1) NOT NULL DEFAULT '0'",
+		"top": "int(1) NOT NULL DEFAULT '0'",
+		"ctime": "int(11) NOT NULL DEFAULT '0'", /* 创建时间 */
+        "mtime": "int(11) NOT NULL DEFAULT '0'", /* 修改时间 */
+        "target": "int(1) NOT NULL DEFAULT '0'", /* 是否新窗口 */
+        "display": "int(11) NOT NULL DEFAULT '1'", /* 是否显示 */
+        "link": "text NOT NULL", /* 自定义链接 */
+        "notice": "int(11) NOT NULL DEFAULT '0'", /* 查看次数 */
+        "static": "varchar(255) NOT NULL DEFAULT ''", /* 静态文件名 */
+        "lang": "int(11) NOT NULL DEFAULT '0'",
+		/* 固定字段 */
+        "image": "text NOT NULL",
+        "images": "text NOT NULL",
+        "text": "text NOT NULL",
+        "content": "longtext NOT NULL",
+        "content1": "longtext NOT NULL",
+        "content2": "longtext NOT NULL",
+        "content3": "longtext NOT NULL",
+        "content4": "longtext NOT NULL",
+        "price": "varchar(255) NOT NULL DEFAULT ''",
+		/* 预留字段 */
+        "icon": "text NOT NULL",
+        "video": "text NOT NULL",
+        "text1": "text NOT NULL",
+        "text2": "text NOT NULL",
+        "text3": "text NOT NULL",
+        "image1": "text NOT NULL",
+        "image2": "text NOT NULL",
+        "image3": "text NOT NULL",
+        "container": "text NOT NULL"
+    },
+    "image": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "name": "varchar(255) NOT NULL DEFAULT ''", /* 名称 */
+        "sort": "int(11) NOT NULL DEFAULT '0'", /* 排序 */
+        "items": "int(11) NOT NULL DEFAULT '0'", /* 所属栏目 */
+        "theme": "varchar(50) NOT NULL DEFAULT ''", /* 主题风格 */
+        "title": "varchar(255) NOT NULL DEFAULT ''", /* 页面标题 */
+        "keywords": "varchar(255) NOT NULL DEFAULT ''", /* 页面关键词 */
+        "description": "text NOT NULL", /* 页面描述 */
+        "alt": "varchar(255) NOT NULL DEFAULT ''", /* 页面图片默认alt */
+        "recommend": "int(1) NOT NULL DEFAULT '0'",
+		"top": "int(1) NOT NULL DEFAULT '0'",
+		"ctime": "int(11) NOT NULL DEFAULT '0'", /* 创建时间 */
+        "mtime": "int(11) NOT NULL DEFAULT '0'", /* 修改时间 */
+        "target": "int(1) NOT NULL DEFAULT '0'", /* 是否新窗口 */
+        "display": "int(11) NOT NULL DEFAULT '1'", /* 是否显示 */
+        "link": "text NOT NULL", /* 自定义链接 */
+        "notice": "int(11) NOT NULL DEFAULT '0'", /* 查看次数 */
+        "static": "varchar(255) NOT NULL DEFAULT ''", /* 静态文件名 */
+        "lang": "int(11) NOT NULL DEFAULT '0'",
+		/* 固定字段 */
+        "image": "text NOT NULL",
+        "images": "text NOT NULL",
+        "text": "text NOT NULL",
+        "content": "longtext NOT NULL",
+		/* 预留字段 */
+        "text1": "text NOT NULL",
+        "text2": "text NOT NULL",
+        "text3": "text NOT NULL",
+        "image1": "text NOT NULL",
+        "image2": "text NOT NULL",
+        "image3": "text NOT NULL",
+        "container": "text NOT NULL"
+    },
+    "download": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "name": "varchar(255) NOT NULL DEFAULT ''", /* 名称 */
+        "sort": "int(11) NOT NULL DEFAULT '0'", /* 排序 */
+        "items": "int(11) NOT NULL DEFAULT '0'", /* 所属栏目 */
+        "theme": "varchar(50) NOT NULL DEFAULT ''", /* 主题风格 */
+        "title": "varchar(255) NOT NULL DEFAULT ''", /* 页面标题 */
+        "keywords": "varchar(255) NOT NULL DEFAULT ''", /* 页面关键词 */
+        "description": "text NOT NULL", /* 页面描述 */
+        "alt": "varchar(255) NOT NULL DEFAULT ''", /* 页面图片默认alt */
+        "recommend": "int(1) NOT NULL DEFAULT '0'",
+		"top": "int(1) NOT NULL DEFAULT '0'",
+		"ctime": "int(11) NOT NULL DEFAULT '0'", /* 创建时间 */
+        "mtime": "int(11) NOT NULL DEFAULT '0'", /* 修改时间 */
+        "target": "int(1) NOT NULL DEFAULT '0'", /* 是否新窗口 */
+        "display": "int(11) NOT NULL DEFAULT '1'", /* 是否显示 */
+        "link": "text NOT NULL", /* 自定义链接 */
+        "notice": "int(11) NOT NULL DEFAULT '0'", /* 查看次数 */
+        "static": "varchar(255) NOT NULL DEFAULT ''", /* 静态文件名 */
+        "lang": "int(11) NOT NULL DEFAULT '0'",
+		/* 固定字段 */
+        "file": "text NOT NULL",
+        "size": "varchar(255) NOT NULL DEFAULT ''",
+        "text": "text NOT NULL",
+        "content": "longtext NOT NULL",
+		/* 预留字段 */
+        "icon": "varchar(255) NOT NULL DEFAULT ''",
+        "image": "text NOT NULL",
+        "container": "text NOT NULL"
+    },
+    "items": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "name": "varchar(255) NOT NULL DEFAULT ''", /* 名称 */
+        "type": "int(1) NOT NULL DEFAULT '1'", /* 栏目类型 */
+        "theme": "varchar(255) NOT NULL DEFAULT ''", /* 主题风格 */
+        "themes": "varchar(255) NOT NULL DEFAULT ''", /* 主题详情页风格 */
+        "folder": "varchar(255) NOT NULL DEFAULT ''", /* 文件夹 */
+        "head": "int(1) NOT NULL DEFAULT '1'",
+        "foot": "int(1) NOT NULL DEFAULT '1'",
+        "issub": "int(1) NOT NULL DEFAULT '1'",
+        "nofollow": "int(1) NOT NULL DEFAULT '0'",
+        "target": "int(1) NOT NULL DEFAULT '0'", /* 是否新窗口 */
+        "sort": "int(11) NOT NULL DEFAULT '0'", /* 排序 */
+        "parent": "int(11) NOT NULL DEFAULT '0'", /* 父级栏目 */
+        "level": "int(11) NOT NULL DEFAULT '1'", /* 栏目级别 */
+        "display": "int(1) NOT NULL DEFAULT '1'", /* 是否显示 */
+        "title": "varchar(255) NOT NULL DEFAULT ''", /* 页面标题 */
+        "keywords": "varchar(255) NOT NULL DEFAULT ''", /* 页面关键词 */
+        "description": "text NOT NULL", /* 页面描述 */
+        "alt": "varchar(255) NOT NULL DEFAULT ''", /* 页面图片默认alt */
+        "link": "text NOT NULL", /* 外链地址 */
+        "static": "varchar(255) NOT NULL DEFAULT ''", /* 静态文件名 */
+        "lang": "int(11) NOT NULL DEFAULT '0'",
+		/* 固定字段 */
+        "icon": "text NOT NULL",
+        "text": "text NOT NULL",
+        "image": "text NOT NULL",
+        "content": "longtext NOT NULL",
+		/* 预留字段 */
+        "icon1": "text NOT NULL",
+        "text1": "text NOT NULL",
+        "text2": "text NOT NULL",
+        "text3": "text NOT NULL",
+        "image1": "text NOT NULL",
+        "image2": "text NOT NULL",
+        "image3": "text NOT NULL",
+        "images": "text NOT NULL",
+        "container": "text NOT NULL"
+    },
+    "language": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "name": "varchar(50) NOT NULL DEFAULT ''",
+        "sign": "varchar(50) NOT NULL DEFAULT ''",
+        "image": "varchar(250) NOT NULL DEFAULT ''",
+        "description": "text NOT NULL",
+        "defaults": "int(1) NOT NULL DEFAULT '0'",
+        "display": "int(1) NOT NULL DEFAULT '1'",
+        "target": "int(1) NOT NULL DEFAULT '0'",
+        "sort": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "layers": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "parent": "int(11) NOT NULL DEFAULT '0'",
+        "name": "varchar(255) NOT NULL DEFAULT ''",
+        "sort": "int(11) NOT NULL DEFAULT '0'",
+        "core": "varchar(255) NOT NULL DEFAULT ''",
+        "series": "int(11) NOT NULL DEFAULT '0'",
+        "display": "int(1) NOT NULL DEFAULT '1'",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "link": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "name": "varchar(255) NOT NULL DEFAULT ''",
+        "items": "varchar(255) NOT NULL DEFAULT ''",
+        "type": "int(1) NOT NULL DEFAULT '0'",
+        "image": "text NOT NULL",
+        "link": "text NOT NULL",
+        "nofollow": "int(1) NOT NULL DEFAULT '1'",
+        "display": "int(1) NOT NULL DEFAULT '1'",
+        "target": "int(1) NOT NULL DEFAULT '1'",
+        "sort": "int(11) NOT NULL DEFAULT '0'",
+        "area": "int(11) NOT NULL DEFAULT '0'",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "manager": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "username": "varchar(255) NOT NULL DEFAULT ''",
+        "password": "varchar(255) NOT NULL DEFAULT ''",
+        "level": "int(11) NOT NULL DEFAULT '0'",
+        "department": "varchar(255) NOT NULL DEFAULT ''",
+        "ip": "varchar(20) NOT NULL DEFAULT ''",
+        "frequency": "int(11) NOT NULL DEFAULT '0'",
+        "permit": "text NOT NULL",
+        "ctime": "int(11) NOT NULL DEFAULT '0'",
+        "ltime": "int(11) NOT NULL DEFAULT '0'",
+        "image": "varchar(255) NOT NULL DEFAULT ''",
+        "alias": "varchar(255) NOT NULL DEFAULT ''",
+        "email": "varchar(255) NOT NULL DEFAULT ''",
+        "phone": "varchar(255) NOT NULL DEFAULT ''",
+        "open": "int(1) NOT NULL DEFAULT '1'"
+    },
+    "menu": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "name": "varchar(255) NOT NULL DEFAULT ''",
+        "type": "int(11) NOT NULL DEFAULT '0'",
+        "value": "text NOT NULL",
+        "icon": "varchar(255) NOT NULL DEFAULT ''",
+        "color": "varchar(255) NOT NULL DEFAULT ''",
+        "bgcolor": "varchar(255) NOT NULL DEFAULT ''",
+        "target": "int(1) NOT NULL DEFAULT '0'",
+        "display": "int(1) NOT NULL DEFAULT '1'",
+        "sort": "int(11) NOT NULL DEFAULT '0'",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "plugin": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "name": "varchar(255) NOT NULL DEFAULT ''",
+        "version": "varchar(255) NOT NULL DEFAULT ''",
+        "target": "int(1) NOT NULL DEFAULT '0'",
+        "display": "int(1) NOT NULL DEFAULT '1'",
+        "must": "int(1) NOT NULL DEFAULT '0'",
+        "sort": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "search": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "parent": "int(11) NOT NULL DEFAULT '0'",
+        "keyword": "varchar(255) NOT NULL DEFAULT ''",
+        "ip": "varchar(255) NOT NULL DEFAULT ''",
+        "ctime": "int(11) NOT NULL DEFAULT '0'",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "tag": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "type": "int(11) NOT NULL DEFAULT '0'",
+        "title": "varchar(50) NOT NULL DEFAULT ''",
+        "name": "varchar(50) NOT NULL DEFAULT ''",
+        "parent": "text NOT NULL",
+        "seo_title": "varchar(255) NOT NULL DEFAULT ''",
+        "keywords": "varchar(255) NOT NULL DEFAULT ''",
+        "description": "text NOT NULL",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+    "theme": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "extent": "int(11) NOT NULL DEFAULT '0'",
+        "parent": "int(11) NOT NULL DEFAULT '0'",
+        "core": "varchar(50) NOT NULL DEFAULT ''",
+        "name": "varchar(50) NOT NULL DEFAULT ''",
+        "value": "text NOT NULL",
+        "lang": "int(11) NOT NULL DEFAULT '0'"
+    },
+	"member": {
+        "id": "int(11) NOT NULL AUTO_INCREMENT",
+        "username": "varchar(255) NOT NULL DEFAULT ''",
+        "password": "varchar(255) NOT NULL DEFAULT ''",
+        "ip": "varchar(20) NOT NULL DEFAULT ''",
+        "frequency": "int(11) NOT NULL DEFAULT '0'",
+        "ctime": "int(11) NOT NULL DEFAULT '0'",
+        "ltime": "int(11) NOT NULL DEFAULT '0'",
+        "email": "varchar(255) NOT NULL DEFAULT ''",
+        "phone": "varchar(255) NOT NULL DEFAULT ''",
+        "avatar": "varchar(255) NOT NULL DEFAULT ''",
+        "open": "int(1) NOT NULL DEFAULT '1'"
+	}
+}

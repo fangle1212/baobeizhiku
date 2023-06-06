@@ -1,0 +1,17 @@
+<div class="mob-news" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  <ul>
+	{php} $group_list = into::load_class('extend','miniprogram','miniprogram','new')->group_list($items_reset, $rows_reset); {/php}
+	{foreach data="$group_list.list"}
+	<li style="margin-top:{$li_tmargin}px;">
+	  <a url="/pages/news_detail/news_detail?id={$v.id}">
+	    <img src="{$v.image}" style="width:{$img_width}px; border-radius:{$imgradius}px;">
+		<span style="padding-left:{$img_width}px;">
+		  <b style="color:{$name_color}; font-size:{$name_size}px;">{$v.name}</b>
+		  <i style="color:{$ctime_color};"><em class="fa fa-clock-o"></em> {$v.ctime}</i>
+		  <p style="color:{$desc_color}; font-size:{$desc_size}px; line-height:{$desc_lheight_reset}px; height:{$desc_lheight_reset|strval=###*2}px;">{$v.text}</p>
+		</span>
+	  </a>
+	</li>
+	{/foreach}
+  </ul>
+</div>

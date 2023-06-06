@@ -1,0 +1,22 @@
+{if:(config.area_foot_show)}{$parent = $G.area?$G.area.id:0}{$Garea = $G.area}{else}{$parent = null}{/if}
+{area class=list items=items.id parent=$parent data=$list}{/area}
+{if:(config.area_foot_show && !$list)}
+{$prt = $G.area.parent}
+{area class=list items=items.id parent=$prt data=$list}{/area}
+{area class=one sign=null where='"id='{$prt???}'"' data=$Garea}{/area}
+{/if}
+{if:($list)}
+<section class="area-zq" bosscms="sys_area" area>
+  <article>
+    {if:($sys_area.title_noarea)}
+    <h3{$sys_area._title_noarea}>{$sys_area.title_noarea}</h3>
+    {/if}
+    {if:($Garea)}
+    <a href="{$Garea|url::items=$G.items,null,null,###}" title="{$Garea.name}"{$Garea._name}>{$Garea.name}</a>
+    {/if}
+	{foreach data=$list}
+    <a href="{$v.url}" title="{$v.name}"{$v._name}>{$v.name}</a>
+    {/foreach}
+  </article>
+</section>
+{/if}

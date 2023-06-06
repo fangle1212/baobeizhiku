@@ -1,0 +1,39 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "12",
+				"title": "线条颜色",
+				"name": "border_color",
+				"value": "rgb(188,188,188)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "3",
+				"title": "线条样式",
+				"name": "border_style",
+				"value": "dashed",
+				"description": "",
+				"param": {
+					"dashed": "虚线",
+					"dotted": "点状线",
+					"solid": "实线"
+				}
+			},
+			{
+				"style": "16",
+				"title": "线条高度",
+				"name": "border_width",
+				"value": "1",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 20
+				}
+			}
+		]
+	}
+]

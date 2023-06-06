@@ -1,0 +1,131 @@
+.page-compare {
+  padding: 20px 0;
+}
+.page-compare article {
+  padding: 0 18px !important;
+}
+.page-compare .scroll-box {
+  overflow-x: auto;
+}
+.page-compare .scroll-box > div {
+  width: 1352px;
+}
+.page-compare .scroll-box .col {
+  background: #fff;
+}
+.page-compare .scroll-box .col:first-child {
+  overflow: inherit;
+  position: sticky;
+  left: 0;
+  z-index: 6;
+}
+
+/* 产品列表 */
+.page-compare .product-list .item {
+  /* height: 300px; */
+  padding: 20px;
+  display: block;
+}
+.page-compare .product-list .item-first {
+  font-size: 16px;
+  font-weight: 600;
+  color: #303030;
+  text-align: center;
+  padding-top: 115px;
+}
+.page-compare .product-list .item .pic {
+  display: block;
+  margin: 20px auto;
+  width: 120px;
+  height: 120px;
+  background: #f3f3f3;
+  border: 1px solid #e2e2e2;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ababab;
+  text-align: center;
+  line-height: 120px;
+}
+.page-compare .product-list .item .name {
+  text-align: center;
+  color: #303030;
+  line-height: 20px;
+  height: 40px;
+  word-break: break-word;
+}
+.page-compare .product-list .item .name a:first-child {
+  color: {$common.mcolor};
+}
+.page-compare .product-list .item .del-btn {
+  margin: 18px auto;
+  width: 88px;
+  height: 28px;
+  background: {$common.mcolor};
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 28px;
+  text-align: center;
+  cursor: pointer;
+  max-width: 100%;
+}
+.page-compare .product-list.fixed {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: +99;
+}
+.page-compare .product-list.fixed .pic {
+  display: none;
+}
+.page-compare .product-list.fixed .item-first {
+  padding-top: 30px;
+  position: relative;
+}
+.page-compare .product-list.fixed .item {
+  height: 130px;
+}
+/* 基本概况 */
+.baseInfo-list {
+  margin: 20px 0;
+}
+
+.page-compare .module {
+  margin: 20px 0 0 0;
+}
+.page-compare .n-title b {
+  position: sticky;
+  left: 0;
+}
+.page-compare .product-tips .row .col .tag-item {
+  margin: 0 auto 10px;
+}
+@media(max-width:767px){
+  .page-compare .scroll-box > div {
+    width: 670px;
+  }
+  .page-compare .product-list .item {
+    padding: 10px;
+  }
+  .page-compare .product-list .item:first-child {
+    padding-top: 50px;
+  }
+  .page-compare .product-list .item .pic {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+}
+.page-compare .tips {
+  display: none;
+}
+@media(max-width:1352px){
+.page-compare .tips {
+  display: block;
+  text-align: right;
+  color: #999;
+  margin: 0 0 10px 0;
+  font-size: 15px;
+}
+}

@@ -1,0 +1,28 @@
+<div class="related-pro-item clearfix">
+  <a href="<?php echo $v['url']; ?>" title="<?php echo $v['name']; ?>" <?php echo $v['target']; ?> class="cover">
+    <img
+      <?php echo $v['_image']; ?>
+      src="<?php echo cache::thumbnail($v['image'],$v['width'],$v['height']); ?>"
+      alt="<?php echo $v['name']; ?>"
+      class="img-contain"
+  /></a>
+  <div class="info">
+    <h4 class="name">
+      <a href="<?php echo $v['url']; ?>" title="<?php echo $v['name']; ?>" <?php echo $v['target']; ?> class="text-overflow">
+        <?php echo $v['name']; ?>
+      </a>
+    </h4>
+    <?php $data = page::group_one( $v['id'], 3, '*', null, null ); if( $data['id'] ){ $v = $data; ?>
+    <?php } ?>
+    <div class="price" <?php echo $v['_price']; ?>>
+      <span>参考价：</span> <?php  if( $data['price'] ){ ?><?php echo $data['price']; ?><?php }else{ ?>暂无<?php } ?>
+    </div>
+    <dl class="other clearfix">
+      <?php foreach( $data['complex'] as $v ){ ?><?php  if( $v['title']=='产地' ){ ?>
+      <dd><span>产地：</span><?php  if( $v['value'] ){ ?><?php echo $v['value']; ?><?php }else{ ?>暂无<?php } ?></dd>
+      <?php } ?><?php  if( $v['title']=='适用年龄' ){ ?>
+      <dd><span>适用年龄：</span><?php  if( $v['value'] ){ ?><?php echo $v['value']; ?><?php }else{ ?>暂无<?php } ?></dd>
+      <?php } ?><?php } ?>
+    </dl>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="mob-sys-download" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  <ul items="{if:(get.items)}{get.items}{else}{$items_reset}{/if}" rows="{$rows_reset}">
+	<li style="margin-top:{$li_tmargin}px;">
+	  <a url="/pages/download_detail/download_detail?id={{id}}"><b style="color:{$name_color}; font-size:{$name_size}px; line-height:{$name_lheight}px;">{{name}}</b></a>
+	  <i style="color:{$ctime_color};"><em class="fa fa-file-text-o"></em> {{size}}KB &nbsp; <em class="fa fa-clock-o"></em> {{ctime}}</i>
+	  <p style="color:{$desc_color}; font-size:{$desc_size}px; line-height:{$desc_lheight}px;">{{text}}</p>
+	  <a href="{{file}}" target="_blank" style="background:{$btn_bgcolor}; color:{$btn_color};"><em class="fa fa-download"></em> {$btn_text}</a>
+	</li>
+  </ul>
+  <u style="line-height:{$load_lheight}px; font-size:{$load_size}px; color:{$load_color}; margin-top:{$li_tmargin}px;">
+    <b>{$loading}</b>
+	<i>{$loaded}</i>
+  </u>
+</div>

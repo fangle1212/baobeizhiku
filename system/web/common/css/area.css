@@ -1,0 +1,9 @@
+section.area-zq{padding:{$sys_area.padding_top}px 0 {$sys_area.padding_bottom}px 0; max-height:{$sys_area.max_height}px; overflow:auto; background:{$sys_area.back_color}; text-align:{$sys_area.text_align};}
+section.area-zq h3{color:{$sys_area.font_color}; padding:0 4px;}
+section.area-zq a{display:inline-block; padding:0 4px; font-size:{$sys_area.font_size}px; line-height:{$sys_area.line_height}; color:{$sys_area.font_color};}
+section.area-zq a:hover{color:{$common.hrcolor};}
+@media(min-width:1200px){
+section.area-zq::-webkit-scrollbar{width:4px; height:4px; background:{$sys_area.back_color};}
+section.area-zq::-webkit-scrollbar-thumb{background:{$common.hrcolor};}
+section.area-zq::-webkit-scrollbar-track-piece{width:4px; height:4px;}
+}

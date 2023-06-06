@@ -1,0 +1,38 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "12",
+				"title": "内容颜色",
+				"name": "text_color",
+				"value": "rgb(18,18,18)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "内容大小",
+				"name": "text_size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 36
+				}
+			},
+			{
+				"style": "16",
+				"title": "内容行高",
+				"name": "text_lheight",
+				"value": "22",
+				"description": "",
+				"param": {
+					"min": 18,
+					"max": 48
+				}
+			}
+		]
+	}
+]

@@ -1,0 +1,10 @@
+/*
+ * Copyright (c) Huyin Information Technology Co., Ltd. All Rights Reserved.
+ * BOSSCMS Content Management System (https://www.bosscms.net/)
+ */
+td[colspan="3"]{text-align:center;}
+em.fa-spinner{animation:turn 1s linear infinite;}
+@keyframes turn{
+0%{-webkit-transform:rotate(0deg);}
+100%{-webkit-transform:rotate(360deg);}
+}

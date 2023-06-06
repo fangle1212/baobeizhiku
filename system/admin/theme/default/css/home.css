@@ -1,0 +1,58 @@
+/*
+ * Copyright (c) Huyin Information Technology Co., Ltd. All Rights Reserved.
+ * BOSSCMS Content Management System (https://www.bosscms.net/)
+ */
+.top{padding:8px;}
+.top:after{display:block; content:''; clear:both;}
+
+.admin{width:66.6666%; float:left; padding:8px 8px 0 8px;}
+.admin dl{background:#fff; min-height:198px; padding:16px; border-radius:3px;}
+.admin dt{float:left; width:88px; height:88px;}
+.admin dt img{display:block;  width:88px; height:88px; border-radius:50%; object-fit:cover;}
+.admin dd{padding-left:108px;}
+.admin dd h2{color:#3f484c; font-size:18px; margin:0 0 28px 0;}
+.admin dd h2 span{font-size:22px; color:#162024;}
+.admin dd p{color:#3f484c; margin-top:18px;}
+
+
+.connect{width:33.333%; float:right; padding:8px 8px 0 8px;}
+.connect>div{background:#fff; overflow:hidden; border-radius:3px;}
+.connect>div>dl{background:#fafafa; display:block; margin:16px 16px 0 16px; border-radius:3px;}
+.connect>div>dl:after{display:block; content:''; clear:both;}
+.connect>div>dl>dt{float:left; width:82px; height:82px; padding:16px; text-align:center;}
+.connect>div>dl>dt em{width:50px; height:50px; line-height:50px; font-size:20px; border-radius:50%; background:#fff; color:#989898;}
+.connect>div>dl>dd{padding-left:82px;}
+.connect>div>dl>dd b{display:block; font-size:18px; font-weight:normal; padding:14px 0 4px 0;}
+.connect>div>dl>dd p{color:#686868;}
+.connect>div>span{display:block; padding:16px;}
+.connect>div>span p{margin-bottom:4px; font-size:15px; line-height:22px;}
+.connect>div>span a{padding:6px 22px; margin-top:8px;}
+
+
+.box{display:flex; padding:0 8px;}
+.box:after{display:block; content:''; clear:both;}
+.box>a{float:left; padding:8px; width:16.66666%; flex:1;}
+.box a>span{display:block; background:#fff; padding:16px; border-radius:3px;}
+.box dl{text-align:center; background:#fbfbfb; transition:.3s; border-radius:3px;}
+.box a:hover dl{background:#f8f8f8;}
+.box dl dt{font-size:16px; padding:16px 16px 0 16px; color:#162024;}
+.box dl dd{font-size:28px; padding:8px}
+
+.bosscms{padding:0 8px;}
+.bosscms a{background:#fcfcfc;}
+.bosscms a b{font-size:28px; padding:0 8px 8px 8px}
+
+.main.table.news{padding:8px 8px 0 8px; margin-bottom:16px;}
+.main.table.news>aside{float:left; width:50%; padding:0 8px; background:none;}
+.main.table.news>aside>div{background:#fff; padding:16px; border-radius:3px;} 
+.main.table.news td{padding:12px 16px;}
+
+.qq{position:relative;}
+.qq>span{position:absolute; top:-4px; left:100%; white-space:nowrap;}
+.qq>span>a{vertical-align:middle; margin-right:4px;}
+.qq>span>a>em{color:#fff !important; font-size:12px; text-align:center;}
+
+.news .fa{color:#85949a; margin-right:4px;}
+
+.server{padding:4px 0;}
+.server li{padding:4px 8px;}

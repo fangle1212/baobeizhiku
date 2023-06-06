@@ -1,0 +1,33 @@
+<div class="news-list-box">
+  {if:(!isset($data))} {group class=list items=$news.items rows=$news.number
+  data=$data}{/group} {/if} {if:($data.list)}
+  <ul class="clearfix">
+    {foreach data=$data.list value=$c}
+    <li class="clearfix is-hover-shadow">
+      <?php
+      $c["name"] = isset($c["name"]) ? $c["name"] : $c["title"];
+      ?>
+      <a href="{$c.url}" title="{$c.name}" {$c.target} class="cover">
+        <span
+          ><img
+            {$c._image}
+            src="{$c.image|thumb=$c.width,$c.height}"
+            alt="{$c.name}"
+            class="img-cover"
+        /></span>
+      </a>
+      <div>
+        <h3 {$c._name}>
+          <a href="{$c.url}" title="{$c.name}" {$c.target}>{$c.name}</a>
+        </h3>
+        <i
+          ><span {config._group_time}>{config.group_time}</span>
+          {$c.mtime|date='Y-m-d',###}</i
+        >
+        <p {$c._text}>{$c.text}</p>
+      </div>
+    </li>
+    {/foreach}
+  </ul>
+  {/if}
+</div>

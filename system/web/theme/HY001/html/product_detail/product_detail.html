@@ -1,0 +1,100 @@
+{include theme=com/head}
+<section class="inside-page productdetail" bosscms="productdetail" group>
+  <?php $product = $G['group'];?>
+  <article>
+    <!-- 面包屑 -->
+    {include theme=com/breadcrumb}
+    <div class="clearfix">
+      <div class="box-l table">
+        <div class="clearfix module">
+          {if:(group.imgs)}
+          <div class="photo" {group._images}>
+            <span {if:(count(group.imgs)
+              >1)}class="more"{/if}>
+              <a href="{group.imgs.0}" title="{group.name}" target="_blank">
+                <img
+                  src="{group.imgs.0|thumb=group.width,group.height}"
+                  alt="{group.name}"
+                  class="img-contain"
+                />
+              </a>
+            </span>
+            {if:(count(group.imgs)>1)}
+            <div class="images">
+              <ul>
+                {foreach data=group.imgs key=$k}
+                <li class="{if:(!$k)}on{/if}">
+                  <span>
+                    <a href="{$v}" title="{group.name}" target="_blank">
+                      <img
+                        src="{$v|thumb=group.width,group.height}"
+                        alt="{group.name}"
+                        class="img-contain"
+                      />
+                    </a>
+                  </span>
+                </li>
+                {/foreach}
+              </ul>
+            </div>
+            {/if}
+          </div>
+          {/if}
+
+          <div class="text">
+            <div class="name-btn">
+              <h1 {group._name}>{group.name}</h1>
+              <div
+                class="compare_btn"
+                data-id="{group.id}"
+                data-parentId="{group.items}"
+              >
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>添加对比
+              </div>
+            </div>
+            <div class="param">
+              {foreach data=group.complex} {if:($v.description==='概况')}
+              <dl>
+                <dt><span {$v._title}>{$v.title}</span>：</dt>
+                <dd>
+                  <div {$v._value}>{$v.value}</div>
+                </dd>
+              </dl>
+              {/if} {/foreach}
+            </div>
+            {if:(group.price)}
+            <h2>
+              <b {$productdetail._price}>{$productdetail.price}</b
+              ><span {group._price}>{group.price}</span>
+            </h2>
+            {/if}
+          </div>
+        </div>
+        <?php 
+        $listArr = Array(0);
+        $ids = $G['group']['id'];
+        $idsArr = explode(',', $ids);
+        ?>
+        <!-- 优缺点 -->
+        {include theme=com/product/productTips}
+        <!-- 营养成分 -->
+        {include theme=com/product/nutrients}
+        {foreach data=group.contents key=$k}
+        {if:($v.content)}
+        <div class="module">
+          <h4 class="n-title">{$v.title}</h4>
+          <div class="content">{$v.content}</div>
+        </div>
+        {/if}
+        {/foreach}
+        <!-- 上下篇 -->
+        {include theme=com/relationPage}
+      </div>
+      <div class="box-r">
+        <!-- 相关产品 -->
+        {include theme=com/otherList} {include theme=com/relatedList}
+      </div>
+    </div>
+  </article>
+</section>
+{include theme=com/foot}

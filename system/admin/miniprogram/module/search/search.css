@@ -1,0 +1,7 @@
+.mob-search{display:block; width:100%;}
+.mob-search form{position:relative;}
+.mob-search form>div{position:relative;}
+.mob-search form>div>input{height:18px; line-height:18px; background:none; border:none; outline:none; width:100%; position:absolute; top:50%; left:0; margin-top:-9px;}
+.mob-search input{display:block; width:100%; border:none; background:none; padding:0 5px 0 30px;}
+.mob-search button{position:absolute; left:0; top:0; z-index:1; width:30px; padding:0 0 0 4px; text-align:center; border:none; background:none;}
+.screen .mob-search input{color:#888 !important;}

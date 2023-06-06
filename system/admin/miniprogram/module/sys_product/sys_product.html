@@ -1,0 +1,20 @@
+<div class="mob-sys-product type{$style}" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  <ul items="{if:(get.items)}{get.items}{else}{$items_reset}{/if}" rows="{$rows_reset}">
+    <li style="padding:{$lipadding}px;">
+	  <a url="/pages/product_detail/product_detail?id={{id}}" style="background:{$div_bgcolor}; border-radius:{$imgradius}px;">
+		<img data-src="{{image}}" style="border-radius:{$imgradius}px;" />
+		<span>
+		  <b style="color:{$title_color}; line-height:{$title_lheight}px; font-size:{$title_size}px;">{{name}}</b>
+		  {if:($v.price)}
+		  <u style="color:{$price_color}; font-size:{$price_size}px;">{{price}}</u>
+		  {/if}
+		</span>
+	  </a>
+    </li>
+	<ol></ol>
+  </ul>
+  <u style="line-height:{$load_lheight}px; font-size:{$load_size}px; color:{$load_color}; margin-top:{$lipadding}px;">
+    <b>{$loading}</b>
+	<i>{$loaded}</i>
+  </u>
+</div>

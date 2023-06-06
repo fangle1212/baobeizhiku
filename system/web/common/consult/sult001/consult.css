@@ -1,0 +1,54 @@
+.consult-online{font-style:normal; position:fixed; z-index:99999; border-radius:3px; overflow:hidden; box-shadow:0 0 8px rgba(0,0,0,.18); border:1px solid #e8e8e8; width:auto; top:{config.consult_top}%;}
+.consult-online img{max-width:100%; vertical-align:bottom;}
+.consult-online.left{left:{config.consult_right}px;}
+.consult-online.right{right:{config.consult_right}px;}
+.consult-online .list{}
+.consult-online .list>h4{cursor:pointer; width:32px; line-height:1.08; padding:12px 4px; text-align:center; background:{config.consult_bgcolor}; color:{config.consult_color};}
+.consult-online .list>h4>i{float:right; display:none; font-size:14px;}
+.consult-online .list>h4:hover{background:{config.consult_hrcolor};}
+.consult-online .list ul{display:none; background:#fff; background:{$common.bycolor}; padding:8px;}
+.consult-online .list ul li{margin-top:8px;}
+.consult-online .list ul li:first-child{margin-top:0;}
+.consult-online .list ul li.weixin{}
+.consult-online .list ul li.weixin>img{box-shadow:0 0 4px rgba(0,0,0,.08);  border:1px solid #e8e8e8; display:block; margin-bottom:4px; border-radius:3px;}
+.consult-online .list ul li.weixin>span{display:block; text-align:center;}
+.consult-online .list ul li.qq{}
+.consult-online .list ul li.qq a{display:block; line-height:28px; border:1px solid #e8e8e8; white-space:nowrap; padding:8px; border-radius:8px; box-shadow:0 0 4px rgba(0,0,0,.08); overflow:hidden;}
+.consult-online .list ul li.qq em{width:28px; height:28px; line-height:26px; font-size:13px; text-align:center; color:#6cccff; border:1px solid #e8e8e8; border-radius:6px;}
+.consult-online .list ul li.qq strong{display:inline-block; padding-left:4px; opacity:.88;}
+.consult-online .list ul li.qq span{display:inline-block; padding-left:4px;}
+.consult-online .list ul li.qq a:hover{background:{config.consult_hrcolor}; color:{config.consult_color};}
+.consult-online .list ul li.qq a:hover em{color:{config.consult_color};}
+.consult-online .list ul li.phone{}
+.consult-online .list ul li.phone a{display:block; line-height:28px; border:1px solid #e8e8e8; white-space:nowrap; padding:8px; border-radius:8px; box-shadow:0 0 4px rgba(0,0,0,.08); overflow:hidden;}
+.consult-online .list ul li.phone em{width:28px; height:28px; line-height:26px; text-align:center; color:#01c55f; font-size:16px; border:1px solid #e8e8e8; border-radius:88px;}
+.consult-online .list ul li.phone strong{display:inline-block; padding-left:4px; opacity:.88;}
+.consult-online .list ul li.phone span{display:inline-block; padding-left:4px;}
+.consult-online .list ul li.phone a:hover{background:{config.consult_hrcolor}; color:{config.consult_color};}
+.consult-online .list ul li.phone a:hover em{color:{config.consult_color};}
+.consult-online .list ul li.email{}
+.consult-online .list ul li.email a{display:block; line-height:28px; border:1px solid #e8e8e8; white-space:nowrap; padding:8px; border-radius:8px; box-shadow:0 0 4px rgba(0,0,0,.08); overflow:hidden;}
+.consult-online .list ul li.email em{width:28px; height:28px; line-height:26px; font-size:14px; text-align:center; color:#9a91f3; border:1px solid #e8e8e8; border-radius:6px;}
+.consult-online .list ul li.email strong{display:inline-block; padding-left:4px; opacity:.88;}
+.consult-online .list ul li.email span{display:inline-block; padding-left:4px;}
+.consult-online .list ul li.email a:hover{background:{config.consult_hrcolor}; color:{config.consult_color};}
+.consult-online .list ul li.email a:hover em{color:{config.consult_color};}
+.consult-online .list ul li.code{}
+.consult-online .list ul li.code a{display:block; line-height:28px; border:1px solid #e8e8e8; white-space:nowrap; padding:8px; border-radius:8px; box-shadow:0 0 4px rgba(0,0,0,.08); overflow:hidden;}
+.consult-online .list ul li.code em{width:28px; height:28px; line-height:26px; font-size:15px; text-align:center; color:#f8ad3d; border:1px solid #e8e8e8; border-radius:88px;}
+.consult-online .list ul li.code strong{display:inline-block; padding-left:4px; opacity:.88;} 
+.consult-online .list ul li.code a:hover{background:{config.consult_hrcolor}; color:{config.consult_color};}
+.consult-online .list ul li.code a:hover em{color:{config.consult_color};}
+.consult-online .list ul li.top{display:none;}
+.consult-online .list ul li.top.on{display:block;}
+.consult-online .list ul li.top a{display:block; line-height:28px; border:1px solid #e8e8e8; white-space:nowrap; text-align:center; padding:4px 8px; border-radius:8px; box-shadow:0 0 4px rgba(0,0,0,.08); overflow:hidden;}
+.consult-online .list ul li.top em{font-size:22px; line-height:26px; vertical-align:top;}
+.consult-online .list ul li.top span{display:inline-block; padding-left:4px;} 
+.consult-online .list ul li.top a:hover{background:{config.consult_hrcolor}; color:{config.consult_color};}
+.consult-online .list ul li.top a:hover em{color:{config.consult_color};}
+
+.consult-online.active{width:198px;}
+.consult-online.active .list{}
+.consult-online.active .list>h4{padding:12px; width:auto; text-align:left;}
+.consult-online.active .list>h4>i{display:block;}
+.consult-online.active .list ul{display:block;}

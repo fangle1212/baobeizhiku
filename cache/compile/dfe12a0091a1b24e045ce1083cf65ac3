@@ -1,0 +1,6 @@
+<div class="related-news-item clearfix">
+  <h3 <?php echo $v['_name']; ?>>
+    <a href="<?php echo $v['url']; ?>" title="<?php echo $v['name']; ?>" <?php echo $v['target']; ?>><?php echo $v['name']; ?></a>
+  </h3>
+  <i><?php echo date('Y-m-d',$v['mtime']); ?></i>
+</div>

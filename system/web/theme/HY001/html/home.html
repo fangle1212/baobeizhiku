@@ -1,0 +1,110 @@
+{include theme=com/head}
+<section bosscms="banner" banner>
+  <article>
+    <div class="banner box-padding">
+      <ul>
+        {banner class=list}
+        <li>
+          {if:($v.content)}
+          <div class="content">
+            <article {$v._content}>{$v.content}</article>
+          </div>
+          {/if}
+          <div class="image">
+            {if:($v.link)}
+            <a href="{$v.link}" title="{$v.name}" {$v.target}>
+              {/if}
+              <span><img {$v._image} src="{$v.image}" alt="{$v.name}" /></span>
+              {if:($v.link)}
+            </a>
+            {/if}
+          </div>
+        </li>
+        {/banner}
+      </ul>
+    </div>
+  </article>
+</section>
+<div class="box-index">
+  <article>
+    {include theme=com/productCatetory} {if:($product.display)}
+    <section
+      class="product box-padding"
+      bosscms="product"
+      groups="{$product.items}"
+    >
+      <article>
+        {if:($product.title)} {items class=one id=$product.items
+        data=$product_items}{/items}
+        <div class="title">
+          <i class="fa {$product.icon}"></i>
+          <h2 {$product._title}>{$product.title}</h2>
+          <p {$product._text}>{$product.text}</p>
+          <em
+            ><a href="/product" title="{$product.name}" {$product.target}
+              >更多 ></a
+            ></em
+          >
+        </div>
+        {/if} {if:($product.items)} {include theme=com/product/productList}
+        {/if}
+      </article>
+    </section>
+    {else}
+    <section bosscms="product" view></section>
+    {/if}
+    <div class="clearfix">
+      <div class="box-l">
+        <section class="news" bosscms="news" groups="{$news.items}">
+          <article>
+            {if:($news.title)} {items class=one id=$news.items
+            data=$news_items}{/items}
+            <div class="title">
+              <i class="fa {$news.icon}"></i>
+              <h2 {$news._title}>{$news.title}</h2>
+              <p {$news._text}>{$news.text}</p>
+              <em
+                ><a href="/news" title="{$news.name}" {$news.target}
+                  >更多 ></a
+                ></em
+              >
+            </div>
+            {/if} {if:($news.items)}
+            <div class="list-box">
+              {group class=list items=$news.items rows=$news.number
+              data=$data}{/group} {include theme=com/news/newsList}
+            </div>
+            {/if}
+          </article>
+        </section>
+      </div>
+
+      <div class="box-r">
+        {include theme=com/hotTags}{include theme=com/hotNews}
+      </div>
+    </div>
+  </article>
+</div>
+{if:($introduce.display)}
+<section class="introduce" bosscms="introduce">
+  <article>
+    <div class="title">
+      <i class="fa {$introduce.icon}"></i>
+      <h2 {$introduce._title}>{$introduce.title}</h2>
+      <p {$introduce._text}>{$introduce.text}</p>
+    </div>
+    <div class="content">
+      {if:($introduce.image)}
+      <img
+        {$introduce._image}
+        src="{$introduce.image}"
+        alt="{$introduce.title}"
+      />
+      {/if}
+      <aside {$introduce._content}>{$introduce.content}</aside>
+    </div>
+  </article>
+</section>
+{else}
+<section bosscms="introduce" view></section>
+{/if} {include theme=com/foot}

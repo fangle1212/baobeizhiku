@@ -1,0 +1,9 @@
+<div class="mob-icon type{$style} row{$row}" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  {foreach data=$list_reset}
+  <a url="{$v.url}">
+	<img src="{$v.img}" style="width:{$imgwidth}px; border-radius:{$imgradius}px;" />
+	<b style="font-size:{$size}px;">{$v.name}</b>
+  </a>
+  <i></i>
+  {/foreach}
+</div>

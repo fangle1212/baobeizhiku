@@ -1,0 +1,13 @@
+<div class="mob-sys-contents" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  <ul>
+	{foreach data=group.contents key=$k}
+	<li {if:(!$k)}class="on"{/if} style="line-height:{$tag_lheight}px; font-size:{$tag_size}px;">
+	  <span style="padding:0 {$tag_padding}px; color:{$tag_color}; background:{$tag_bgcolor}">{$v.title}</span>
+	  <span style="padding:0 {$tag_padding}px; color:{$tag_hover_color}; background:{$tag_hover_bgcolor};">{$v.title}</span>
+	</li>
+	{/foreach}
+  </ul>
+  {foreach data=group.contents key=$k}
+  <div {if:(!$k)}class="on"{/if} style="padding:{$tag_padding}px; background:{$tag_hover_bgcolor};">{$v.content}</div>
+  {/foreach}
+</div>

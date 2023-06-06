@@ -1,0 +1,18 @@
+{include theme=com/head}
+<section class="tags">
+  <article>
+    <div class="list-box">
+      <ul>
+        {tag class=list}
+        <li>
+          <a href="{$v.url}" title="{$v.title}">
+            <i>({if:($v.parent)}{$v.parent|explode=',',###|count}{else}0{/if})</i>
+            <b {$v._title}>{$v.title}</b>
+          </a>
+        </li>
+        {/tag}
+      </ul>
+    </div>
+  </article>
+</section>
+{include theme=com/foot}

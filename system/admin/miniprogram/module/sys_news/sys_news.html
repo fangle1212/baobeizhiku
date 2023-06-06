@@ -1,0 +1,18 @@
+<div class="mob-sys-news" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  <ul items="{if:(get.items)}{get.items}{else}{$items_reset}{/if}" rows="{$rows_reset}">
+	<li style="margin-top:{$li_tmargin}px;">
+	  <a url="/pages/news_detail/news_detail?id={{id}}">
+	    <img data-src="{{image}}" style="width:{$img_width}px; border-radius:{$imgradius}px;">
+		<span style="padding-left:{$img_width}px;">
+		  <b style="color:{$name_color}; font-size:{$name_size}px;">{{name}}</b>
+		  <i style="color:{$ctime_color};"><em class="fa fa-clock-o"></em> {{ctime}}</i>
+		  <p style="color:{$desc_color}; font-size:{$desc_size}px; line-height:{$desc_lheight_reset}px; height:{$desc_lheight_reset|strval=###*2}px;">{{text}}</p>
+		</span>
+	  </a>
+	</li>
+  </ul>
+  <u style="line-height:{$load_lheight}px; font-size:{$load_size}px; color:{$load_color}; margin-top:{$li_tmargin}px;">
+    <b>{$loading}</b>
+	<i>{$loaded}</i>
+  </u>
+</div>

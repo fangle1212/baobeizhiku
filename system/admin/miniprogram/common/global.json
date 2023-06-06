@@ -1,0 +1,71 @@
+{
+    "a": {
+		"title": "基础设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "3",
+				"title": "是否显示",
+				"name": "display_reset",
+				"value": "1",
+				"description": "",
+				"param": {
+					"1": "显示",
+					"0": "隐藏"
+				}
+			},
+			{
+				"style": "12",
+				"title": "背景色",
+				"name": "bgcolor",
+				"value": "",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "顶部外距",
+				"name": "tmargin",
+				"value": "0",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 80
+				}
+			},
+			{
+				"style": "16",
+				"title": "左右外距",
+				"name": "lrmargin",
+				"value": "0",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 50
+				}
+			},
+			{
+				"style": "16",
+				"title": "上下内距",
+				"name": "tbpadding",
+				"value": "10",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 50
+				}
+			},
+			{
+				"style": "16",
+				"title": "左右内距",
+				"name": "lrpadding",
+				"value": "10",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 50
+				}
+			}
+		]
+	}
+}

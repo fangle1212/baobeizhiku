@@ -1,0 +1,908 @@
+[
+    {
+        "name": "all",
+        "value": "全部",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_detail_open",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_foot_insert",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_foot_open",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_foot_show",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_foot_type",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_link_type",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_link_scheme",
+        "value": "http",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_insert",
+        "value": "<footer",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_items",
+        "value": "[\"88888\"]",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_open",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_sitemap_open",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_name_type",
+        "value": "[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\"]",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "beian",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "both_type",
+        "value": "1",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "consult_backtop",
+        "value": "返顶",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "consult_bgcolor",
+        "value": "rgb(0,185,255)",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "consult_color",
+        "value": "rgb(255,255,255)",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "consult_content",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "consult_hrcolor",
+        "value": "rgb(0,155,235)",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "consult_open",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "consult_right",
+        "value": "10",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "consult_side",
+        "value": "right",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "consult_theme",
+        "value": "default",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "consult_title",
+        "value": "联系方式",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "consult_top",
+        "value": "30",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "description",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "domain",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "domain_mobile",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "download_file",
+        "value": "下载文件",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "download_number",
+        "value": "8",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "download_size",
+        "value": "文件大小：",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "download_thumbnail_height",
+        "value": "300",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "download_thumbnail_width",
+        "value": "300",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "feedback_number",
+        "value": "8",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "foot",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "foot_code",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "foot_mobile_code",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "group_time",
+        "value": "发布日期：",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "group_notice",
+        "value": "阅读量：",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "head_code",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "head_mobile_code",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "home",
+        "value": "首页",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "home_title",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "icon",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "image",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "image_number",
+        "value": "12",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "image_thumbnail_height",
+        "value": "400",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "image_thumbnail_width",
+        "value": "400",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "keywords",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "keywords_connector",
+        "value": "|",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "link_title",
+        "value": "友情链接：",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "logo",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "logo_mobile",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_username",
+        "value": "用户名",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_password",
+        "value": "密码",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_passwords",
+        "value": "重复密码",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_code",
+        "value": "验证码",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_email",
+        "value": "邮箱",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_phone",
+        "value": "手机",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_phone_code",
+        "value": "手机验证码",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_phone_button",
+        "value": "获取验证码",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_phone_retime",
+        "value": "重新发送([time]s)",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_agreement_yes",
+        "value": "我已阅读并同意",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_agreement_name",
+        "value": "《用户协议》",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_login_button",
+        "value": "登录注册",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_register_button",
+        "value": "立即注册",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_code_error",
+        "value": "验证码错误",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_agreement_error",
+        "value": "请阅读并同意协议",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_phone_error",
+        "value": "手机号错误",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_email_error",
+        "value": "邮箱格式错误",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_login_success",
+        "value": "登录成功",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_post_error",
+        "value": "没有提交信息",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_login_error",
+        "value": "账号或密码错误",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_avatar_error",
+        "value": "图片错误",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_avatar_size_error",
+        "value": "上传图片大小不能超过",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_logout_success",
+        "value": "登出成功",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_password_error",
+        "value": "密码必须含有英文字母和数字，且长度大于6位字符",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_information_success",
+        "value": "账号信息修改成功",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_information_error",
+        "value": "账号信息修改失败",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_email_link_error",
+        "value": "邮件验证链接已失效",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_register_success",
+        "value": "注册成功",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_register_success_check",
+        "value": "注册成功，请等待审核结果",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_phone_rdtime_min",
+        "value": "秒后才能发送验证码",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_phone_sms_success",
+        "value": "手机验证码已发送",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_phone_sms_error",
+        "value": "手机验证码发送失败",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_phone_code_error",
+        "value": "手机验证码错误",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_passwords_error",
+        "value": "两次密码输入不同，请重新输入",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_username_error",
+        "value": "账户名称必须大于2个字符",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_username_has_error",
+        "value": "该账号已经存在，请重新输入",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_email_send_success",
+        "value": "注册验证邮件已发送",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_email_send_error",
+        "value": "邮件发送失败",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_register_error",
+        "value": "注册失败",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_open",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_login_captcha",
+        "value": "1",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_logout_time",
+        "value": "28888",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_register_captcha",
+        "value": "1",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_register_check",
+        "value": "1",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_captcha_type",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_sms_template",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_agreement_open",
+        "value": "1",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_agreement_link",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_mail_title",
+        "value": "会员注册验证",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "member_mail_content",
+        "value": "&lt;p&gt;请点击链接 [url] 完成会员注册！&lt;\/p&gt;",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "miit_beian",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "miniprogram_theme",
+        "value": "RJXCX001",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "miniprogram_open",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "miniprogram_token",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "minpg_wxapiid",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "minpg_wxapisecret",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "news_number",
+        "value": "8",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "news_thumbnail_height",
+        "value": "300",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "news_thumbnail_width",
+        "value": "400",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "page_after",
+        "value": "下一篇",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "page_before",
+        "value": "上一篇",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "page_first",
+        "value": "首页",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "page_last",
+        "value": "末页",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "page_next",
+        "value": "下一页",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "page_number",
+        "value": "第[n]页",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "page_none",
+        "value": "没有了",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "page_prev",
+        "value": "上一页",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "product_content_number",
+        "value": "3",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "product_content_title",
+        "value": "内容详情",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "product_content_title1",
+        "value": "内容详情1",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "product_content_title2",
+        "value": "内容详情2",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "product_content_title3",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "product_content_title4",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "product_number",
+        "value": "12",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "product_thumbnail_height",
+        "value": "400",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "product_thumbnail_width",
+        "value": "500",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "rewrite_open",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "search_number",
+        "value": "10",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "state_content",
+        "value": "<p>网站更新中，敬请期待！<\/p>",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "state_open",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "state_title",
+        "value": "网站更新中，敬请期待！",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "store_bucket",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "store_domain",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "store_id",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "store_key",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "store_platform",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "store_region",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "store_type",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "thumbnail_size",
+        "value": "cover",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "thumbnail_horizontal",
+        "value": "center",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "thumbnail_vertical",
+        "value": "center",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "title",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "title_connector",
+        "value": " - ",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "violation_open",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "violation_replace",
+        "value": "*",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "violation_table",
+        "value": "[\"最\",\"抢\",\"第一\",\"一流\",\"唯一\",\"独一无二\",\"仅此\",\"NO.1\",\"TOP.1\",\"NO1\",\"TOP1\",\"全国\",\"中国\",\"国家\",\"国际\",\"世界\",\"全球\",\"全民\",\"万人\",\"顶级\",\"顶尖\",\"尖端\",\"高级\",\"极品\",\"极佳\",\"绝佳\",\"绝对\",\"终极\",\"极致\",\"首个\",\"首选\",\"独家\",\"首发\",\"首次\",\"首款\",\"冠军\",\"驰名\",\"大牌\",\"金牌\",\"名牌\",\"王牌\",\"领袖\",\"领先\",\"领导\",\"缔造\",\"创领\",\"巨星\",\"著名\",\"掌门人\",\"至尊\",\"高峰\",\"巅峰\",\"奢侈\",\"之王\",\"王者\",\"史无前例\",\"前无古人\",\"永久\",\"万能\",\"祖传\",\"特效\",\"高效\",\"强效\",\"全效\",\"速效\",\"无敌\",\"纯天然\",\"100％\",\"高档\",\"正品\",\"真皮\",\"超赚\",\"超强\",\"精准\",\"老字号\",\"特供\",\"专供\",\"专家推荐\",\"免检\",\"免抽检\",\"秒杀\",\"抢爆\",\"疯抢\",\"抢购\",\"抢疯了\",\"卖疯了\",\"完美\",\"全面\",\"全方位\",\"卓越\",\"完美\",\"信赖\",\"良好\",\"优秀\",\"高级\",\"高档\",\"便宜\",\"流行\",\"先进\",\"一波\",\"缔造者\",\"创领\",\"绝无\",\"一波\",\"免单\",\"获奖\",\"秒杀\",\"再不抢\",\"大品牌\",\"涨价\",\"降价\",\"无需国家质量检测\",\"免单\",\"小人\",\"进宝\",\"富贵\",\"凶\",\"旺\",\"出色\",\"引领\",\"极具\"]",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "web_theme",
+        "value": "HY001",
+        "parent": "0",
+        "type": "0"
+    }
+]

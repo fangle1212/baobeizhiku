@@ -1,0 +1,10 @@
+.mob-sys-imgs-swiper{overflow:hidden; position:relative;}
+.mob-sys-imgs-swiper:after{display:block; content:''; clear:both;}
+.mob-sys-imgs-wrapper{width:10000%;}
+.mob-sys-imgs-slide{width:1%; float:left;}
+.mob-sys-imgs-slide img{display:block; width:100%;}
+.mob-sys-imgs-pagination{position:absolute; left:0; right:0; bottom:10px; z-index:1; text-align:center;}
+.mob-sys-imgs-pagination>span{width:8px; height:8px; margin:0 5px; border-radius:8px; overflow:hidden; display:inline-block;}
+.mob-sys-imgs-pagination>span>i{display:none; width:8px; height:8px;}
+.mob-sys-imgs-pagination>span.active{background:none !important;}
+.mob-sys-imgs-pagination>span.active>i{display:block;}

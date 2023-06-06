@@ -1,0 +1,43 @@
+{include theme=com/head}
+<section class="feedback" bosscms="feedback" feedback>
+  <article>
+    {feedback class=list items=items.id data=$result}{/feedback}
+    {if:($result.list)}
+	<div class="content-box">
+      <div class="list-box">
+        <ul>
+          {foreach data=$result.list}
+          <li>
+            <h4>
+              {if:(isset(config.feedback_name))}
+              <b>{$v.param|arrExist=config.feedback_name}</b>
+              {/if}
+              <i>"{$v.ctime|date='Y/m/d',###}"</i>
+            </h4>
+            {$show=json::decode(config.feedback_show)}
+            {foreach data=$show value=$s}
+            {if:($v.param[$s])}
+            <p>{$v.param|arrExist=$s}</p>
+            {/if}
+            {/foreach}
+			{if:($v.reply)}
+            <div>
+              {if:($feedback.reply)}
+			  <b{$feedback._reply}>{$feedback.reply}</b>
+			  {/if}
+              <p{$v._reply}>{$v.reply|strLineSpace}</p>
+            </div>
+			{/if}
+          </li>
+          {/foreach}
+        </ul>
+      </div>
+      <div class="page-box">{pages class=html set=$result.pages display=true}{/pages}</div>
+	</div>
+    {/if}
+    {feedback class=html items=items.id}
+    <div class="form-box">{$html}</div>
+    {/feedback}
+  </article>
+</section>
+{include theme=com/foot}

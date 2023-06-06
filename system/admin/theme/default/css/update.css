@@ -1,0 +1,16 @@
+.version{padding-bottom:8px;}
+.version p{margin-bottom:8px;}
+
+.update{background:#f8f8f8; padding:16px;}
+.update>h3{}
+.update>p{margin-top:16px; margin-bottom:12px; color:#666;}
+.update>ul{}
+.update>ul>li{margin:8px 0 0;}
+
+section.refer button em{padding:0;}
+section.refer button.on{background:#39d17b;}
+section.refer button.on em{animation:turn 1s linear infinite; text-align:center;}
+@keyframes turn{
+0%{-webkit-transform:rotate(0deg);}
+100%{-webkit-transform:rotate(360deg);}
+}

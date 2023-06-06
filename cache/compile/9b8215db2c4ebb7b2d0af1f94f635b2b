@@ -1,0 +1,57 @@
+<div class="nutrients module">
+  <h4 class="n-title fast-nav-title">营养成分</h4>
+  <ul class="row">
+    <li class="col item th" style="padding: 0 10px;">
+      <ul class="row">
+        <li class="col item">成分</li>
+        <li class="col item">单位</li>
+      </ul>
+    </li>
+    <?php foreach( $listArr as $index ){ ?>
+    <li class="col item th">
+      <?php  if( $idsArr[$index] ){ ?> <?php $group1 = page::group_one( $idsArr[$index], 3, '*', null, null ); if( $group1['id'] ){ $v = $group1; ?><?php $val = $v; $product = $v;?><?php include(load::theme('com/product/contentUnit')); ?> <?php } ?> <?php } ?>
+    </li>
+    <?php } ?>
+  </ul>
+  <?php $complex1 = page::complex_list( 3, 0, null, params, 0 ); ?><?php foreach( $complex1 as $c ){ ?>
+  <?php  if( $c['description']==='营养' ){ ?>
+  <?php
+  $isShow = true;
+  if ($isComparePage != true && $ids) {
+    $type = 3;
+    $pro = page::group_one($ids, $type);
+    $complex = $pro["complex"];
+    foreach($complex as $item){
+      if ($item["id"] == $c["id"] && empty($item["value"])) {
+        $isShow = false;
+      }
+    }
+  }
+  ?>
+  <?php  if( $isShow ){ ?>
+  <ul class="row">
+    <li class="col item" style="padding: 0 10px;">
+      <ul class="row">
+        <?php $group2 = page::group_list( 108, 1, null, null, null, 'pages', '*', "name='{$c["title"]}'", null ); ?><?php foreach( $group2['list'] as $cc ){ ?> <?php $group3 = page::group_one( $cc['id'], 2, '*', null, null ); if( $group3['id'] ){ $v = $group3; ?>
+        <li class="col item jieshao" <?php echo $c['_title']; ?>>
+          <?php echo $c['title']; ?> <?php  if( $v['content'] ){ ?>
+          <div class="jieshao-right">
+            <div class="tips-text">说明：</div>
+            <div class="tips-content"><?php echo $v['content']; ?></div>
+          </div>
+          <?php } ?>
+        </li>
+        <li class="col item"><?php  if( $v['text'] ){ ?><?php echo $v['text']; ?><?php } ?></li>
+        <?php } ?> <?php } ?>
+      </ul>
+    </li>
+    <?php foreach( $listArr as $index ){ ?>
+    <li class="col item">
+      <?php  if( $idsArr[$index] ){ ?> <?php $group4 = page::group_one( $idsArr[$index], 3, '*', null, null ); if( $group4['id'] ){ $v = $group4; ?>
+      <?php foreach( $v['complex'] as $v ){ ?> <?php  if( $c['id'] == $v['id'] ){ ?> <?php echo $v['value']; ?> <?php } ?>
+      <?php } ?> <?php } ?> <?php } ?>
+    </li>
+    <?php } ?>
+  </ul>
+  <?php } ?> <?php } ?> <?php } ?>
+</div>

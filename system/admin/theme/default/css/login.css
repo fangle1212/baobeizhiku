@@ -1,0 +1,31 @@
+/*
+ * Copyright (c) Huyin Information Technology Co., Ltd. All Rights Reserved.
+ * BOSSCMS Content Management System (https://www.bosscms.net/)
+ */
+html,body{height:100%; line-height:1.58;
+display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-o-box; display:box; 
+-webkit-box-pack:center; -moz-box-pack:center; -ms-flex-pack:center; -o-box-pack:center; box-pack:center; 
+-webkit-box-align:center; -moz-box-align:center; -ms-flex-align:center; -o-box-align:center; box-align:center;}
+
+.background-box{position:fixed; top:0; right:0; bottom:0; left:0; z-index:1; overflow:hidden;}
+.background-box>img{display:block; width:100%; height:100%; object-fit:cover;}
+
+.login-box{position:relative; z-index:9; margin:0 auto; width:388px;}
+
+.login-body{background:#fff; box-shadow:0 0 18px rgba(0,0,0,.018); padding:28px; border-radius:3px;}
+
+.login-logo{padding-bottom:18px;}
+.login-logo a{}
+.login-logo a img{display:block; max-width:248px; margin:0 auto;}
+.login-login bosscms{}
+
+.login-form{}
+.login-form>span{display:block; text-align:center; border-bottom:1px solid #e8e8e8; padding-bottom:18px; margin-bottom:28px;}
+.login-form h2{font-size:24px; font-weight:normal;}
+.login-form p{margin-top:4px; color:#888;}
+.login-form code{margin-bottom:18px;}
+.login-form code.input[captcha]>img{background:#f4f4f4;}
+.login-form button{display:block; width:100%; padding:8px;}
+
+.login-foot{margin-top:18px;}
+.login-foot a{}

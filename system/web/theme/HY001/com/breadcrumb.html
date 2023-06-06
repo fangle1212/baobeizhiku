@@ -1,0 +1,3 @@
+<div class="breadcrumb">
+  <?php $index = 0; ?>{items class=position}{if:($index > 0)}<span>></span>{/if}<a class="{$v.on}" href="{$v.url}" title="{$v.name}" {$v.target} {$v._name}>{$v.name}</a><?php $index++; ?>{/items}{if:($G.keyword)}<span>></span>{$G.keyword}{/if}
+</div>

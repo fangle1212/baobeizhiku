@@ -1,0 +1,76 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "12",
+				"title": "选项卡颜色",
+				"name": "tag_color",
+				"value": "rgb(18,18,18)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "选中颜色",
+				"name": "tag_hover_color",
+				"value": "rgb(18,18,18)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "选项卡背景色",
+				"name": "tag_bgcolor",
+				"value": "rgb(248,248,248)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "选中背景色",
+				"name": "tag_hover_bgcolor",
+				"value": "rgb(255,255,255)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "选项卡大小",
+				"name": "tag_size",
+				"value": "15",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 36
+				}
+			},
+			{
+				"style": "16",
+				"title": "选项卡行高",
+				"name": "tag_lheight",
+				"value": "40",
+				"description": "",
+				"param": {
+					"min": 30,
+					"max": 60
+				}
+			},
+			
+			{
+				"style": "16",
+				"title": "选项卡边距",
+				"name": "tag_padding",
+				"value": "10",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 50
+				}
+			}
+			
+			
+		]
+	}
+]

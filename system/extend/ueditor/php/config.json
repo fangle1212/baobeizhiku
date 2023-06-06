@@ -1,0 +1,108 @@
+<?php
+global $G;
+into::basic_json('extension');
+$other = array();
+$extension = json::decode($G['config']['upload_extension']);
+foreach($extension as $ext){
+	$in = false;
+	foreach($G['extension'] as $v){
+		if(in_array($ext, $v)){
+			$in = true;
+		}
+	}
+	if(!$in){
+		$other[] = $ext;
+	}
+}
+
+
+$imageAllowFiles = json::encode(
+	array_merge(
+		$G['extension']['photo'],
+		$other
+	)
+);
+$videoAllowFiles = json::encode(
+	array_merge(
+		$G['extension']['movie'],
+		$other
+	)
+);
+$fileAllowFiles = json::encode(
+	array_merge(
+		$G['extension']['code'],
+		$G['extension']['zip'],
+		$G['extension']['word'],
+		$G['extension']['photo'],
+		$G['extension']['movie'],
+		$G['extension']['excel'],
+		$G['extension']['powerpoint'],
+		$G['extension']['audio'],
+		$G['extension']['text'],
+		$G['extension']['pdf'],
+		$other
+	)
+);
+echo <<<JSON
+{
+    /* 上传图片配置项 */
+    "imageActionName": "uploadimage", /* 执行上传图片的action名称 */
+    "imageFieldName": "upfile", /* 提交的图片表单名称 */
+    "imageMaxSize": 10240000, /* 上传大小限制，单位B */
+    "imageCompressEnable": false, /* 是否压缩图片,默认是true */
+    "imageCompressBorder": 1600, /* 图片压缩最长边限制 */
+    "imageInsertAlign": "none", /* 插入的图片浮动方式 */
+    "imageUrlPrefix": "", /* 图片访问路径前缀 */
+    "imagePathFormat": "upload/photo/", /* 具请体看线上文档: fex.baidu.com/ueditor/#use-format_upload_filename */
+    "imageAllowFiles": {$imageAllowFiles}, /* 上传图片格式显示 */
+
+    /* 列出指定目录下的图片 */
+    "imageManagerActionName": "listimage", /* 执行图片管理的action名称 */
+    "imageManagerListSize": 24, /* 每次列出文件数量 */
+    "imageManagerInsertAlign": "none", /* 插入的图片浮动方式 */
+    "imageManagerUrlPrefix": "", /* 图片访问路径前缀 */
+    "imageManagerListPath": "upload/photo/", /* 指定要列出图片的目录 */
+    "imageManagerAllowFiles": {$imageAllowFiles}, /* 列出的文件类型 */
+
+    /* 抓取远程图片配置 */
+    "catcherActionName": "catchimage", /* 执行抓取远程图片的action名称 */
+    "catcherFieldName": "source", /* 提交的图片列表表单名称 */
+    "catcherMaxSize": 10240000, /* 上传大小限制，单位B */
+    "catcherLocalDomain": ["127.0.0.1", "localhost", "img.baidu.com"],
+    "catcherUrlPrefix": "", /* 图片访问路径前缀 */
+    "catcherPathFormat": "upload/photo/", /* 上传保存路径,可以自定义保存路径和文件名格式 */
+    "catcherAllowFiles": {$imageAllowFiles}, /* 抓取图片格式显示 */
+
+    /* 上传视频配置 */
+    "videoActionName": "uploadvideo", /* 执行上传视频的action名称 */
+    "videoFieldName": "upfile", /* 提交的视频表单名称 */
+    "videoMaxSize": 1024000000, /* 上传大小限制，单位B */
+    "videoUrlPrefix": "", /* 视频访问路径前缀 */
+    "videoPathFormat": "upload/movie/", /* 上传保存路径,可以自定义保存路径和文件名格式 */
+    "videoAllowFiles": {$videoAllowFiles}, /* 上传视频格式显示 */
+
+    /* 列出指定目录下的视频 */
+    "videoManagerActionName": "listvideo", /* 执行图片管理的action名称 */
+    "videoManagerListSize": 24, /* 每次列出文件数量 */
+    "videoManagerInsertAlign": "none", /* 插入的图片浮动方式 */
+    "videoManagerUrlPrefix": "", /* 图片访问路径前缀 */
+    "videoManagerListPath": "upload/movie/", /* 指定要列出图片的目录 */
+    "videoManagerAllowFiles": {$videoAllowFiles}, /* 列出的文件类型 */
+
+    /* 上传文件配置 */
+    "fileActionName": "uploadfile", /* controller里,执行上传视频的action名称 */
+    "fileFieldName": "upfile", /* 提交的文件表单名称 */
+    "fileMaxSize": 1024000000, /* 上传大小限制，单位B */
+    "fileUrlPrefix": "", /* 文件访问路径前缀 */
+    "filePathFormat": null, /* 上传保存路径,可以自定义保存路径和文件名格式 */
+    "fileAllowFiles": {$fileAllowFiles}, /* 上传文件格式显示 */
+
+    /* 列出指定目录下的附件文件 */
+    "fileManagerActionName": "listfile", /* 执行文件管理的action名称 */
+    "fileManagerListSize": 24, /* 每次列出文件数量 */
+    "fileManagerUrlPrefix": "", /* 文件访问路径前缀 */
+    "fileManagerListPath": "upload/", /* 指定要列出文件的目录 */
+    "fileManagerAllowFiles": {$fileAllowFiles} /* 列出的文件类型 */
+}
+JSON;
+?>

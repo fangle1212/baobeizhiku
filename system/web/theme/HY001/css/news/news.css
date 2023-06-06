@@ -1,0 +1,11 @@
+.newslist{background:{$newslist.back_color}; overflow:hidden; }
+@media(min-width:992px){
+  .newslist{padding-top:28px; padding-bottom:28px;} 
+ }
+.hot-news.module, .hot-products.module {
+  border: 0;
+  padding-top: 0;
+}
+.hot-news.module .n-title, .hot-products.module .n-title{
+  padding: 0 0 8px 0;
+}

@@ -1,0 +1,26 @@
+<?php $keyword = $G["items"]["name"]; ?>
+<?php $items = $G["items"]["id"]; ?>
+
+{search class=list data=$search items=$items keyword=$keyword}{/search}
+<?php
+echo var_dump($search);
+?>
+<?php
+echo $items;
+?>
+{if:($search.list)}
+<section class="related-products module">
+  <div class="n-title">相关文章</div>
+  <ul>
+    {foreach data=$search.list}
+    333
+    <li>
+      <h3 {$v._name}>
+        <a href="{$v.url}" title="{$v.name}" {$v.target}>{$v.name}</a>
+      </h3>
+      <i>{$v.mtime|date='Y-m-d',###}</i>
+    </li>
+    {/foreach}
+  </ul>
+</section>
+{/if}

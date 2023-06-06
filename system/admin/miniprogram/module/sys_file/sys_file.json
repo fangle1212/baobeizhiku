@@ -1,0 +1,65 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "0",
+				"title": "按钮文字",
+				"name": "text_word",
+				"value": "下载",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "按钮颜色",
+				"name": "text_color",
+				"value": "rgb(255,255,255)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "按钮背景色",
+				"name": "text_bgcolor",
+				"value": "rgb(108,148,255)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "按钮大小",
+				"name": "text_size",
+				"value": "15",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 36
+				}
+			},
+			{
+				"style": "16",
+				"title": "按钮行高",
+				"name": "text_lheight",
+				"value": "30",
+				"description": "",
+				"param": {
+					"min": 25,
+					"max": 50
+				}
+			},
+			{
+				"style": "16",
+				"title": "按钮圆角",
+				"name": "text_radius",
+				"value": "30",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 50
+				}
+			}
+		]
+	}
+]

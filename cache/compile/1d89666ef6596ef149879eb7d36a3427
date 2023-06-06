@@ -1,0 +1,2 @@
+<?php foreach( $product['complex'] as $v ){ ?> <?php  if( $v['title'] ===
+'含量单位' ){ ?>含量/<?php  if( $v['value'] ){ ?><?php echo $v['value']; ?><?php }else{ ?><?php  if( $product['items']==='97' ){ ?>1粒<?php }else if( $product['items']==='99' ){ ?>10ml<?php } ?> <?php } ?><?php } ?><?php } ?>

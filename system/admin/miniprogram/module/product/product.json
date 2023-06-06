@@ -1,0 +1,125 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "21",
+				"title": "产品栏目",
+				"name": "items_reset",
+				"value": "",
+				"description": "",
+				"param": {
+					"type": "3"					
+				}
+			},
+			{
+				"style": "16",
+				"title": "显示数量",
+				"name": "rows_reset",
+				"value": "8",
+				"description": "",
+				"param": {
+					"min": 2,
+					"max": 12
+				}
+			},
+			
+			{
+				"style": "3",
+				"title": "选择样式",
+				"name": "style",
+				"value": "2",
+				"description": "",
+				"param": {
+					"1": "单列",
+					"2": "两列",
+					"3": "三列",
+					"4": "四列"
+				}
+			},
+			{
+				"style": "16",
+				"title": "图片间距",
+				"name": "lipadding",
+				"value": "5",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 20
+				}
+			},
+			
+			{
+				"style": "12",
+				"title": "内容背景色",
+				"name": "div_bgcolor",
+				"value": "rgb(255,255,255)",
+				"description": "",
+				"param": []
+			},
+			
+			{
+				"style": "12",
+				"title": "标题颜色",
+				"name": "title_color",
+				"value": "rgb(18,18,18)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "标题大小",
+				"name": "title_size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 24
+				}
+			},
+			{
+				"style": "16",
+				"title": "标题行距",
+				"name": "title_lheight",
+				"value": "22",
+				"description": "",
+				"param": {
+					"min": 18,
+					"max": 38
+				}
+			},
+			
+			{
+				"style": "12",
+				"title": "价格颜色",
+				"name": "price_color",
+				"value": "rgb(255,0,0)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "价格大小",
+				"name": "price_size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 23
+				}
+			},
+			{
+				"style": "16",
+				"title": "图片圆角",
+				"name": "imgradius",
+				"value": "0",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 30
+				}
+			}
+		]
+	}
+]

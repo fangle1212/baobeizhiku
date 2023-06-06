@@ -1,0 +1,6 @@
+.productlist{background:{$productlist.back_color}; overflow:hidden; padding: 30px 0;}
+.productlist .product-list-box > ul { padding: 30px 0; }
+@media(min-width:992px){
+  .productlist .product-list-box > ul { margin-right: -2% }
+  .productlist .product-list-box > ul > li{ width:48%; float: left; margin-right: 2%;}
+}

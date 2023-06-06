@@ -1,0 +1,92 @@
+<?php include(load::theme('com/head')); ?>
+<section class="inside-page productdetail" bosscms="productdetail" group>
+  <?php $product = $G['group'];?>
+  <article>
+    <div class="clearfix">
+      <div class="box-l table">
+        <div class="clearfix module">
+          <?php  if( $G['group']['imgs'] ){ ?>
+          <div class="photo" <?php echo $G['group']['_images']; ?>>
+            <span <?php  if( count($G['group']['imgs'])
+              >1 ){ ?>class="more"<?php } ?>>
+              <a href="<?php echo $G['group']['imgs']['0']; ?>" title="<?php echo $G['group']['name']; ?>" target="_blank">
+                <img
+                  src="<?php echo cache::thumbnail($G['group']['imgs']['0'],$G['group']['width'],$G['group']['height']); ?>"
+                  alt="<?php echo $G['group']['name']; ?>"
+                  class="img-contain"
+                />
+              </a>
+            </span>
+            <?php  if( count($G['group']['imgs'])>1 ){ ?>
+            <div class="images">
+              <ul>
+                <?php foreach( $G['group']['imgs'] as $k => $v ){ ?>
+                <li class="<?php  if( !$k ){ ?>on<?php } ?>">
+                  <span>
+                    <a href="<?php echo $v; ?>" title="<?php echo $G['group']['name']; ?>" target="_blank">
+                      <img
+                        src="<?php echo cache::thumbnail($v,$G['group']['width'],$G['group']['height']); ?>"
+                        alt="<?php echo $G['group']['name']; ?>"
+                        class="img-contain"
+                      />
+                    </a>
+                  </span>
+                </li>
+                <?php } ?>
+              </ul>
+            </div>
+            <?php } ?>
+          </div>
+          <?php } ?>
+
+          <div class="text">
+            <div class="name-btn">
+              <h1 <?php echo $G['group']['_name']; ?>><?php echo $G['group']['name']; ?></h1>
+              <div class="compare_btn" data-id="<?php echo $G['group']['id']; ?>" data-parentId="<?php echo $G['group']['items']; ?>"><i class="fa fa-plus-circle" aria-hidden="true" /></i>添加对比</div>
+            </div>
+            <div class="param">
+              <?php foreach( $G['group']['complex'] as $v ){ ?> <?php  if( $v['description']==='概况' ){ ?>
+              <dl>
+                <dt><span <?php echo $v['_title']; ?>><?php echo $v['title']; ?></span>：</dt>
+                <dd>
+                  <div <?php echo $v['_value']; ?>><?php echo $v['value']; ?></div>
+                </dd>
+              </dl>
+              <?php } ?> <?php } ?>
+            </div>
+            <?php  if( $G['group']['price'] ){ ?>
+            <h2>
+              <b <?php echo $productdetail['_price']; ?>><?php echo $productdetail['price']; ?></b
+              ><span <?php echo $G['group']['_price']; ?>><?php echo $G['group']['price']; ?></span>
+            </h2>
+            <?php } ?>
+          </div>
+        </div>
+        <?php 
+        $listArr = Array(0);
+        $ids = $G['group']['id'];
+        $idsArr = explode(',', $ids);
+        ?>
+        <!-- 优缺点 -->
+        <?php include(load::theme('com/product/productTips')); ?>
+        <!-- 营养成分 -->
+        <?php include(load::theme('com/product/nutrients')); ?>
+        <?php foreach( $G['group']['contents'] as $k => $v ){ ?>
+        <div class="module">
+          <h4 <?php echo $v['_title']; ?> class="n-title"><?php echo $v['title']; ?></h4>
+          <div <?php echo $v['_content']; ?> class="content"><?php echo $v['content']; ?></div>
+        </div>
+        <?php } ?>
+        <!-- 上下篇 -->
+        <?php include(load::theme('com/relationPage')); ?>
+      </div>
+      <div class="box-r">
+        <!-- 相关产品 -->
+        <?php include(load::theme('com/otherList')); ?>
+        <?php include(load::theme('com/relatedList')); ?>
+      </div>
+    </div>
+  </article>
+</section>
+
+<?php include(load::theme('com/foot')); ?>

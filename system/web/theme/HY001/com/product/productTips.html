@@ -1,0 +1,42 @@
+<div class="product-tips module">
+  <h4 class="n-title fast-nav-title">
+    <b>产品提示<span>（鼠标移至标签可查看说明）</span></b>
+  </h4>
+  {complex class=list extent=3 items=0 name=params parent=0 value=$c}
+  {if:($c.description==='提示')}
+  <ul class="row">
+    <li class="col item" {$c._title}>{$c.title}</li>
+    <?php $i = 0; ?>
+    {foreach data=$listArr value=$index}
+    <?php $i++; ?>
+    <li class="col item">
+      {if:($idsArr[$index])} {group class=one id=$idsArr[$index] type=3}
+      {foreach data=$v.complex} {if:($c.id == $v.id)} {if:($v.value)}
+      <?php
+      $vals = $v['value'];
+      $valArr = explode(',', $vals);
+      ?>
+      {foreach data=$valArr value=$val}
+      <dd class="jieshao tag-item">
+        {$val} {group class=list items=108 rows=1 where='"name='{$val???}'"'
+        value=$cc} {group class=one id=$cc.id type=2} {if:($v.content)} {if:($i
+        > 3)}
+        <div class="jieshao-left">
+          <div class="tips-text">说明：</div>
+          <div class="tips-content">{$v.content}</div>
+        </div>
+        {else/}
+        <div class="jieshao-right">
+          <div class="tips-text">说明：</div>
+          <div class="tips-content">{$v.content}</div>
+        </div>
+        {/if} {/if} {/group} {/group}
+      </dd>
+      {/foreach} {else/}
+      <dd class="tag-item none">暂无</dd>
+      {/if} {/if} {/foreach} {/group} {/if}
+    </li>
+    {/foreach}
+  </ul>
+  {/if} {/complex}
+</div>

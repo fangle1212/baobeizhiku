@@ -1,0 +1,18 @@
+{include theme=com/head}
+<section class="inside-page newslist" bosscms="newslist" groups>
+  <article>
+    <!-- 面包屑 -->
+    {include theme=com/breadcrumb}
+    <div class="clearfix">
+      <div class="box-l">
+        <?php $news = $G["group"]; ?>
+        {include theme=com/news/newsList} {pages class=html set=groups.pages
+        display=true}{/pages}
+      </div>
+      <div class="box-r">
+        {include theme=com/hotNews} {include theme=com/hotProducts}
+      </div>
+    </div>
+  </article>
+</section>
+{include theme=com/foot}

@@ -1,0 +1,28 @@
+.downloadlist{background:{$downloadlist.back_color}; overflow:hidden; }
+.downloadlist .list-box ul li{border-bottom:1px dashed #f0f0f0; position:relative;}
+.downloadlist .list-box ul li:after{display:block; content:''; clear:both;}
+.downloadlist .list-box ul li a{transition:.3s;}
+.downloadlist .list-box ul li b{font-weight:inherit; display:block;}
+.downloadlist .list-box ul li b i{font-style:normal; opacity:.68; margin-left:18px;}
+.downloadlist .list-box ul li b i:first-child{margin-left:0;}
+.downloadlist .list-box ul li p{opacity:.88;}
+@media(min-width:992px){
+.downloadlist{padding-top:28px; padding-bottom:28px;} 
+.downloadlist .list-box{margin-bottom:28px;}
+.downloadlist .list-box ul{}
+.downloadlist .list-box ul li{padding:16px 0;}
+}
+@media(max-width:991px){
+.downloadlist{padding-top:18px; padding-bottom:18px;} 
+.downloadlist .list-box{margin-bottom:18px;}
+.downloadlist .list-box ul li{width:100%; padding:12px 0;}
+}
+@media(min-width:768px){
+.downloadlist .list-box ul li h3{padding-right:108px;}
+.downloadlist .list-box ul li b{margin:4px 0;}
+.downloadlist .list-box ul li a[button]{position:absolute; right:0; top:18px;}
+}
+@media(max-width:767px){
+.downloadlist .list-box ul li{padding:4px 0;} 
+.downloadlist .list-box ul li a[button]{margin:4px 0;}
+}

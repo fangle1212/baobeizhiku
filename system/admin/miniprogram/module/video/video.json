@@ -1,0 +1,46 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "16",
+				"title": "视频高度",
+				"name": "height",
+				"value": "220",
+				"description": "",
+				"param": {
+					"min": 100,
+					"max": 600
+				}
+			},
+			{
+				"style": "8",
+				"title": "视频地址",
+				"name": "video_url",
+				"value": "",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "6",
+				"title": "视频封面",
+				"name": "video_img",
+				"value": "..\/system\/admin\/common\/img\/not_img.png",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "3",
+				"title": "自动播放",
+				"name": "autoplay_reset",
+				"value": "0",
+				"description": "",
+				"param": {
+					"1": "开启",
+					"0": "关闭"
+				}
+			}
+		]
+	}
+]

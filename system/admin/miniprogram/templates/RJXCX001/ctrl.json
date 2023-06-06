@@ -1,0 +1,898 @@
+{
+    "diypage": [
+        {
+            "id": "0",
+            "title": "首页",
+            "class": "home",
+            "module": [
+                {
+                    "type": "banner",
+                    "param": {
+                        "height": "220",
+                        "autoplays": "1",
+                        "interval": "5000",
+                        "duration": "500",
+                        "indicator_dots": "1",
+                        "indicator_color": "rgba(0,0,0,0.3)",
+                        "indicator_active_color": "#000000",
+                        "imgradius": "0",
+                        "list_reset": [
+                            {
+                                "img": "..\/\/upload\/photo\/202112\/111308576.jpg",
+                                "url": ""
+                            },
+                            {
+                                "img": "..\/\/upload\/photo\/202112\/111308188.jpg",
+                                "url": ""
+                            }
+                        ],
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "0",
+                        "lrpadding": "0"
+                    }
+                },
+                {
+                    "type": "search",
+                    "param": {
+                        "items": "61",
+                        "placeholder": "请输入搜索关键词",
+                        "input_size": "14",
+                        "input_color": "rgb(18,18,18)",
+                        "input_radius": "19",
+                        "input_height": "34",
+                        "input_bgcolor": "rgb(248,248,248)",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "title",
+                    "param": {
+                        "style": "1",
+                        "hrcolor": "rgb(108,148,255)",
+                        "title": "产品展示",
+                        "title_color": "rgb(18,18,18)",
+                        "title_size": "18",
+                        "title_height": "24",
+                        "description": "",
+                        "description_color": "rgb(108,108,108)",
+                        "description_size": "12",
+                        "description_height": "22",
+                        "more": "更多>",
+                        "more_url": "\/pages\/product\/product?items=16",
+                        "more_color": "rgb(68,68,68)",
+                        "more_size": "14",
+                        "more_height": "24",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "11",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "product",
+                    "param": {
+                        "items_reset": "16",
+                        "rows_reset": "6",
+                        "style": "2",
+                        "lipadding": "5",
+                        "div_bgcolor": "rgb(255,255,255)",
+                        "title_color": "rgb(18,18,18)",
+                        "title_size": "14",
+                        "title_lheight": "18",
+                        "price_color": "rgb(255,0,0)",
+                        "price_size": "14",
+                        "imgradius": "3",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "1",
+                        "lrmargin": "0",
+                        "tbpadding": "5",
+                        "lrpadding": "5"
+                    }
+                },
+                {
+                    "type": "title",
+                    "param": {
+                        "style": "1",
+                        "hrcolor": "rgb(108,148,255)",
+                        "title": "公司简介",
+                        "title_color": "rgb(18,18,18)",
+                        "title_size": "18",
+                        "title_height": "24",
+                        "description": "",
+                        "description_color": "rgb(108,108,108)",
+                        "description_size": "12",
+                        "description_height": "22",
+                        "more": "更多>",
+                        "more_url": "\/pages\/page\/page?diypage=87",
+                        "more_color": "rgb(68,68,68)",
+                        "more_size": "14",
+                        "more_height": "24",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "10",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "content",
+                    "param": {
+                        "contents": "<p><img style=\"border-radius:3px;margin-bottom:5px;\" src=\"..\/\/upload\/photo\/202112\/111308188.jpg\"\/><\/p><p>BOSSCMS是一款基于自主研发PHP框架+MySQL架构的内容管理系统，能够满足各类网站开发建设的需求。系统开源、安全、稳定、简洁、易开发、专注为中小型企业及政企单位、个人站长、广大开发者、建站公司提供一套简单好用的网站内容管理系统解决方案。官网提供了大量的网站模板，可以让您不需要任何的专业技术就能轻松搭建您的网站，易操作、易上手、快捷方便的后台操作让您10分钟就会建立自己的网站。<\/p>",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "1",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "title",
+                    "param": {
+                        "style": "1",
+                        "hrcolor": "rgb(108,148,255)",
+                        "title": "新闻资讯",
+                        "title_color": "rgb(18,18,18)",
+                        "title_size": "18",
+                        "title_height": "24",
+                        "description": "",
+                        "description_color": "rgb(108,108,108)",
+                        "description_size": "12",
+                        "description_height": "22",
+                        "more": "更多>",
+                        "more_url": "\/pages\/news\/news?items=17",
+                        "more_color": "rgb(68,68,68)",
+                        "more_size": "14",
+                        "more_height": "24",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "10",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "news",
+                    "param": {
+                        "items_reset": "17",
+                        "rows_reset": "4",
+                        "img_width": "110",
+                        "li_tmargin": "10",
+                        "name_color": "rgb(68,68,68)",
+                        "name_size": "14",
+                        "ctime_color": "rgb(158,158,158)",
+                        "desc_color": "rgb(108,108,108)",
+                        "desc_size": "14",
+                        "desc_lheight_reset": "20",
+                        "imgradius": "3",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "1",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "title",
+                    "param": {
+                        "style": "1",
+                        "hrcolor": "rgb(108,148,255)",
+                        "title": "工程案例",
+                        "title_color": "rgb(18,18,18)",
+                        "title_size": "18",
+                        "title_height": "24",
+                        "description": "",
+                        "description_color": "rgb(108,108,108)",
+                        "description_size": "14",
+                        "description_height": "22",
+                        "more": "更多>",
+                        "more_url": "\/pages\/image\/image?items=63",
+                        "more_color": "rgb(68,68,68)",
+                        "more_size": "14",
+                        "more_height": "24",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "10",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "image",
+                    "param": {
+                        "items_reset": "63",
+                        "rows_reset": "8",
+                        "style": "2",
+                        "lipadding": "5",
+                        "image_color": "rgb(255,255,255)",
+                        "image_bgcolor": "rgba(0,0,0,0.48)",
+                        "image_size": "14",
+                        "image_lheight": "22",
+                        "imgradius": "3",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "1",
+                        "lrmargin": "0",
+                        "tbpadding": "5",
+                        "lrpadding": "5"
+                    }
+                },
+                {
+                    "type": "title",
+                    "param": {
+                        "style": "1",
+                        "hrcolor": "rgb(108,148,255)",
+                        "title": "下载测试",
+                        "title_color": "rgb(18,18,18)",
+                        "title_size": "18",
+                        "title_height": "24",
+                        "description": "",
+                        "description_color": "rgb(108,108,108)",
+                        "description_size": "14",
+                        "description_height": "22",
+                        "more": "更多>",
+                        "more_url": "\/pages\/download\/download?items=64",
+                        "more_color": "rgb(68,68,68)",
+                        "more_size": "14",
+                        "more_height": "24",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "10",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "download",
+                    "param": {
+                        "items_reset": "64",
+                        "rows_reset": "4",
+                        "li_tmargin": "10",
+                        "name_color": "rgb(68,68,68)",
+                        "name_size": "16",
+                        "name_lheight": "22",
+                        "ctime_color": "rgb(158,158,158)",
+                        "desc_color": "rgb(108,108,108)",
+                        "desc_size": "14",
+                        "desc_lheight": "20",
+                        "btn_text": "下载",
+                        "btn_color": "rgb(255,255,255)",
+                        "btn_bgcolor": "rgb(32,86,187)",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "1",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "87",
+            "title": "公司简介",
+            "class": "page",
+            "module": [
+                {
+                    "type": "img",
+                    "param": {
+                        "imgradius": "0",
+                        "list_reset": [
+                            {
+                                "img": "..\/\/upload\/photo\/202112\/081102195.jpg",
+                                "url": ""
+                            }
+                        ],
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "0",
+                        "lrpadding": "0"
+                    }
+                },
+                {
+                    "type": "content",
+                    "param": {
+                        "contents": "<p>1、自主研发<\/p><p>BOSSCMS系统基于自主研发的PHP框架开发，不依赖于任何框架，完全拥有自主知识产权，不是任性而是业精于勤。<\/p><p>2、简洁有效<\/p><p>BOSSCMS系统源码简洁、无冗余代码，保证了系统运行速度，提升了服务器加载速度和满足蜘蛛爬行。<\/p><p>3、支持多语言<\/p><p>BOSSCMS支持自定义多语言，可轻松添中文、英文、日文、韩文或其他各种语言。<\/p><p>4、后台易操作<\/p><p>BOSSCMS系统后台使用简单易用，你可以用它10分钟搭建一个你需要的网站。<\/p><p>5、开发灵活<\/p><p>BOSSCMS系统采用MVC模块式开发，增加了系统的维护性、可扩展性，使二次开发变得简单、容易。<\/p><p>6、可视化编辑<\/p><p>BOSSCMS系统支持可视化编辑功能，管理员可以在可视化编辑中管理网站的栏目和内容。<\/p><p>7、SEO优化<\/p><p>BOSSCMS系统内置SEO搜索引擎优化机制、广告违禁词、城市分站等功能，对SEO非常友好。<\/p><p>8、模版丰富<\/p><p>BOSSCMS系统会陆续提供大量的网站模版，涵盖各行各业，任用户自由选择。<\/p><p>9、100%开源<\/p><p>BOSSCMS系统是100%开源的PHP程序，保证了软件源代码完全支持私有化部署。<\/p>",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "83",
+            "title": "联系我们",
+            "class": "page",
+            "module": [
+                {
+                    "type": "content",
+                    "param": {
+                        "contents": "<p style=\"color: rgb(33, 33, 33); white-space: normal; text-indent: 2em;\"><strong><span style=\"font-size: 16px;\">官方网站：<a href=\"https:\/\/www.bosscms.net\/\" target=\"_blank\" button=\"none\" title=\"BOSSCMS\" style=\"color: rgb(33, 33, 33); transition-property: all;\">https:\/\/www.bosscms.net\/<\/a><\/span><\/strong><\/p><p style=\"color: rgb(33, 33, 33); white-space: normal; text-indent: 2em;\"><strong><span style=\"font-size: 16px; color: #FF0000;\">技术交流群①群123456&nbsp;<\/span><\/strong><\/p><p style=\"color: rgb(33, 33, 33); white-space: normal;\"><br\/><\/p><p style=\"color: rgb(33, 33, 33);  text-indent: 2em;\"><strong><span style=\"font-size: 16px; color: #FF0000;\">技术交流群②群 123456<\/span><\/strong><\/p><p style=\"color: rgb(33, 33, 33); white-space: normal;\"><br\/><\/p><p style=\"color: rgb(33, 33, 33); white-space: normal; text-indent: 2em;\"><strong><span style=\"font-size: 16px; color: #0070C0;\">如果你是模板开发者和应用开发者，对我们BOSSCMS很感兴趣，我们期待你的参与。<\/span><\/strong><\/p><p style=\"color: rgb(33, 33, 33); white-space: normal; text-indent: 2em;\"><strong><span style=\"font-size: 16px; color: #0070C0;\">如果您认可BOSSCMS，期待您把BOSSCMS系统推荐给你的朋友，帮我们做做宣传，也是对我们的帮助哟！<\/span><\/strong><\/p><p style=\"color: rgb(33, 33, 33); white-space: normal; text-indent: 2em;\"><span style=\" font-size: 16px;\">BOSSCMS是一款基于自主研发PHP框架+MySQL架构的内容管理系统，能够满足各类网站开发建设的需求。系统开源、安全、稳定、简洁、易开发、专注为中小型企业及政企单位、个人站长、广大开发者、建站公司提供一套简单好用的网站内容管理系统解决方案。官网提供了大量的网站模板，可以让您不需要任何的专业技术就能轻松搭建您的网站，易操作、易上手、快捷方便的后台操作让您10分钟就会建立自己的网站。重要说明：严禁使用BOSSCMS建站系统从事任何的非法活动。<\/span><\/p><p><br\/><\/p>",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "10",
+                        "lrmargin": "10",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "title": "在线留言",
+            "class": "page",
+            "module": [
+                {
+                    "type": "feedback",
+                    "param": {
+                        "items_reset": "58",
+                        "title_color": "rgb(0,0,0)",
+                        "title_size": "16",
+                        "desc_color": "rgb(140,140,140)",
+                        "desc_size": "14",
+                        "btn_color": "rgb(255,255,255)",
+                        "btn_bgcolor": "rgb(40,40,40)",
+                        "btn_size": "16",
+                        "display_reset": "1",
+                        "bgcolor": "",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "31",
+            "title": "新闻列表",
+            "class": "news",
+            "module": [
+                {
+                    "type": "sys_news",
+                    "param": {
+                        "items_reset": "17",
+                        "rows_reset": "8",
+                        "img_width": "110",
+                        "li_tmargin": "10",
+                        "name_color": "rgb(68,68,68)",
+                        "name_size": "14",
+                        "ctime_color": "rgb(158,158,158)",
+                        "desc_color": "rgb(108,108,108)",
+                        "desc_size": "14",
+                        "desc_lheight_reset": "20",
+                        "imgradius": "4",
+                        "loading": "加载中...",
+                        "loaded": "已全部加载",
+                        "load_color": "rgb(68,68,68)",
+                        "load_lheight": "26",
+                        "load_size": "14",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "19",
+            "title": "新闻详情",
+            "class": "news_detail",
+            "module": [
+                {
+                    "type": "sys_h1",
+                    "param": {
+                        "name_color": "rgb(18,18,18)",
+                        "name_size": "18",
+                        "name_lheight": "24",
+                        "desc_color": "rgb(168,168,168)",
+                        "desc_size": "12",
+                        "desc_lheight": "18",
+                        "ctime_display_reset": "1",
+                        "notice_display_reset": "1",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "1",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_content",
+                    "param": {
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "10",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "28",
+            "title": "产品列表",
+            "class": "product",
+            "module": [
+                {
+                    "type": "sys_product",
+                    "param": {
+                        "items_reset": "16",
+                        "rows_reset": "8",
+                        "style": "2",
+                        "lipadding": "5",
+                        "div_bgcolor": "rgb(255,255,255)",
+                        "title_color": "rgb(18,18,18)",
+                        "title_size": "14",
+                        "title_lheight": "22",
+                        "price_color": "rgb(255,0,0)",
+                        "price_size": "14",
+                        "imgradius": "3",
+                        "loading": "加载中...",
+                        "loaded": "已全部加载",
+                        "load_color": "rgb(68,68,68)",
+                        "load_lheight": "26",
+                        "load_size": "14",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "5",
+                        "lrpadding": "5"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "60",
+            "title": "产品详情",
+            "class": "product_detail",
+            "module": [
+                {
+                    "type": "sys_imgs",
+                    "param": {
+                        "autoplays": "0",
+                        "interval": "5000",
+                        "duration": "500",
+                        "indicator_dots": "1",
+                        "indicator_color": "rgba(0,0,0,0.3)",
+                        "indicator_active_color": "#000000",
+                        "imgradius": "0",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "0",
+                        "lrpadding": "0"
+                    }
+                },
+                {
+                    "type": "sys_h1",
+                    "param": {
+                        "name_color": "rgb(18,18,18)",
+                        "name_size": "18",
+                        "name_lheight": "24",
+                        "desc_color": "rgb(168,168,168)",
+                        "desc_size": "12",
+                        "desc_lheight": "18",
+                        "ctime_display_reset": "1",
+                        "notice_display_reset": "1",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_text",
+                    "param": {
+                        "text_color": "rgb(18,18,18)",
+                        "text_size": "14",
+                        "text_lheight": "22",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "10",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_complex",
+                    "param": {
+                        "name_color": "rgb(38,38,38)",
+                        "name_size": "14",
+                        "desc_color": "rgb(168,168,168)",
+                        "desc_size": "14",
+                        "desc_lheight": "22",
+                        "dl_tmargin": "5",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "1",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_price",
+                    "param": {
+                        "text_word": "价格：",
+                        "text_color": "rgb(18,18,18)",
+                        "text_size": "14",
+                        "price_color": "rgb(255,0,0)",
+                        "price_size": "18",
+                        "lineheight": "22",
+                        "display_reset": "0",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "1",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_contents",
+                    "param": {
+                        "tag_color": "rgb(18,18,18)",
+                        "tag_hover_color": "rgb(18,18,18)",
+                        "tag_bgcolor": "rgb(248,248,248)",
+                        "tag_hover_bgcolor": "rgb(255,255,255)",
+                        "tag_size": "15",
+                        "tag_lheight": "40",
+                        "tag_padding": "10",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(248,248,248)",
+                        "tmargin": "10",
+                        "lrmargin": "0",
+                        "tbpadding": "0",
+                        "lrpadding": "0"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "25",
+            "title": "图片列表",
+            "class": "image",
+            "module": [
+                {
+                    "type": "sys_image",
+                    "param": {
+                        "items_reset": "63",
+                        "rows_reset": "8",
+                        "style": "2",
+                        "lipadding": "5",
+                        "image_color": "rgb(255,255,255)",
+                        "image_bgcolor": "rgba(0,0,0,0.48)",
+                        "image_size": "14",
+                        "image_lheight": "22",
+                        "imgradius": "3",
+                        "loading": "加载中...",
+                        "loaded": "已全部加载",
+                        "load_color": "rgb(68,68,68)",
+                        "load_lheight": "26",
+                        "load_size": "14",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "5",
+                        "lrpadding": "5"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "16",
+            "title": "图片详情",
+            "class": "image_detail",
+            "module": [
+                {
+                    "type": "sys_imgs",
+                    "param": {
+                        "autoplays": "0",
+                        "interval": "5000",
+                        "duration": "500",
+                        "indicator_dots": "1",
+                        "indicator_color": "rgba(0,0,0,0.3)",
+                        "indicator_active_color": "#000000",
+                        "imgradius": "3",
+                        "display_reset": "1",
+                        "bgcolor": "",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_h1",
+                    "param": {
+                        "name_color": "rgb(18,18,18)",
+                        "name_size": "18",
+                        "name_lheight": "24",
+                        "desc_color": "rgb(168,168,168)",
+                        "desc_size": "12",
+                        "desc_lheight": "18",
+                        "ctime_display_reset": "1",
+                        "notice_display_reset": "1",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_text",
+                    "param": {
+                        "text_color": "rgb(18,18,18)",
+                        "text_size": "14",
+                        "text_lheight": "22",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "10",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_complex",
+                    "param": {
+                        "name_color": "rgb(38,38,38)",
+                        "name_size": "14",
+                        "desc_color": "rgb(168,168,168)",
+                        "desc_size": "14",
+                        "desc_lheight": "22",
+                        "dl_tmargin": "5",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "1",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_content",
+                    "param": {
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "10",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "73",
+            "title": "下载列表",
+            "class": "download",
+            "module": [
+                {
+                    "type": "sys_download",
+                    "param": {
+                        "items_reset": "64",
+                        "rows_reset": "8",
+                        "li_tmargin": "10",
+                        "name_color": "rgb(68,68,68)",
+                        "name_size": "16",
+                        "name_lheight": "22",
+                        "ctime_color": "rgb(158,158,158)",
+                        "desc_color": "rgb(108,108,108)",
+                        "desc_size": "14",
+                        "desc_lheight": "20",
+                        "btn_text": "下载",
+                        "btn_color": "rgb(255,255,255)",
+                        "btn_bgcolor": "rgb(32,86,187)",
+                        "loading": "加载中...",
+                        "loaded": "已全部加载",
+                        "load_color": "rgb(68,68,68)",
+                        "load_lheight": "26",
+                        "load_size": "14",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "88",
+            "title": "下载详情",
+            "class": "download_detail",
+            "module": [
+                {
+                    "type": "sys_h1",
+                    "param": {
+                        "name_color": "rgb(18,18,18)",
+                        "name_size": "18",
+                        "name_lheight": "24",
+                        "desc_color": "rgb(168,168,168)",
+                        "desc_size": "12",
+                        "desc_lheight": "18",
+                        "ctime_display_reset": "1",
+                        "notice_display_reset": "1",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_text",
+                    "param": {
+                        "text_color": "rgb(18,18,18)",
+                        "text_size": "14",
+                        "text_lheight": "22",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "10",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_complex",
+                    "param": {
+                        "name_color": "rgb(38,38,38)",
+                        "name_size": "14",
+                        "desc_color": "rgb(168,168,168)",
+                        "desc_size": "14",
+                        "desc_lheight": "22",
+                        "dl_tmargin": "5",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "1",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_file",
+                    "param": {
+                        "text_word": "下载",
+                        "text_color": "rgb(255,255,255)",
+                        "text_bgcolor": "rgb(108,148,255)",
+                        "text_size": "15",
+                        "text_lheight": "30",
+                        "text_radius": "30",
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "1",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                },
+                {
+                    "type": "sys_content",
+                    "param": {
+                        "display_reset": "1",
+                        "bgcolor": "rgb(255,255,255)",
+                        "tmargin": "10",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "72",
+            "title": "搜索列表",
+            "class": "search",
+            "module": [
+                {
+                    "type": "sys_search",
+                    "param": {
+                        "keyword_reset": "bosscms",
+                        "items_reset": "61",
+                        "rows_reset": "8",
+                        "img_width": "80",
+                        "li_tmargin": "10",
+                        "li_padding": "10",
+                        "li_bgcolor": "rgb(255,255,255)",
+                        "name_color": "rgb(68,68,68)",
+                        "name_size": "15",
+                        "name_lheight": "28",
+                        "ctime_color": "rgb(158,158,158)",
+                        "desc_color": "rgb(108,108,108)",
+                        "desc_size": "14",
+                        "desc_lheight": "20",
+                        "imgradius": "3",
+                        "loading": "加载中...",
+                        "loaded": "已全部加载",
+                        "load_color": "rgb(68,68,68)",
+                        "load_lheight": "26",
+                        "load_size": "14",
+                        "display_reset": "1",
+                        "bgcolor": "",
+                        "tmargin": "0",
+                        "lrmargin": "0",
+                        "tbpadding": "10",
+                        "lrpadding": "10"
+                    }
+                }
+            ]
+        }
+    ],
+    "top_bar": {
+        "navigationStyle": "default",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black"
+    },
+    "cut_bar": {
+        "bgcolor": "#f8f8f8",
+        "color": "#181818"
+    },
+    "tab_bar": {
+        "display": "1",
+        "color": "#999999",
+        "selectedColor": "#6c94ff",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "iconPath": "..\/\/upload\/photo\/image\/favicon.ico",
+                "selectedIconPath": "..\/\/upload\/photo\/image\/favicon.ico",
+                "text": "首页",
+                "pagePath": "\/pages\/home\/home"
+            },
+            {
+                "iconPath": "..\/\/upload\/photo\/image\/favicon.ico",
+                "selectedIconPath": "..\/\/upload\/photo\/image\/favicon.ico",
+                "text": "联系",
+                "pagePath": "\/pages\/page\/page?diypage=83"
+            },
+            {
+                "iconPath": "..\/\/upload\/photo\/image\/favicon.ico",
+                "selectedIconPath": "..\/\/upload\/photo\/image\/favicon.ico",
+                "text": "留言",
+                "pagePath": "\/pages\/page\/page?diypage=6"
+            }
+        ]
+    }
+}

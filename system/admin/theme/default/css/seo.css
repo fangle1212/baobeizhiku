@@ -1,0 +1,8 @@
+/*
+ * Copyright (c) Huyin Information Technology Co., Ltd. All Rights Reserved.
+ * BOSSCMS Content Management System (https://www.bosscms.net/)
+ */
+section.main aside>div>dl>dd{max-width:888px; position:relative;}
+section.main aside>div>dl>dd>a.rule{position:absolute; display:none; z-index:88; top:12px; right:18px; opacity:.58;}
+section.main aside>div>dl>dd>a.rule:hover{opacity:1;}
+section.main aside>div>dl.on>dd>a{display:block;}

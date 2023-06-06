@@ -1,0 +1,15 @@
+<div class="mob-notice" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  <div class="mob-notice-box">
+    <div class="fa fa-volume-up" style="line-height:{$height}px; color:{$facolor};"></div>
+	<div class="mob-notice-swiper" style="height:{$height}px;" interval="{$interval}" duration="{$duration}">
+	  <div class="mob-notice-wrapper">
+	    {php} $group_list = into::load_class('extend','miniprogram','miniprogram','new')->group_list($items_reset, $rows_reset); {/php}
+	    {foreach data="$group_list.list"}
+	    <div class="mob-notice-slide" style="line-height:{$height}px;">
+		  <a url="/pages/news_detail/news_detail?id={$v.id}" style="color:{$color}; font-size:{$size}px;">{$v.name}</a>
+	    </div>
+	    {/foreach}
+	  </div>
+	</div>
+  </div>
+</div>

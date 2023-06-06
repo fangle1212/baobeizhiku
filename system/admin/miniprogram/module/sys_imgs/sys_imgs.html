@@ -1,0 +1,12 @@
+<div class="mob-sys-imgs" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  <div class="mob-sys-imgs-swiper" autoplays="{$autoplays}" interval="{$interval}" duration="{$duration}">
+    <div class="mob-sys-imgs-wrapper">
+      {foreach data=group.images key=$k}
+	  <div class="mob-sys-imgs-slide">
+	    <img src="{$v|thumb=group.width,group.height}" style="border-radius:{$imgradius}px;" />
+	  </div>
+      {/foreach}
+    </div>
+    <div class="mob-sys-imgs-pagination" indicator-dots="{$indicator_dots}" indicator-color="{$indicator_color}" indicator-active-color="{$indicator_active_color}"></div>
+  </div>
+</div>

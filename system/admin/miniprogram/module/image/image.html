@@ -1,0 +1,14 @@
+<div class="mob-image type{$style}" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  <ul>
+	{php} $group_list = into::load_class('extend','miniprogram','miniprogram','new')->group_list($items_reset, $rows_reset); {/php}
+	{foreach data="$group_list.list"}
+    <li style="padding:{$lipadding}px;">
+	  <a url="/pages/image_detail/image_detail?id={$v.id}">
+		<img src="{$v.image}" style="border-radius:{$imgradius}px;" />
+		<span style="background:{$image_bgcolor}; color:{$image_color}; font-size:{$image_size}px; line-height:{$image_lheight}px;">{$v.name}</span>
+	  </a>
+    </li>
+	<ol></ol>
+	{/foreach}
+  </ul>
+</div>

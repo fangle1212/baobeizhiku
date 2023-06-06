@@ -1,0 +1,3 @@
+.mob-content:after{display:block; content:''; clear:both;}
+.mob-content video,
+.mob-content img{max-width:100%;}

@@ -1,0 +1,58 @@
+<address class="consult-online {config.consult_side}" bosscms="" consult>
+  <div class="list">
+    <ul>
+      {consult class=list}
+	  {if:($v.type==0)}
+      <li class="weixin">
+        <a href="javascript:;" title="{$v.name}">
+          <em class="fa fa-weixin"></em>
+          <strong{$v._name}>{$v.name}</strong>
+        </a>
+        <span><img{$v._value} src="{$v.value}" alt="{$v.name}" /></span>
+      </li>
+	  {else if:($v.type==1)}
+      <li class="qq">
+        <a href="javascript:;" qq="{$v.value}" title="{$v.name}" target="_blank">
+          <em class="fa fa-qq"></em>
+          <strong{$v._name}>{$v.name}</strong>
+        </a>
+      </li>
+	  {else if:($v.type==2)}
+      <li class="phone">
+        <a href="tel:{$v.value}" title="{$v.name}" target="_blank">
+          <em class="fa fa-phone"></em>
+          <strong{$v._name}>{$v.name}</strong>
+        </a>
+        <span><b{$v._value}>{$v.value}</b></span>
+      </li>
+	  {else if:($v.type==3)}
+      <li class="email">
+        <a href="mailto:{$v.value}" title="{$v.name}" target="_blank">
+          <em class="fa fa-envelope"></em>
+          <strong{$v._name}>{$v.name}</strong>
+        </a>
+        <span><b{$v._value}>{$v.value}</b></span>
+      </li>
+	  {else if:($v.type==99)}
+      <li class="code">
+        <a href="javascript:{$v.value};" title="{$v.name}">
+          <em class="fa fa-commenting-o"></em>
+          <strong{$v._name}>{$v.name}</strong>
+        </a>
+      </li>
+      {/if}
+      {/if}
+	  {if:(config.consult_content)}
+      <li{config._consult_content}>{config.consult_content}</li>
+	  {/if}
+      {if:(config.consult_backtop)}
+      <li class="top">
+        <a href="javascript:;" title="{config.consult_backtop}">
+          <em class="fa fa-chevron-up"></em>
+          <strong{config._consult_backtop}>{config.consult_backtop}</strong>
+        </a>
+      </li>
+      {/if}
+    </ul>
+  </div>
+</address>

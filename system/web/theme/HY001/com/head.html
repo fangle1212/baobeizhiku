@@ -1,0 +1,30 @@
+{include common=header}
+<header class="head" bosscms="head">
+  <article>
+    <div class="logo-box">
+      <a href="{home.url}" title="{config.title}">
+        <h1>{config.title}</h1>
+        <img {config._logo} src="{config.logo}" alt="{config.title}" />
+      </a>
+    </div>
+    <div class="menu-box"><i class="fa fa-list"></i></div>
+		<div class="head-r clearfix">
+			<nav class="nav" bosscms="nav" items>
+				<article>
+				<div>
+					<ul>
+						<li class="{home.on}"><a href="{home.url}" title="{home.name}"><b {home._name}>{home.name}</b></a></li>
+						{items class=head}
+						<li class="{$v.on}">
+						{if:($v.name == '对比')}
+						<a href="javascript:void(0);" onclick="jumpToCompare()" title="{$v.name}" class="parent-nav-item" data-url="{$v.url}" data-target="{$v.target}"><b {$v._name}>{$v.name}</b></a>
+						{else /}<a href="{$v.url}" title="{$v.name}" class="parent-nav-item"><b {$v._name}>{$v.name}</b></a>
+						{/if}</li>
+						{/items}
+				</div>
+				</article>
+			</nav>
+    {search class=html items=$head.search_items}<div class="search-box"> <i class="fa fa-search"></i><div class="form-box">{$html}</div></div>{/search}
+	</div>
+  </article>
+</header>

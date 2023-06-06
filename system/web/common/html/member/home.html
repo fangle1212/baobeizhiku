@@ -1,0 +1,76 @@
+{include theme=com/head}
+{$logout = url::member('api/member','logout')}
+{$home_url = url::member()}
+{$post = url::member('api/member','information')}
+<section class="member" bosscms="sys_member">
+  <article>
+    <div class="sidebar">
+      <dl class="mnav">
+        <dt>
+          <i class="fa fa-list"></i>
+          <a href="{$logout}" class="fa fa-power-off" title="{$sys_member.member_logout}"></a>
+          <h3{$sys_member._member_name}>{$sys_member.member_name}</h3>
+        </dt>
+        <dd>
+          <ul>
+            <li{if:(!get.action)} class="on"{/if}><a href="{$home_url}" title="{$sys_member.member_information_title}"{$sys_member._member_information_title}>{$sys_member.member_information_title}</a></li>
+            {if:(arrExist($G,'member_nav'))}
+            {foreach data=$G.member_nav}
+            <li{if:(get.action==$v.action)} class="on"{/if}><a href="{$v.url}" title="{$v.name}">{$v.name}</a></li>
+            {/foreach}
+            {/if}
+          </ul>
+        </dd>
+      </dl>
+      <dl class="logout"> 
+        <dd>
+          <ul>
+            <li><a href="{$logout}" title="{$sys_member.member_logout}"{$sys_member._member_logout}>{$sys_member.member_logout}</a></li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="container">
+	  {if:(get.action)}
+      <div class="member_container">{$G.member_container}</div>
+	  {else}
+      <div class="information">
+        <h3{$sys_member._member_information_title}>{$sys_member.member_information_title}</h3>
+        <form method="post" enctype="multipart/form-data" action="{$post}">
+          <dl class="avatar">
+            <dt{$sys_member._member_avatar}>{$sys_member.member_avatar}</dt>
+            <dd>
+              <div>
+                <span class="fa fa-plus"></span>
+                <img src="{member.avatar}" alt="{member.username}" />
+                <ins>{$input = form::input('avatar',null,null,'file',null,false)}{$input}</ins>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt{$sys_member._member_username}>{$sys_member.member_username}</dt>
+            <dd>{member.username}</dd>
+          </dl>
+          <dl>
+            <dt{$sys_member._member_password}>{$sys_member.member_password}</dt>
+            <dd>{$input = form::input('password',null,null,'password',null,false)}{$input}</dd>
+          </dl>
+          <dl>
+            <dt{$sys_member._member_email}>{$sys_member.member_email}</dt>
+            <dd>{member.email|form::input='email',###,null,'email',null,false}</dd>
+          </dl>
+          <dl>
+            <dt{$sys_member._member_phone}>{$sys_member.member_phone}</dt>
+            <dd>{member.phone|form::input='phone',###,null,'tel',null,false}</dd>
+          </dl>
+          <dl>
+            <dd><button{$sys_member._member_save}>{$sys_member.member_save}</button></dd>
+          </dl>
+        </form>
+      </div>
+	  {/if}
+    </div>
+  </article>
+</section>
+
+{include theme=com/foot}

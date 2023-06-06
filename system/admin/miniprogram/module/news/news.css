@@ -1,0 +1,10 @@
+.mob-news{}
+.mob-news ul{}
+.mob-news ul li{}
+.mob-news ul li:first-child{margin-top:0 !important;}
+.mob-news ul li a{display:block; position:relative;}
+.mob-news ul li a img{position:absolute; left:0; top:0; bottom:0; height:100%; object-fit:cover;}
+.mob-news ul li a span{display:block; margin-left:10px;}
+.mob-news ul li a span b{display:block; font-weight:normal; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.mob-news ul li a span i{display:block; font-style:normal; padding:2px 0; font-size:12px;}
+.mob-news ul li a span p{display:block; overflow:hidden;}

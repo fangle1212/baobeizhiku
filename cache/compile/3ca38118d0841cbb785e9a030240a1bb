@@ -1,0 +1,47 @@
+<?php include(load::theme('com/head')); ?>
+<div class="inside-page page-news-channel">
+  <article>
+    <div class="clearfix">
+      <div class="box-l">
+        <?php $items1 = page::items_list( $G['items']['id'], 0, '*', true, null ); ?><?php foreach( $items1 as $v ){ ?>
+        <section class="news-box">
+          <div class="title clearfix">
+            <h3 class="name text-overflow">
+              <a href="<?php echo $v['url']; ?>" title="<?php echo $v['name']; ?>" <?php echo $v['target']; ?>><?php echo $v['name']; ?></a>
+            </h3>
+            <a href="<?php echo $v['url']; ?>" title="<?php echo $v['name']; ?>" <?php echo $v['target']; ?> class="more"
+              >更多 ></a
+            >
+          </div>
+
+          <div class="news-list">
+            <ul class="clearfix">
+              <?php $group1 = page::group_list( $v['id'], 6, null, null, null, 'pages', '*', "recommend='1'", null ); ?><?php foreach( $group1['list'] as $v ){ ?>
+              <li>
+                <a href="<?php echo $v['url']; ?>" title="<?php echo $v['name']; ?>" <?php echo $v['target']; ?>>
+                  <div class="img">
+                    <img
+                      <?php echo $v['_image']; ?>
+                      class="img-cover"
+                      src="<?php echo cache::thumbnail($v['image'],$v['width'],$v['height']); ?>"
+                      alt="<?php echo $v['name']; ?>"
+                    />
+                  </div>
+                  <h4 class="two-line-overflow" <?php echo $v['_name']; ?>><?php echo $v['name']; ?></h4>
+                </a>
+              </li>
+              <?php } ?>
+            </ul>
+          </div>
+        </section>
+        <?php } ?>
+      </div>
+      <div class="box-r">
+        <?php include(load::theme('com/hotNews')); ?>
+        <?php include(load::theme('com/hotProducts')); ?>
+      </div>
+    </div>
+  </article>
+</div>
+
+<?php include(load::theme('com/foot')); ?>

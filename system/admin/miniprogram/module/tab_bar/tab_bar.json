@@ -1,0 +1,122 @@
+[
+    {
+		"title": "底部菜单",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "3",
+				"title": "开关",
+				"name": "display",
+				"value": "1",
+				"description": "",
+				"param": {
+					"1": "开启",
+					"0": "关闭"
+				}
+			},
+			{
+				"style": "12",
+				"title": "字体颜色",
+				"name": "color",
+				"value": "",
+				"description": "",
+				"param": {
+					"hexcolor": "hexcolor"
+				}
+			},
+			{
+				"style": "12",
+				"title": "选中颜色",
+				"name": "selectedColor",
+				"value": "",
+				"description": "",
+				"param": {
+					"hexcolor": "hexcolor"
+				}
+			},
+			{
+				"style": "3",
+				"title": "隔离线",
+				"name": "borderStyle",
+				"value": "black",
+				"description": "",
+				"param": {
+					"black": "黑色",
+					"white": "白色"
+				}
+			},
+			{
+				"style": "12",
+				"title": "背景色",
+				"name": "backgroundColor",
+				"value": "",
+				"description": "",
+				"param": {
+					"hexcolor": "hexcolor"
+				}
+			},
+			{
+				"style": "31",
+				"title": "菜单列表",
+				"name": "list",
+				"value": [],
+				"description": "菜单数量必须为2~5个才会显示",
+				"param": {
+					"max": "5",
+					"item": "菜单按钮[item]"
+				},
+				"ctrl": [
+					{
+						"style": "6",
+						"title": "图标",
+						"name": "iconPath",
+						"value": "",
+						"description": "",
+						"param": [],
+						"attribute": {
+							"dlwidth": "50%",
+							"unlink": "unlink"
+						}
+					},
+					{
+						"style": "6",
+						"title": "选中图标",
+						"name": "selectedIconPath",
+						"value": "",
+						"description": "",
+						"param": [],
+						"attribute": {
+							"dlwidth": "50%",
+							"dlclear": "dlclear",
+							"unlink": "unlink"
+						}
+					},
+					{
+						"style": "0",
+						"title": "",
+						"name": "text",
+						"value": "",
+						"description": "",
+						"param": [],
+						"attribute": {
+							"dlwidth": "40%",
+							"placeholder": "请输入标题"
+						}
+					},
+					{
+						"style": "40",
+						"title": "",
+						"name": "pagePath",
+						"value": "",
+						"description": "",
+						"param": [],
+						"attribute": {
+							"dlwidth": "60%",
+							"dlclear": "dlclear"
+						}
+					}
+				]
+			}
+		]
+    }
+]

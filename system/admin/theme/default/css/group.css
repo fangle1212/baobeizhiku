@@ -1,0 +1,8 @@
+.tag{border:1px solid #d9e1e6; border-radius:3px; padding:3px; margin-top:3px;}
+.tag>div{}
+.tag>div>span{display:inline-block; margin-left:8px; opacity:.68;}
+.tag>div>span:hover{opacity:1;}
+.tag ul{border-top:1px dashed #d9e1e6; margin-top:3px;}
+.tag ul:after{display:block; content:''; clear:both;}
+.tag ul li{float:left; margin:3px 3px 0 0; background:#f8f8f8; padding:5px 10px; border-radius:3px; cursor:pointer;}
+.tag ul li.on{background:#39d17b; color:#fff;}

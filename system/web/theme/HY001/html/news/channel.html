@@ -1,0 +1,45 @@
+{include theme=com/head}
+<div class="inside-page page-news-channel">
+  <article>
+    <div class="clearfix">
+      <div class="box-l">
+        {items class=list id=$G.items.id}
+        <section class="news-box">
+          <div class="title clearfix">
+            <h3 class="name text-overflow">
+              <a href="{$v.url}" title="{$v.name}" {$v.target}>{$v.name}</a>
+            </h3>
+            <a href="{$v.url}" title="{$v.name}" {$v.target} class="more"
+              >更多 ></a
+            >
+          </div>
+
+          <div class="news-list">
+            <ul class="clearfix">
+              {group class=list items=$v.id rows=6 where='"recommend='1'"'}
+              <li>
+                <a href="{$v.url}" title="{$v.name}" {$v.target}>
+                  <div class="img">
+                    <img
+                      {$v._image}
+                      class="img-cover"
+                      src="{$v.image|thumb=$v.width,$v.height}"
+                      alt="{$v.name}"
+                    />
+                  </div>
+                  <h4 class="two-line-overflow" {$v._name}>{$v.name}</h4>
+                </a>
+              </li>
+              {/group}
+            </ul>
+          </div>
+        </section>
+        {/items}
+      </div>
+      <div class="box-r">
+        {include theme=com/hotNews} {include theme=com/hotProducts}
+      </div>
+    </div>
+  </article>
+</div>
+{include theme=com/foot}

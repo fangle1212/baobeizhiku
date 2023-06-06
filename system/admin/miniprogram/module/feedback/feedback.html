@@ -1,0 +1,10 @@
+<div class="mob-feedback" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  {feedback class="html" items="$items_reset"}
+  {php}
+  $html = str_replace('<h4>',"<h4 style=\"color:{$title_color};font-size:{$title_size}px;\">",$html);
+  $html = str_replace('<p>',"<p style=\"color:{$desc_color};font-size:{$desc_size}px;\">",$html);
+  $html = str_replace('<button',"<button style=\"background:{$btn_bgcolor};color:{$btn_color};font-size:{$btn_size}px;\"",$html);
+  echo $html;
+  {/php}
+  {/feedback}
+</div>

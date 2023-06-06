@@ -1,0 +1,13 @@
+<?php $data = page::group_list( $product['items'], 10, null, null, null, 'pages', '*', null, notice ); ?><?php if(false){ ?><?php } ?>
+<?php  if( $data['list'] ){ ?>
+<section class="hot-products module">
+  <div class="n-title"><em>热门产品</em></div>
+  <ul>
+    <?php foreach( $data['list'] as $v ){ ?>
+    <li class="clearfix">
+      <?php include(load::theme('com/relatedProItem')); ?>
+    </li>
+    <?php } ?>
+  </ul>
+</section>
+<?php } ?>

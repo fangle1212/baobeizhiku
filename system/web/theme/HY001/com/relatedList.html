@@ -1,0 +1,27 @@
+<?php
+$type = $G["group"]["type"];
+$className = $type == "3" ? "related-news module" : "related-products module";
+$title = $type == "3" ? "相关测评" : "相关产品";
+$icon = $type == "3" ? "fa fa-file-text" : "fa fa-fire";
+$cid = $type == "3" ? $news["items"] : $product["items"];
+$link = $type == "3" ? "/news" : "/product";
+$tag = "";
+$tags = $G["group"]["tag"];
+if (count($tags) >
+0) { $tag = $tags[0]["title"]; } $keyword = $type == '3' ? $G["items"]["name"] :
+$tag; ?> {search class=list data=$search items=61 keyword=$keyword rows=10
+cid=$cid}{/search} {if:($search.list)}
+<section class="{$className}">
+  <div class="n-title">
+    <em>{$title}</em><strong><a href="{$link}">更多 ></a></strong>
+  </div>
+  <ul>
+    {foreach data=$search.list}
+    <li>
+      {$v.name = $v.title} {if:($type == 3)}{include theme=com/relatedNewsItem}
+      {else/} {include theme=com/relatedProItem} {/if}
+    </li>
+    {/foreach}
+  </ul>
+</section>
+{/if}

@@ -1,0 +1,39 @@
+{include theme=com/head}
+<section class="downloaddetail" bosscms="downloaddetail" group>
+  <article>
+    <h1 {group._name}>{group.name}</h1>
+    <div class="top">
+      <b {config._group_time}>{config.group_time}</b>
+      <i>{group.mtime|date='Y-m-d H:i:s',###}</i>
+      <b {config._group_notice}>{config.group_notice}</b>
+      <i><notice type="{group.type}" id="{group.id}">{group.notice}</notice></i>
+    </div>
+    <div class="sub">
+	  {foreach data=group.complex}
+	  {if:($v.value)}
+      <dl>
+        <dt><span {$v._title}>{$v.title}</span></dt>
+        <dd><span {$v._value}>{$v.value}</span></dd>
+      </dl>
+	  {/if}
+	  {/foreach}
+      <dl>
+        <dt><span {config._download_size}>{config.download_size}</span></dt>
+        <dd><span {group._size}>{group.size|round=###/1024*100|floatval=###/100}KB</span></dd>
+      </dl>
+      <a href="{group.file}" title="{group.name}" button="button" download {config._download_file}>{config.download_file}</a>
+    </div>
+    <div class="content">
+      <aside {group._content}>{group.content}</aside>
+      {if:(group.tag)}
+      <div class="tag">
+        {foreach data=group.tag}
+        <a href="{$v.url}" title="{$v.title}" {$v._title}>{$v.title}</a>
+        {/foreach}
+      </div>
+      {/if}
+      {both class=html id=group.id items=items.id}{/both}
+    </div>
+  </article>
+</section>
+{include theme=com/foot}

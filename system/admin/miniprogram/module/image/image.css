@@ -1,0 +1,13 @@
+.mob-image ul:after{display:block; content:''; clear:both;}
+.mob-image ul>li{float:left;}
+.mob-image ul>li>a{display:block; position:relative;}
+.mob-image ul>li>a>img{display:block; width:100%;}
+.mob-image ul>li>a>span{position:absolute; left:0; bottom:0; right:0; z-index:1; padding:4px; overflow:hidden; text-align:center;}
+.mob-image ul>ol{display:none;}
+.mob-image.type1 ul>li{width:100%;}
+.mob-image.type2 ul>li{width:50%;}
+.mob-image.type3 ul>li{width:33.333%;}
+.mob-image.type4 ul>li{width:25%;}
+.mob-image.type2 ul>ol:nth-child(4n),
+.mob-image.type3 ul>ol:nth-child(6n),
+.mob-image.type4 ul>ol:nth-child(8n){float:left; display:block; clear:both;}

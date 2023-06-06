@@ -1,0 +1,8 @@
+<div class="mob-sys-complex" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  {foreach data=group.complex}
+  <dl style="margin-top:{$dl_tmargin}px;">
+    <dt style="color:{$name_color}; font-size:{$name_size}px; line-height:{$desc_lheight}px;">{$v.title}</dt>
+    <dd style="color:{$desc_color}; font-size:{$desc_size}px; line-height:{$desc_lheight}px;">{$v.value}</dd>
+  </dl>
+  {/foreach}
+</div>

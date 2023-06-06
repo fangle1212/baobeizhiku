@@ -1,0 +1,49 @@
+[
+    {
+		"title": "导航栏",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "0",
+				"title": "页面标题",
+				"name": "navigationBarTitleText",
+				"value": "",
+				"description": "",
+				"param": [],
+				"attribute": []
+			},
+			{
+				"style": "3",
+				"title": "风格类型",
+				"name": "navigationStyle",
+				"value": "default",
+				"description": "",
+				"param": {
+					"default": "标准",
+					"custom": "沉浸式"
+				}
+			},
+			{
+				"style": "12",
+				"title": "背景色",
+				"name": "navigationBarBackgroundColor",
+				"value": "",
+				"description": "",
+				"param": {
+					"hexcolor": "hexcolor"
+				}
+			},
+			{
+				"style": "3",
+				"title": "字体颜色",
+				"name": "navigationBarTextStyle",
+				"value": "black",
+				"description": "",
+				"param": {
+					"black": "黑色",
+					"white": "白色"
+				}
+			}
+		]
+	}
+]

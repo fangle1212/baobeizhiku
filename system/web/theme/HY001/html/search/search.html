@@ -1,0 +1,41 @@
+{include theme=com/head}
+<section>
+  <article>
+    <!-- 面包屑 -->
+    {include theme=com/breadcrumb}
+  </article>
+</section>
+<section class="searchform" bosscms="searchform">
+  <article>{search class=html items=items.id}{/search}</article>
+</section>
+{if:($G.keyword)}
+<section class="searchlist" bosscms="searchlist" search>
+  <article class="tabs">
+    <div class="tabs-title">
+      <div class="tabs-title-item">产品</div>
+      <div class="tabs-title-item">评测</div>
+    </div>
+    <div class="tabs-content">
+      <div class="tabs-content-item">
+        <!-- 产品 -->
+        {search class=list data=$searchProducts items=items.id
+        keywrod=$G.keyword cid=$product["items"]}{/search}
+        {if:($searchProducts.list)} {$data = $searchProducts} {include
+        theme=com/product/productList} {pages class=html
+        set=$searchProducts.pages display=true}{/pages} {else}
+        <h3 {config._search_null} class="null-box">{config.search_null}</h3>
+        {/if}
+      </div>
+      <div class="tabs-content-item">
+        <!-- 新闻 -->
+        {search class=list data=$searchNews items=items.id keywrod=$G.keyword
+        cid=$news["items"]}{/search} {if:($searchNews.list)} {$data =
+        $searchNews} {include theme=com/news/newsList} {pages class=html
+        set=$searchNews.pages display=true}{/pages} {else}
+        <h3 {config._search_null} class="null-box">{config.search_null}</h3>
+        {/if}
+      </div>
+    </div>
+  </article>
+</section>
+{/if} {include theme=com/foot}

@@ -1,0 +1,7 @@
+.about{background:{$about.back_color};}
+@media(min-width:992px){
+.about{padding-top:28px; padding-bottom:28px;}
+}
+@media(max-width:991px){
+.about{padding-top:18px; padding-bottom:18px;}
+}

@@ -1,0 +1,22 @@
+<?php
+  $type = $G["group"]["type"];
+  $className = $type == "3" ? "related-products module" : "related-news module";
+  $title = $type == "3" ? "同类产品" : "其他测评";
+  $icon = $type == "3" ? "fa fa-fire" : "fa fa-file-text";
+  $link = $type == "3" ? "/news" : "/product";
+?>
+{group class=list items=group.items rows=10 order=notice
+  where='"id!='{$G["group"]["id"]???}'"' data=$data}{/group}
+{if:($data.list)}
+<section class="{$className}">
+  <div class="n-title"><em>{$title}</em><strong><a href="{$link}">更多 ></a></strong></div>
+  <ul>
+    {foreach data=$data.list}
+    <li>
+      {if:($type == 3)} {include theme=com/relatedProItem} {else/} {include
+      theme=com/relatedNewsItem} {/if}
+    </li>
+    {/foreach}
+  </ul>
+</section>
+{/if}

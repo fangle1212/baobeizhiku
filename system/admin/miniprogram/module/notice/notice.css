@@ -1,0 +1,6 @@
+.mob-notice-box{position:relative;}
+.mob-notice .fa{position: absolute; left:0; top:0; line-height:30px;}
+.mob-notice-swiper{position:relative; padding-left:24px; width:100%; height:30px; overflow:hidden;}
+.mob-notice-wrapper{width:100%; height:10000%;}
+.mob-notice-slide{width:100%; height:1%;}
+.mob-notice-slide a{display:block; white-space: nowrap; overflow: hidden; text-overflow:ellipsis;}

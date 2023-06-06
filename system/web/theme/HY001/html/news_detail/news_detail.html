@@ -1,0 +1,28 @@
+{include theme=com/head}
+<section class="inside-page newsdetail" bosscms="newsdetail" group>
+  <article>
+    {include theme=com/breadcrumb}
+    <div class="clearfix">
+      <div class="box-l">
+        <h1 {group._name}>{group.name}</h1>
+        <div class="desc">
+          <b {config._group_time}>{config.group_time}</b>
+          <i>{group.mtime|date='Y-m-d H:i:s',###}</i>
+          <b {config._group_notice}>{config.group_notice}</b>
+          <i
+            ><notice type="{group.type}" id="{group.id}"
+              >{group.notice}</notice
+            ></i
+          >
+        </div>
+        <aside {group._content}>{group.content}</aside>
+        {include theme=com/relationPage}
+      </div>
+
+      <div class="box-r">
+        {include theme=com/otherList} {include theme=com/relatedList}
+      </div>
+    </div>
+  </article>
+</section>
+{include theme=com/foot}

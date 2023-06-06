@@ -1,0 +1,28 @@
+<div class="related-pro-item clearfix">
+  <a href="{$v.url}" title="{$v.name}" {$v.target} class="cover">
+    <img
+      {$v._image}
+      src="{$v.image|thumb=$v.width,$v.height}"
+      alt="{$v.name}"
+      class="img-contain"
+  /></a>
+  <div class="info">
+    <h4 class="name">
+      <a href="{$v.url}" title="{$v.name}" {$v.target} class="text-overflow">
+        {$v.name}
+      </a>
+    </h4>
+    {group class=one id=$v.id type=3 data=$data}
+    {/group}
+    <div class="price" {$v._price}>
+      <span>参考价：</span> {if:($data.price)}{$data.price}{else/}暂无{/if}
+    </div>
+    <dl class="other clearfix">
+      {foreach data=$data.complex}{if:($v.title=='产地')}
+      <dd><span>产地：</span>{if:($v.value)}{$v.value}{else/}暂无{/if}</dd>
+      {/if}{if:($v.title=='适用年龄')}
+      <dd><span>适用年龄：</span>{if:($v.value)}{$v.value}{else/}暂无{/if}</dd>
+      {/if}{/foreach}
+    </dl>
+  </div>
+</div>

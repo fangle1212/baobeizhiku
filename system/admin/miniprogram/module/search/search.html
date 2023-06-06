@@ -1,0 +1,11 @@
+<div class="mob-search" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  <form action="" media="get">
+    <input type="hidden" name="theme" value="{$theme}" />
+    <input type="hidden" name="class" value="search" />
+    <input type="hidden" name="items" value="{$items}" />
+	<div style="height:{$input_height}px; line-height:{$input_height}px; background:{$input_bgcolor}; border-radius:{$input_radius}px;">
+      <input type="text" name="keyword" placeholder="{$placeholder}" style="font-size:{$input_size}px; color:{$input_color};" />
+	</div>
+	<button class="fa fa-search" style="height:{$input_height}px; line-height:{$input_height}px; color:{$input_color}; font-size:{$input_size}px; font-size:calc({$input_size}px + 1px);"></button>
+  </form>
+</div>

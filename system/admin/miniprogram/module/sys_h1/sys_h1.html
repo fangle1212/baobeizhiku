@@ -1,0 +1,13 @@
+<div class="mob-sys-h1" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  <h1 style="color:{$name_color}; font-size:{$name_size}px; line-height:{$name_lheight}px;">{group.name}</h1>
+  {if:($ctime_display_reset || $notice_display_reset)}
+  <span style="color:{$desc_color}; font-size:{$desc_size}px; line-height:{$desc_lheight}px;">
+	{if:($ctime_display_reset)}
+    <i class="fa fa-clock-o"></i> {group.ctime} &nbsp; 
+	{/if}
+	{if:($notice_display_reset)}
+	<i class="fa fa-eye"></i> {group.notice}
+	{/if}
+  </span>
+  {/if}
+</div>

@@ -1,0 +1,22 @@
+.tags{padding:48px 0;}
+.tags .list-box{}
+.tags .list-box ul{margin:-8px;}
+.tags .list-box ul:after{display:block; content:''; clear:both;}
+.tags .list-box ul li{float:left; padding:8px; width:16.66666%;}
+.tags .list-box ul li a{padding:8px 18px; background:#f8f8f8; font-size:15px; display:block;}
+.tags .list-box ul li a i{font-style:normal; float:right; opacity:.8;}
+.tags .list-box ul li a b{font-weight:inherit; display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+@media(max-width:1199px){
+.tags{padding:28px 0;}
+.tags .list-box ul{margin:-6px;}
+.tags .list-box ul li{width:20%; padding:6px;}
+}
+@media(max-width:992px){
+.tags .list-box ul li{width:25%;}
+}
+@media(max-width:767px){
+.tags{padding:18px 0;}
+.tags .list-box ul{margin:-4px;}
+.tags .list-box ul li{width:50%; padding:4px;}
+.tags .list-box ul li a{padding:6px 8px; font-size:14px;}
+}

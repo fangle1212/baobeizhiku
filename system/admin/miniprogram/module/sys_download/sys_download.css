@@ -1,0 +1,13 @@
+.mob-sys-download{}
+.mob-sys-download ul{}
+.mob-sys-download ul li{}
+.mob-sys-download ul li:first-child{margin-top:0 !important;}
+.mob-sys-download ul li b{display:block; font-weight:normal; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.mob-sys-download ul li i{display:block; font-style:normal; padding:2px 0; font-size:12px;}
+.mob-sys-download ul li p{display:block; overflow:hidden;}
+.mob-sys-download ul li a[target="_blank"]{display:inline-block; margin-top:5px; font-size:14px; line-height:25px; padding:0 10px; border-radius:15px;}
+.mob-sys-download>u{display:block; text-decoration:none; text-align:center;}
+.mob-sys-download>u b{display:block; font-weight:normal;}
+.mob-sys-download>u i{display:none; font-style:normal;}
+.mob-sys-download>u.over b{display:none;}
+.mob-sys-download>u.over i{display:block;}

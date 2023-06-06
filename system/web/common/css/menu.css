@@ -1,0 +1,28 @@
+.mobile-menu{ font-style:normal; height:45px; margin:0; padding-left:0; padding-right:0;}
+.mobile-menu .list{position:fixed; z-index:9999998; bottom:0; left:0; right:0;}
+.mobile-menu .list ul{display:flex; position:relative;}
+.mobile-menu .list ul li{flex:1;}
+.mobile-menu .list ul li:first-child{margin:0;}
+.mobile-menu .list ul li>a{display:block; overflow:hidden; padding:0 5px; height:45px; transition:.3s;
+text-align:center; position:relative;
+display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-o-box; display:box;
+-webkit-box-orient:vertical; -moz-box-orient:vertical; -ms-box-orient:vertical; -o-box-orient:vertical; box-orient:vertical; 
+-webkit-box-pack:center; -moz-box-pack:center; -ms-flex-pack:center; -o-box-pack:center; box-pack:center; 
+-webkit-box-align:center; -moz-box-align:center; -ms-flex-align:center; -o-box-align:center; box-align:center;}
+
+{menu class=list key=$k}
+.mobile-menu .list ul li:nth-child({$k|ceil=###+1})>a{background:{$v.bgcolor}; color:{$v.color};}
+{/menu}
+
+.mobile-menu .list ul li>a.img.on:after{position:absolute; top:0; right:0; bottom:0; left:0; background:rgba(0,0,0,.1); content:'';}
+.mobile-menu .list ul li>a>em{display:block; font-size:16px;}
+.mobile-menu .list ul li>a>strong{display:block; font-size:14px; line-height:1; font-weight:normal;}
+.mobile-menu .list ul li>a>em+strong{margin-top:4px;}
+.mobile-menu .list ul li>span{position:fixed; top:0; bottom:45px; left:0; right:0; z-index:9999999; transition:.3s;
+background:rgba(0,0,0,.5); overflow:auto; visibility:hidden; opacity:0;
+display:-webkit-box; display:-moz-box; display:-ms-flexbox; display:-o-box; display:box;
+-webkit-box-orient:vertical; -moz-box-orient:vertical; -ms-box-orient:vertical; -o-box-orient:vertical; box-orient:vertical; 
+-webkit-box-pack:center; -moz-box-pack:center; -ms-flex-pack:center; -o-box-pack:center; box-pack:center; 
+-webkit-box-align:center; -moz-box-align:center; -ms-flex-align:center; -o-box-align:center; box-align:center;}
+.mobile-menu .list ul li>a.on+span{visibility:visible; opacity:1;}
+.mobile-menu .list ul li>span>img{display:block; max-width:100%;}

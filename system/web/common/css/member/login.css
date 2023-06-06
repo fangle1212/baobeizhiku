@@ -1,0 +1,34 @@
+section.member.login{padding:58px 0; background:{$sys_member.back_color};}
+section.member.login>article{}
+
+section.member.login .form{display:block; background:#fff; max-width:500px; margin:0 auto; padding:18px 28px; border-radius:3px;}
+section.member.login .form>h2{display:block; text-align:center; font-size:28px; margin-bottom:22px;} 
+
+section.member.login form>div{display:block; margin:0 0 18px 0;}
+section.member.login form>div span{display:block;}
+section.member.login form>div span.captcha{position:relative;}
+section.member.login form>div span.captcha>input{padding-right:120px;}
+section.member.login form>div span.captcha>i{position:absolute; border-left:1px solid #e8e8e8; background:#f8f8f8; top:1px; right:1px; bottom:1px; border-raidus:3px; padding:8px; padding-bottom:0;}
+section.member.login form>div span.captcha>i>img{display:block; max-height:100%; cursor:pointer;}
+section.member.login form>div span.captcha>ins{position:absolute; background:#f8f8f8; top:1px; right:1px; bottom:1px; border:3px; width:108px; border-left:1px solid #e8e8e8; cursor:pointer;}
+section.member.login form>div span.captcha>ins>i{position:absolute; top:50%; left:0; right:0; line-height:18px; margin-top:-9px; color:#585858; text-align:center; font-style:normal; user-select:none;}
+
+section.member.login div.button button{width:100%; padding:12px; font-size:15px; border:none; border-radius:3px; cursor:pointer; transition:.3s; color:#fff; background:{$common.hrcolor};}
+section.member.login div.button button:hover{opacity:.88;}
+
+section.member.login div.register{text-align:right; margin-top:18px;}
+
+section.member.login form input[type=text],
+section.member.login form input[type=password],
+section.member.login form input[type=number],
+section.member.login form input[type=tel],
+section.member.login form input[type=email]{display:block; width:100%; margin:0; transition:.3s; padding:12px 14px; border-radius:3px; 
+background:#fff; border:1px solid #e8e8e8; line-height:22px; height:48px; font-size:15px;}
+
+@media(max-width:767px){
+section.member.login{padding:18px 0;}
+section.member.login .form{padding:12px;}
+section.member.login form>div{margin:0 0 8px 0;}
+section.member.login .form>h2{font-size:22px; margin-bottom:12px;}
+section.member.login div.register{margin-top:12px;}
+}

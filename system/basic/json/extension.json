@@ -1,0 +1,34 @@
+{
+	"code" : [
+		".html", ".htm", ".js", ".css", ".php", ".asp", ".aspx", ".jsp", ".java", ".cs", 
+		".cpp", ".dsp", ".dsw", ".exe", ".lib", ".h", ".c", ".config"
+	],
+	"zip" : [
+		".zip", ".rar", ".gz", ".jar", ".7z", ".cab"
+	],
+	"word" : [
+		".doc", ".docx"
+	],
+	"photo" : [
+		".jpg", ".gif", ".png", ".jpeg", ".tif", ".bmp", ".ico", ".webp"
+	],
+	"excel" : [
+		".xlsx", ".xlsm", ".xlsb", ".xltx", ".xltm", ".xls", ".xlt", ".xml", ".xlam", ".xla", ".xlw", ".xlr", ".csv"
+	],
+	"movie" : [
+		".mp4", ".wmv", ".avi", ".mov", ".asf", ".3gp", ".ra", ".ram", ".mkv", ".flv", ".rmvb", 
+		".webm", ".qsv", ".swf", ".rm", ".mpeg", ".mpg", ".ogg", ".ogv", ".wmv", ".wav", ".mid"
+	],
+	"powerpoint" : [
+		".pptx", ".pptm", ".ppt", ".potx", ".xps", ".potm", ".pot", ".ppsx", ".ppsm", ".pps", ".ppam", ".ppa"
+	],
+	"audio" : [
+		".mp3", ".mpeg", ".midi"
+	],
+	"text" : [
+		".txt", ".prn", ".dif", ".slk"
+	],
+	"pdf" : [
+		".pdf"
+	]
+}

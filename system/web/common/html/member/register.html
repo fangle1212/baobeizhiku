@@ -1,0 +1,15 @@
+{include theme=com/head}
+
+<section class="member register" bosscms="sys_member">
+  <article>
+    <div class="form">
+      <h2{$sys_member._register_name}>{$sys_member.register_name}</h2>
+      {register class=html}{/register}
+      <div class="login">
+        <span><a href="{path.folder|url::member='login'}" title="{$sys_member.register_link_text}"{$sys_member._register_link_text}>{$sys_member.register_link_text}</a></span>
+      </div>
+    </div>
+  </article>
+</section>
+
+{include theme=com/foot}

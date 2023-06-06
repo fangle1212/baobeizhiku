@@ -1,0 +1,85 @@
+html,body{height:100%;}
+header.head{position:absolute; top:0; left:0; right:0; height:72px; background:#fff; z-index:8;}
+header.head .content{width:778px; height:100%; margin:0 auto; position:relative;}
+header.head .content .logo{position:absolute; width:188px; margin:17px 16px 0 0; top:0; right:100%; height:38px;}
+header.head .content .logo img{display:block; height:38px;}
+header.head .content:after{display:block; content:''; clear:both;} 
+
+header.head .content .text{float:left; font-size:18px; margin-top:22px;}
+header.head .content .wrap{float:right; }
+header.head .content .wrap span{display:block; text-align:right; padding:8px 0 12px 0;}
+header.head .content .wrap span b{font-weight:normal; display:inline-block; padding:0 4px; opacity:.68;}
+header.head .content .wrap p{font-size:15px; color:#687479;}
+header.head .content .wrap p b{color:#1c4f81; font-weight:normal;}
+
+
+main.install{width:778px; margin:0 auto; height:100%; padding-top:88px; position:relative;}
+
+section.step{background:#fff; position:absolute; right:100%; top:88px; z-index:3; width:188px; margin-right:16px;}
+section.step ul{padding:4px;} 
+section.step ul li{ padding:4px; position:relative;}
+section.step ul li span{display:block; background:#ccc; color:#fff; line-height:28px; padding:8px 16px; font-size:15px; transition:.3s;}
+section.step ul li.on span{background:#76b9ed;}
+section.step ul li em{color:#fff; position:absolute; top:4px; right:20px; line-height:44px; z-index:3;}
+
+section.iframes{height:100%; padding: 0 0 16px 0; position:relative; z-index:1;}
+section.iframes iframe{display:block; width:100%; height:100%; border:none; margin:0;}
+
+section.main aside+aside{border-top:1px solid #ecf3f4;}
+
+section.license{height:100%; padding-bottom:51px; position:relative;}
+section.license div.content{height:100%; overflow:auto; line-height:1.75; background:#fff; padding:8px 16px;}
+section.license div.content h2{text-align:center;}
+section.license div.content h3{text-align:center; color:#3f484c}
+section.license div.next{position:absolute; bottom:0; left:0; right:0; padding:8px; background:#fff; border-top:1px solid #ecf3f4;}
+section.license div.next code{float:right; margin:5px 0 0 16px;}
+section.license div.next a{float:right; padding:6px 28px;}
+section.license div.next a.nosee{background:#ccc; cursor:default;}
+
+
+section.check .table{padding:16px; background:#fff; border-top:1px solid #ecf3f4;}
+section.check .table:first-child{border-top:none;}
+section.check .table h2{font-size:16px; margin-bottom:8px;}
+section.check .table th:nth-child(1),
+section.check .table td:nth-child(1){width:33.333%;}
+section.check .table th:nth-child(2),
+section.check .table td:nth-child(2){width:33.333%;}
+section.check .table th:nth-child(3),
+section.check .table td:nth-child(3){width:33.333%; text-align:center;}
+section.check .table .fa-times{color:#f1737b;}
+section.check .table .fa-check{color:#39d17b;}
+
+
+section div.both{background:#fff; padding:8px; border-top:1px solid #ecf3f4;}
+section div.both:after{display:block; content:''; clear:both;}
+section div.both .button{padding:4px 28px;}
+section div.both .button.prev{float:left; margin-right:8px;}
+section div.both .button.next{float:right; margin-left:8px;}
+section div.both .button.not{background:#ccc; cursor:default;}
+
+
+section.main.form{padding:0;}
+section.main.form aside{float:none;}
+section.main.form aside>div{border:none;}
+section.main.form aside>div>h2{font-size:16px;}
+
+
+section.success .yes{padding:36px; background:#fff;}
+section.success .yes em{width:120px; height:120px; color:#fff; border-radius:50%; display:block; margin:0 auto; background:#58abeb; font-size:60px; text-align:center; line-height:120px;}
+section.success .yes span{display:block; text-align:center; font-size:18px; margin-top:8px;}
+
+section.success .come{background:#fff; padding:28px; text-align:center; border-top:1px solid #ecf3f4;}
+section.success .come span{display:block; text-align:center; font-size:16px; margin-bottom:18px;}
+section.success .come .button{padding:4px 28px; margin-right:18px;}
+section.success .come .button:last-child{margin:0;}
+
+
+section.database .error{background:#fff; padding:16px;}
+section.database button.button.green.next .fa-spinner{float:right; width:22px; margin-right: -10px; animation:turn 1s linear infinite; text-align:center;}
+@keyframes turn{
+0%{-webkit-transform:rotate(0deg);}
+100%{-webkit-transform:rotate(360deg);}
+}
+
+section.copyright{margin:16px 0 0 0;}
+section.license + section.copyright{position:absolute; bottom:0; left:0; right:0;}

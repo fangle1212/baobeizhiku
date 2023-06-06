@@ -1,0 +1,69 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "12",
+				"title": "标题颜色",
+				"name": "name_color",
+				"value": "rgb(38,38,38)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "标题大小",
+				"name": "name_size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 36
+				}
+			},
+			
+			{
+				"style": "12",
+				"title": "内容颜色",
+				"name": "desc_color",
+				"value": "rgb(168,168,168)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "内容大小",
+				"name": "desc_size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 24
+				}
+			},
+			{
+				"style": "16",
+				"title": "内容行高",
+				"name": "desc_lheight",
+				"value": "22",
+				"description": "",
+				"param": {
+					"min": 16,
+					"max": 38
+				}
+			},
+			{
+				"style": "16",
+				"title": "内容间距",
+				"name": "dl_tmargin",
+				"value": "5",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 30
+				}
+			}
+		]
+	}
+]

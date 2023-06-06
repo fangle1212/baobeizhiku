@@ -1,0 +1,12 @@
+<?php include(load::theme('com/head')); ?>
+
+<section class="productlist" bosscms="productlist" groups>
+  <?php include(load::theme('com/productCatetory')); ?> 
+  <article>
+    <?php $product = $G["group"]; ?>
+    <?php include(load::theme('com/product/productList')); ?>
+    <?php $pages1 = html::pages( $G['groups']['pages'], true, false ); if( $pages1 ){ $html = $pages1; ?><?php echo $html; ?><?php } ?>
+  </article>
+</section>
+
+<?php include(load::theme('com/foot')); ?>

@@ -1,0 +1,63 @@
+.downloaddetail{background:{$downloaddetail.back_color}; }
+.downloaddetail h1{text-align:center; margin-bottom:8px;}
+
+.downloaddetail .top{text-align:center; opacity:.68; margin-bottom:18px;}
+.downloaddetail .top b{font-weight:inherit;}
+.downloaddetail .top i{font-style:inherit; margin-right:18px;}
+.downloaddetail .top i:last-child{margin:0;}
+
+.downloaddetail .sub{float:left;}
+.downloaddetail .sub>dl{padding-bottom:8px;}
+.downloaddetail .sub>dl:after{display:block; content:''; clear:both;}
+.downloaddetail .sub>dl>dt{float:left; opacity:.88;}
+.downloaddetail .sub>dl>dd{float:left;}
+.downloaddetail .sub>a{margin-top:18px;}
+
+.downloaddetail .content{border-left:1px solid #f0f0f0;}
+
+.downloaddetail aside{margin-bottom:18px;}  
+.downloaddetail dir{padding-top:18px; border-top:1px solid #f0f0f0;}
+.downloaddetail dir:after{display:block; content:''; clear:both;}
+.downloaddetail dir>dl{ }
+.downloaddetail dir>dl:after{display:block; content:''; clear:both;}
+.downloaddetail dir>dl:first-child{}
+.downloaddetail dir>dl:last-child{}
+.downloaddetail dir>dl>dt{float:left; margin-right:8px; opacity:.88;}
+.downloaddetail dir>dl>dt b{font-weight:inherit;}
+.downloaddetail dir>dl>dd{float:left;}
+.downloaddetail dir>dl>dd i{font-style:inherit;}
+.downloaddetail dir>dl>dd a{ }
+.downloaddetail dir>dl>dd a:hover{ }
+
+.downloaddetail .tag{margin-bottom:18px;}
+.downloaddetail .tag a{display:inline-block; margin-right:8px; border:1px solid #f0f0f0; padding:2px 8px; border-radius:3px;}
+@media(max-width:767px){
+.downloaddetail .tag{margin-bottom:8px;}
+.downloaddetail .tag a{margin-right:4px; padding:2px 8px;}
+}
+@media(min-width:1200px){
+.downloaddetail .sub{width:268px; padding-right:28px;}
+.downloaddetail .content{margin-left:268px; padding-left:28px;}
+}
+@media(max-width:1199px){
+.downloaddetail .sub{width:248px; padding-right:18px;}
+.downloaddetail .content{margin-left:248px; padding-left:18px;}
+}
+@media(min-width:992px){
+.downloaddetail{padding-top:28px; padding-bottom:28px;} 
+}
+@media(max-width:991px){
+.downloaddetail{padding-top:18px; padding-bottom:18px;} 
+.downloaddetail .sub{width:auto; padding-right:0; float:none;}
+.downloaddetail .sub>a{margin-top:8px;}
+.downloaddetail .content{margin-left:0; padding-left:0; padding-top:18px; margin-top:18px; border-top:1px solid #f0f0f0; border-left:none;}
+}
+@media(max-width:767px){
+.downloaddetail h1{font-size:24px; margin-bottom:4px;}
+.downloaddetail .top{margin-bottom:8px;}
+.downloaddetail aside{margin-bottom:8px;}  
+.downloaddetail dir{padding-top:8px;}
+.downloaddetail .sub>dl{padding-bottom:4px;}
+.downloaddetail .sub>a{margin-top:4px;}
+.downloaddetail .content{padding-top:8px; margin-top:12px;}
+}

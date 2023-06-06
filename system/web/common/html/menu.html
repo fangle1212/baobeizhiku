@@ -1,0 +1,27 @@
+<menu class="mobile-menu" bosscms="" menu>
+  <div class="list">
+    <ul>
+      {menu class=list}
+      <li>
+        <a {if:($v.type==0)}
+           {items class=one id=$v.value value=$m}
+           href="{$m.url}"
+           {/items}
+		   {else if:($v.type==1)}
+           href="{$v.value}"
+           {else if:($v.type==2)}
+           href="javascript:;" class="img"
+           {else if:($v.type==3)}
+           href="javascript:;" onclick="{$v.value}"
+           {/if} title="{$v.name}" {$v.target}>
+          <em{$v._icon} class="fa {$v.icon}"></em>
+          <strong{$v._name}>{$v.name}</strong>
+        </a>
+        {if:($v.type==2)}
+        <span><img{$v._value} src="{$v.value}" alt="{$v.name}"/></span>
+        {/if}
+      </li>
+      {/menu}
+    </ul>
+  </div>
+</menu>

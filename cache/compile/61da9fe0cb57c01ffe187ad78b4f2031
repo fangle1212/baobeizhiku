@@ -1,0 +1,39 @@
+<div class="product-tips module">
+  <h4 class="n-title fast-nav-title">产品提示<span>（鼠标移至标签可查看说明）</span></h4>
+  <?php $complex1 = page::complex_list( 3, 0, null, params, 0 ); ?><?php foreach( $complex1 as $c ){ ?>
+  <?php  if( $c['description']==='提示' ){ ?>
+  <ul class="row">
+    <li class="col item" <?php echo $c['_title']; ?>><?php echo $c['title']; ?></li>
+    <?php $i = 0; ?>
+    <?php foreach( $listArr as $index ){ ?>
+    <?php $i++; ?>
+    <li class="col item">
+      <?php  if( $idsArr[$index] ){ ?> <?php $group1 = page::group_one( $idsArr[$index], 3, '*', null, null ); if( $group1['id'] ){ $v = $group1; ?>
+      <?php foreach( $v['complex'] as $v ){ ?> <?php  if( $c['id'] == $v['id'] ){ ?> <?php  if( $v['value'] ){ ?>
+      <?php
+      $vals = $v['value'];
+      $valArr = explode(',', $vals);
+      ?>
+      <?php foreach( $valArr as $val ){ ?>
+      <dd class="jieshao tag-item">
+        <?php echo $val; ?> <?php $group2 = page::group_list( 108, 1, null, null, null, 'pages', '*', "name='{$val}'", null ); ?><?php foreach( $group2['list'] as $cc ){ ?> <?php $group3 = page::group_one( $cc['id'], 2, '*', null, null ); if( $group3['id'] ){ $v = $group3; ?> <?php  if( $v['content'] ){ ?> <?php  if( $i
+        > 3 ){ ?>
+        <div class="jieshao-left">
+          <div class="tips-text">说明：</div>
+          <div class="tips-content"><?php echo $v['content']; ?></div>
+        </div>
+        <?php }else{ ?>
+        <div class="jieshao-right">
+          <div class="tips-text">说明：</div>
+          <div class="tips-content"><?php echo $v['content']; ?></div>
+        </div>
+        <?php } ?> <?php } ?> <?php } ?> <?php } ?>
+      </dd>
+      <?php } ?> <?php }else{ ?>
+      <dd class="tag-item none">暂无</dd>
+      <?php } ?> <?php } ?> <?php } ?> <?php } ?> <?php } ?>
+    </li>
+    <?php } ?>
+  </ul>
+  <?php } ?> <?php } ?>
+</div>

@@ -1,0 +1,53 @@
+.feedback{overflow:hidden; background:{$feedback.back_color};}
+
+.feedback .list-box{}
+.feedback .list-box ul{}
+.feedback .list-box ul li{border-bottom:1px dashed #f0f0f0;}
+.feedback .list-box ul li h4{margin-bottom:8px;}
+.feedback .list-box ul li h4 b{display:inline-block; font-weight:inherit; margin-right:8px;}
+.feedback .list-box ul li h4 i{display:inline-block; font-style:inherit; opacity:.68; font-size:{$common.ftsize}px;}
+.feedback .list-box ul li div{border:1px solid #f0f0f0; background:rgba(0,0,0,.008); margin-top:18px; margin-bottom:8px; border-radius:3px;}
+.feedback .list-box ul li div>b{font-weight:inherit; padding:4px 0; display:block; opacity:.8;}
+
+.feedback .form-box{max-width:888px; margin:0 auto;}
+.feedback .form-box form{display:block;}
+.feedback .form-box form dl{display:block; margin:0 0 8px 0;}
+.feedback .form-box form dl dt{display:block; margin-bottom:4px;}
+.feedback .form-box form dl dt h4{display:inline-block;}
+.feedback .form-box form dl dt i{display:inline-block; font-style:normal; color:red; margin-left:3px;}
+.feedback .form-box form dl dd{display:block;}
+.feedback .form-box form dl dd span{display:block;}
+.feedback .form-box form dl dd span.captcha{position:relative;}
+.feedback .form-box form dl dd span.captcha i{position:absolute; background:#f8f8f8; top:1px; right:1px; bottom:1px; border:3px; padding:6px; padding-bottom:0;}
+.feedback .form-box form dl dd span.captcha img{display:block; max-height:100%; cursor:pointer;}
+.feedback .form-box form dl dd p{display:block; margin:4px 0 0; opacity:.8;}
+.feedback .form-box form button{margin:8px 0 0; width:100%; padding:8px; border:none; border-radius:3px; cursor:pointer; transition:.3s; color:#fff; background:{$common.hrcolor};}
+.feedback .form-box form button:hover{opacity:.88;}
+
+.feedback *::-webkit-input-placeholder{color:{$font_color}; color:{$input_color};}
+.feedback *::-moz-input-placeholder{color:{$font_color}; color:{$input_color};}
+.feedback *::-ms-input-placeholder{color:{$font_color}; color:{$input_color};}
+
+@media(min-width:992px){
+.feedback{padding-top:28px; padding-bottom:28px;}
+.feedback .content-box{float:left; width:60%; padding-right:28px; border-right:1px solid #f0f0f0;}
+.feedback .content-box + .form-box{float:left; width:40%; padding-left:28px; margin-left:-1px; border-left:1px solid #f0f0f0;}
+.feedback .list-box ul li{padding:0 0 18px 0; margin:0 0 18px 0;}
+.feedback .list-box ul li div{padding:8px 12px;}
+}
+@media(max-width:1199px){
+.feedback .content-box{padding-right:18px;}
+.feedback .content-box + .form-box{padding-left:18px;}
+}
+@media(max-width:991px){
+.feedback{padding-top:18px; padding-bottom:18px;}
+.feedback .content-box{padding-bottom:18px; border-bottom:1px solid #f0f0f0; padding-right:0;}
+.feedback .content-box + .form-box{padding-left:0; padding-top:18px;}
+.feedback .list-box ul li{padding:0 0 8px 0; margin:0 0 8px 0;}
+.feedback .list-box ul li div{padding:5px 8px;}
+.feedback .list-box + .form-box{padding-top:18px;}
+}
+@media(max-width:767px){
+.feedback .list-box ul li h4{margin-bottom:4px;}
+.feedback .list-box ul li div{margin-top:8px; margin-bottom:4px;}
+}

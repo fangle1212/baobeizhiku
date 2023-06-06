@@ -1,0 +1,91 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "16",
+				"title": "组件高度",
+				"name": "height",
+				"value": "30",
+				"description": "",
+				"param": {
+					"min": 25,
+					"max": 50
+				}
+			},
+			{
+				"style": "21",
+				"title": "新闻栏目",
+				"name": "items_reset",
+				"value": "",
+				"description": "",
+				"param": {
+					"type": "2"					
+				}
+			},
+			{
+				"style": "16",
+				"title": "显示数量",
+				"name": "rows_reset",
+				"value": "5",
+				"description": "",
+				"param": {
+					"min": 1,
+					"max": 10
+				}
+			},
+			{
+				"style": "12",
+				"title": "喇叭颜色",
+				"name": "facolor",
+				"value": "rgb(0,0,0)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "字体大小",
+				"name": "size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 20
+				}
+			},
+			{
+				"style": "12",
+				"title": "字体颜色",
+				"name": "color",
+				"value": "rgb(68,68,68)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "切换时间",
+				"name": "interval",
+				"value": "5000",
+				"description": "",
+				"param": {
+					"min": 1000,
+					"max": 8000,
+					"step": 100
+				}
+			},
+			{
+				"style": "16",
+				"title": "动画时长",
+				"name": "duration",
+				"value": "500",
+				"description": "",
+				"param": {
+					"min": 100,
+					"max": 2000,
+					"step": 100
+				}
+			}
+		]
+	}
+]

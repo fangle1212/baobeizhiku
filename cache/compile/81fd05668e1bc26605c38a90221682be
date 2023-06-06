@@ -1,0 +1,28 @@
+var $G=[];
+$G['lang']=<?php  if( $G['language']['id'] ){ ?><?php echo $G['language']['id']; ?><?php }else{ ?>0<?php } ?>;
+$G['relative']='<?php echo $G['path']['relative']; ?>';
+$G['items']=<?php  if( $G['items']['id'] ){ ?><?php echo $G['items']['id']; ?><?php }else{ ?>0<?php } ?>;
+$G['type']=<?php  if( $G['items']['type'] ){ ?><?php echo $G['items']['type']; ?><?php }else{ ?>0<?php } ?>;
+$G['id']=<?php  if( isset($G['get']['id']) ){ ?><?php echo $G['get']['id']; ?><?php }else{ ?>0<?php } ?>
+
+<?php  if( isset($G['get']['id']) ){ ?>
+$(document).ready(function(){
+	$('notice[type][id]').each(function(){
+		bosscms = true;
+		$.post(
+			$G['relative']+'api/notice/?lang='+$G['lang'],
+			{
+				type: $(this).attr('type'),
+				id: $(this).attr('id')
+			},
+			function(data){
+				if(data){
+					$('notice[type="'+data.type+'"][id="'+data.id+'"]').before(data.notice).remove();
+				}
+			},
+			'json'
+		);
+	});
+});
+<?php } ?>
+

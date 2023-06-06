@@ -1,0 +1,65 @@
+<div class="product-list-box">
+  <?php  if( !isset($data) ){ ?> <?php $data = page::group_list( $product['items'], $product['number'], null, null, null, 'pages', '*', null, null ); ?><?php if(false){ ?><?php } ?> <?php } ?> <?php  if( $data['list'] ){ ?>
+  <ul class="clearfix">
+    <?php foreach( $data['list'] as $c ){ ?>
+    <li class="clearfix is-hover-shadow">
+      <?php
+      $c["name"] = isset($c["name"]) ? $c["name"] : $c["title"];
+      ?>
+      <a href="<?php echo $c['url']; ?>" title="<?php echo $c['name']; ?>" <?php echo $c['target']; ?> class="cover">
+        <img
+          <?php echo $c['_image']; ?>
+          src="<?php echo cache::thumbnail($c['image'],$c['width'],$c['height']); ?>"
+          alt="<?php echo $c['name']; ?>"
+          class="img-contain"
+      /></a>
+      <div class="info">
+        <h4 <?php echo $c['_name']; ?>>
+          <a
+            href="<?php echo $c['url']; ?>"
+            title="<?php echo $c['name']; ?>"
+            <?php echo $c['target']; ?>
+            class="text-overflow"
+          >
+            <?php echo $c['name']; ?>
+          </a>
+          <div class="compare_btn" data-id="<?php echo $c['id']; ?>" data-parentId="<?php echo $c['items']; ?>">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>添加对比
+          </div>
+        </h4>
+        <?php $item = $c ; ?>
+        <?php  if( !isset($item["price"]) ){ ?>
+          <?php $item = page::group_one( $c['id'], 3, '*', null, null ); if( $item['id'] ){ $v = $item; ?><?php } ?>
+        <?php } ?>
+        <div class="price" <?php echo $item['_price']; ?>>
+          <span>参考价：</span> <?php  if( $item['price'] ){ ?><?php echo $item['price']; ?><?php }else{ ?>暂无<?php } ?>
+        </div>
+
+        <ol class="other clearfix">
+          <?php foreach( $item['complex'] as $v ){ ?><?php  if( $v['title']=='产地' ){ ?>
+          <li><span>产地：</span><?php  if( $v['value'] ){ ?><?php echo $v['value']; ?><?php }else{ ?>暂无<?php } ?></li>
+          <?php } ?><?php  if( $v['title']=='适用年龄' ){ ?>
+          <li>
+            <span>适用年龄：</span><?php  if( $v['value'] ){ ?><?php echo $v['value']; ?><?php }else{ ?>暂无<?php } ?>
+          </li>
+          <?php } ?><?php } ?>
+        </ol>
+        <?php foreach( $item['complex'] as $v ){ ?><?php  if( $v['title']=='优点' || $v['title']=='注意' ){ ?>
+        <dl>
+          <dt <?php echo $v['_title']; ?>><?php echo $v['title']; ?>：</dt>
+          <?php  if( $v['value'] ){ ?><?php
+          $vals = $v['value'];
+          $valArr = explode(',', $vals);
+          ?><?php foreach( $valArr as $val ){ ?>
+          <dd><?php echo $val; ?></dd>
+          <?php } ?><?php }else{ ?>
+          <dd class="none">暂无</dd>
+          <?php } ?>
+        </dl>
+        <?php } ?><?php } ?>
+      </div>
+    </li>
+    <?php } ?>
+  </ul>
+  <?php } ?>
+</div>

@@ -1,0 +1,22 @@
+{include theme=com/head}
+<section class="downloadlist" bosscms="downloadlist" groups>
+  <article>
+    <div class="list-box">
+      <ul>
+	    {foreach data=groups.list}
+        <li>
+          <h3 {$v._name}><a href="{$v.url}" title="{$v.name}" {$v.target}>{$v.name}</a></h3>
+          <b>
+            <i><span {config._download_size}>{config.download_size}</span><span {$v._size}>{$v.size|round=###/1024*100|floatval=###/100}KB</span></i>
+            <i><span {config._group_time}>{config.group_time}</span><span>{$v.mtime|date='Y-m-d',###}</span></i>
+          </b>
+          <p {$v._text}>{$v.text}</p>
+          <a href="{$v.file}" title="{$v.name}" button="button" download {config._download_file}>{config.download_file}</a>
+        </li>
+		{/foreach}
+      </ul>
+    </div>
+	{pages class=html set=groups.pages display=true}{/pages}
+  </article>
+</section>
+{include theme=com/foot}

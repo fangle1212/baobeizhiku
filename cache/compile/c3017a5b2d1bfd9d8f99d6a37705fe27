@@ -1,0 +1,103 @@
+<?php include(load::common('header')); ?>
+
+<header class="head" bosscms="head">
+  <article>
+    <div class="logo-box">
+      <a href="<?php echo $G['home']['url']; ?>" title="<?php echo $G['config']['title']; ?>">
+        <b <?php echo $G['config']['_title']; ?>><?php echo $G['config']['title']; ?></b>
+        <img <?php echo $G['config']['_logo']; ?> src="<?php echo $G['config']['logo']; ?>" alt="<?php echo $G['config']['title']; ?>" />
+      </a>
+    </div>
+    <div class="menu-box"><i class="fa fa-list"></i></div>
+		<div class="head-r clearfix">
+			<nav class="nav" bosscms="nav" items>
+				<article>
+				<div>
+					<ul>
+						<li class="<?php echo $G['home']['on']; ?>"><a href="<?php echo $G['home']['url']; ?>" title="<?php echo $G['home']['name']; ?>"><b <?php echo $G['home']['_name']; ?>><?php echo $G['home']['name']; ?></b></a></li>
+						<?php $items1 = page::items_head( ); ?><?php foreach( $items1 as $v ){ ?>
+						<!-- <?php  if( $v['children'] ){ ?>has<?php } ?> -->
+						<li class="<?php echo $v['on']; ?>">
+							<a href="javascript:;" title="<?php echo $v['name']; ?>" class="parent-nav-item" data-url="<?php echo $v['url']; ?>" data-target="<?php echo $v['target']; ?>"><b <?php echo $v['_name']; ?>><?php echo $v['name']; ?></b></a>
+					<!-- <?php  if( $v['children'] ){ ?>
+							<div>
+								<ul>
+									<?php $items2 = page::items_list( $v['id'], 0, '*', true, null ); ?><?php foreach( $items2 as $v2 ){ ?>
+									<li class="<?php echo $v2['on']; ?> <?php  if( $v2['children'] ){ ?>has<?php } ?>">
+										<a href="<?php echo $v2['url']; ?>" title="<?php echo $v2['name']; ?>" <?php echo $v2['target']; ?>><b <?php echo $v2['_name']; ?>><?php echo $v2['name']; ?></b></a>
+							<?php  if( $v2['children'] ){ ?>
+											<div>
+												<ul>
+									<?php $items3 = page::items_list( $v2['id'], 0, '*', true, null ); ?><?php foreach( $items3 as $v3 ){ ?>
+													<li class="<?php echo $v3['on']; ?>">
+														<a href="<?php echo $v3['url']; ?>" title="<?php echo $v3['name']; ?>" <?php echo $v3['target']; ?>><b <?php echo $v3['_name']; ?>><?php echo $v3['name']; ?></b></a>
+													</li>
+								<?php } ?>
+												</ul>
+											</div>
+							<?php } ?>
+									</li>
+						<?php } ?>
+								</ul>
+							</div>
+							<?php } ?> -->
+						</li>
+					<?php } ?>
+				</div>
+				</article>
+			</nav>
+    <?php $search1 = html::search( $head['search_items'], true ); if( $head['search_items'] ){ $html = $search1; ?>
+    <div class="search-box">
+      <i class="fa fa-search"></i>
+      <div class="form-box"><?php echo $html; ?></div>
+    </div>
+	<?php } ?>
+	</div>
+	
+    <!-- <div class="globe-box">
+      <span>
+        <img <?php echo $G['language']['_image']; ?> src="<?php echo $G['language']['image']; ?>" alt="<?php echo $G['language']['name']; ?>" />
+        <i <?php echo $G['language']['_name']; ?>><?php echo $G['language']['name']; ?></i>
+      </span>
+      <ul>
+        <?php $language1 = page::language_list( '*', null, null ); ?><?php foreach( $language1 as $v ){ ?>
+        <li>
+          <a href="<?php echo $v['url']; ?>" title="<?php echo $v['name']; ?>" <?php echo $v['target']; ?>>
+            <img <?php echo $v['_image']; ?> src="<?php echo $v['image']; ?>" alt="<?php echo $v['name']; ?>" />
+            <span <?php echo $v['_name']; ?>><?php echo $v['name']; ?></span>
+          </a>
+        </li>
+		<?php } ?>
+      </ul>
+    </div> -->
+  </article>
+</header>
+
+<!-- <?php  if( !$G['path']['home'] ){ ?>
+<?php $nav = page::items_list( $G['items']['max'], 0, '*', true, null ); ?><?php if(false){ ?><?php } ?>
+<?php  if( $nav ){ ?>
+<section class="subnav" bosscms="subnav" items>
+  <article>
+    <ul>
+	  <?php foreach( $nav as $v ){ ?>
+      <li class="<?php echo $v['on']; ?> <?php  if( $v['children'] ){ ?>has<?php } ?>">
+        <a href="<?php echo $v['url']; ?>" title="<?php echo $v['name']; ?>" <?php echo $v['target']; ?>><span <?php echo $v['_name']; ?>><?php echo $v['name']; ?></span></a>
+		<?php  if( $v['children'] ){ ?>
+    	<ul>
+            <li class="<?php echo $v['on']; ?> parent">
+              <a href="<?php echo $v['url']; ?>" title="<?php echo $v['name']; ?>" <?php echo $v['target']; ?>><span <?php echo $v['_name']; ?>><?php echo $v['name']; ?></span></a>
+            </li>
+			<?php $items5 = page::items_list( $v['id'], 0, '*', true, null ); ?><?php foreach( $items5 as $v2 ){ ?>
+            <li class="<?php echo $v2['on']; ?>">
+              <a href="<?php echo $v2['url']; ?>" title="<?php echo $v2['name']; ?>" <?php echo $v2['target']; ?>><span <?php echo $v2['_name']; ?>><?php echo $v2['name']; ?></span></a>
+            </li>
+			<?php } ?>
+    	</ul>
+		<?php } ?>
+      </li>
+	  <?php } ?>
+    </ul>
+  </article>
+</section>
+<?php } ?>
+<?php } ?> -->

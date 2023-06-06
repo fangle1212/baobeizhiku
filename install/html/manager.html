@@ -1,0 +1,47 @@
+<form action="?page=admin" method="post" bosscms>
+<section class="manager main form">
+  <aside>
+    <div>
+      <h2>后台管理员设置</h2>
+      <dl>
+        <dt>管理员账户</dt>
+        <dd>
+          <code class="input bosscms"><input name="username" placeholder="请输入管理员账户" required="required" type="text" value=""></code>
+        </dd>
+      </dl>
+      <dl>
+        <dt>管理员密码</dt>
+        <dd>
+          <code class="input"><input name="password" placeholder="请输入管理员密码" required="required" type="password" value=""></code>
+        </dd>
+      </dl>
+      <dl>
+        <dt>重确密码</dt>
+        <dd>
+          <code class="input"><input name="passwords" placeholder="请再次输入管理员密码" required="required" type="password" value=""></code>
+        </dd>
+      </dl>
+    </div>
+  </aside> 
+  <aside>
+    <div>
+      <h2>演示数据设置</h2>
+      <dl>
+        <dt>是否导入</dt>
+        <dd>
+          <code class="checkbox">
+            <label class="checkbox">
+              <input name="import" type="checkbox" value="1">
+              <ins>确定导入演示数据</ins>
+            </label>
+          </code>
+        </dd>
+      </dl>
+    </div>
+  </aside>  
+  <div class="both">
+    <a class="button blue prev bosscms" href="?page=database">上一步</a>
+    <button class="button green next">下一步</button>
+  </div>
+</section>
+</form>

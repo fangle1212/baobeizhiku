@@ -1,0 +1,19 @@
+<div class="mob-product type{$style}" style="padding:{$tbpadding}px {$lrpadding}px; background-color:{$bgcolor}; margin:{$tmargin}px {$lrmargin}px 0 {$lrmargin}px;">
+  <ul>
+	{php} $group_list = into::load_class('extend','miniprogram','miniprogram','new')->group_list($items_reset, $rows_reset); {/php}
+	{foreach data="$group_list.list"}
+    <li style="padding:{$lipadding}px;">
+	  <a url="/pages/product_detail/product_detail?id={$v.id}" style="background:{$div_bgcolor}; border-radius:{$imgradius}px;">
+		<img src="{$v.image}" style="border-radius:{$imgradius}px;" />
+		<span>
+		  <b style="color:{$title_color}; line-height:{$title_lheight}px; font-size:{$title_size}px;">{$v.name}</b>
+		  {if:($v.price)}
+		  <u style="color:{$price_color}; font-size:{$price_size}px;">{$v.price}</u>
+		  {/if}
+		</span>
+	  </a>
+    </li>
+	<ol></ol>
+	{/foreach}
+  </ul>
+</div>

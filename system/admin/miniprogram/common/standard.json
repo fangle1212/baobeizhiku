@@ -1,0 +1,188 @@
+{
+	"diypage": {
+		"home": {
+			"id": "0",
+			"title": "首页",
+			"class": "home",
+			"module": []
+		},
+		"page": {
+			"id": "10001",
+			"title": "单页",
+			"class": "page",
+			"module": []
+		},
+		"news": {
+			"id": "10002",
+			"title": "新闻列表页",
+			"class": "news",
+			"module": [
+				{
+					"type": "sys_news",
+					"param": []
+				}
+			]
+		},
+		"news_detail": {
+			"id": "10020",
+			"title": "新闻详情页",
+			"class": "news_detail",
+			"module": [
+				{
+					"type": "sys_h1",
+					"param": []
+				},
+				{
+					"type": "sys_content",
+					"param": []
+				}
+			]
+		},
+		"product": {
+			"id": "10003",
+			"title": "产品列表页",
+			"class": "product",
+			"module": [
+				{
+					"type": "sys_product",
+					"param": []
+				}
+			]
+		},
+		"product_detail": {
+			"id": "10030",
+			"title": "产品详情页",
+			"class": "product_detail",
+			"module": [
+				{
+					"type": "sys_imgs",
+					"param": []
+				},
+				{
+					"type": "sys_h1",
+					"param": []
+				},
+				{
+					"type": "sys_text",
+					"param": []
+				},
+				{
+					"type": "sys_complex",
+					"param": []
+				},
+				{
+					"type": "sys_price",
+					"param": []
+				},
+				{
+					"type": "sys_contents",
+					"param": []
+				}
+			]
+		},
+		"image": {
+			"id": "10004",
+			"title": "图片列表页",
+			"class": "image",
+			"module": [
+				{
+					"type": "sys_image",
+					"param": []
+				}
+			]
+		},
+		"image_detail": {
+			"id": "10040",
+			"title": "图片详情页",
+			"class": "image_detail",
+			"module": [
+				{
+					"type": "sys_imgs",
+					"param": []
+				},
+				{
+					"type": "sys_h1",
+					"param": []
+				},
+				{
+					"type": "sys_text",
+					"param": []
+				},
+				{
+					"type": "sys_complex",
+					"param": []
+				},
+				{
+					"type": "sys_content",
+					"param": []
+				}
+			]
+		},
+		"download": {
+			"id": "10005",
+			"title": "下载列表页",
+			"class": "download",
+			"module": [
+				{
+					"type": "sys_download",
+					"param": []
+				}
+			]
+		},
+		"download_detail": {
+			"id": "10050",
+			"title": "下载详情页",
+			"class": "download_detail",
+			"module": [
+				{
+					"type": "sys_h1",
+					"param": []
+				},
+				{
+					"type": "sys_text",
+					"param": []
+				},
+				{
+					"type": "sys_complex",
+					"param": []
+				},
+				{
+					"type": "sys_file",
+					"param": []
+				},
+				{
+					"type": "sys_content",
+					"param": []
+				}
+			]
+		},
+		"search": {
+			"id": "10007",
+			"title": "搜索列表页",
+			"class": "search",
+			"module": [
+				{
+					"type": "sys_search",
+					"param": []
+				}
+			]
+		}
+	},
+    "top_bar": {
+        "navigationStyle": "default",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black"
+    },
+    "tab_bar": {
+        "display": "0",
+        "color": "#666666",
+        "selectedColor": "#000000",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": []
+	},
+    "cut_bar": {
+        "bgcolor": "#f8f8f8",
+        "color": "#181818"
+    }
+}

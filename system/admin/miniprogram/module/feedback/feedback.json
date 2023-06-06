@@ -1,0 +1,86 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "22",
+				"title": "反馈栏目",
+				"name": "items_reset",
+				"value": "",
+				"description": "",
+				"param": []
+			},
+			
+			{
+				"style": "12",
+				"title": "标题颜色",
+				"name": "title_color",
+				"value": "rgb(0,0,0)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "标题大小",
+				"name": "title_size",
+				"value": "16",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 22
+				}
+			},
+			
+			{
+				"style": "12",
+				"title": "描述颜色",
+				"name": "desc_color",
+				"value": "rgb(140,140,140)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "描述大小",
+				"name": "desc_size",
+				"value": "14",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 20
+				}
+			},
+			
+			{
+				"style": "12",
+				"title": "按钮颜色",
+				"name": "btn_color",
+				"value": "rgb(255,255,255)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "12",
+				"title": "按钮背景色",
+				"name": "btn_bgcolor",
+				"value": "rgb(40,40,40)",
+				"description": "",
+				"param": []
+			},
+			{
+				"style": "16",
+				"title": "按钮字大小",
+				"name": "btn_size",
+				"value": "16",
+				"description": "",
+				"param": {
+					"min": 12,
+					"max": 20
+				}
+			}
+			
+			
+		]
+	}
+]

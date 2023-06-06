@@ -1,0 +1,91 @@
+[
+    {
+		"title": "内容设置",
+		"description": "",
+		"ctrl": [
+			{
+				"style": "3",
+				"title": "选择样式",
+				"name": "style",
+				"value": "2",
+				"description": "",
+				"param": {
+					"2": "两列",
+					"3": "三列",
+					"4": "四列",
+					"1": "橱窗"
+				}
+			},
+			{
+				"style": "16",
+				"title": "图片内距",
+				"name": "imgpadding",
+				"value": "0",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 20
+				}
+			},
+			{
+				"style": "16",
+				"title": "图片圆角",
+				"name": "imgradius",
+				"value": "0",
+				"description": "",
+				"param": {
+					"min": 0,
+					"max": 30
+				}
+			},
+			{
+				"style": "31",
+				"title": "图片列表",
+				"name": "list_reset",
+				"value": [
+					{
+						"img": "",
+						"url": ""
+					},
+					{
+						"img": "",
+						"url": ""
+					},
+					{
+						"img": "",
+						"url": ""
+					},
+					{
+						"img": "",
+						"url": ""
+					}
+				],
+				"description": "",
+				"param": {
+					"item": "图片[item]"
+				},
+				"ctrl": [
+					{
+						"style": "6",
+						"title": "图片",
+						"name": "img",
+						"value": "",
+						"description": "",
+						"param": []
+					},
+					{
+						"style": "40",
+						"title": "链接",
+						"name": "url",
+						"value": "",
+						"description": "",
+						"param": [],
+						"attribute": {
+							"placeholder": "请输入链接"
+						}
+					}
+				]
+			}
+		]
+	}
+]

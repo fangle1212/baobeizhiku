@@ -1,0 +1,350 @@
+[
+    {
+        "name": "admin_captcha_type",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "admin_contact_content",
+        "value": "电话：188888888888   QQ：012345678",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_contact_description",
+        "value": "专属您系统的客服专员",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_contact_link",
+        "value": "https:\/\/wpa.qq.com\/msgrd?v=3&uin=0123456&site=qq&menu=yes",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_contact_title",
+        "value": "专席客服",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_copyright_link",
+        "value": "https:\/\/www.bosscms.net\/",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_copyright_name",
+        "value": "©2022 BOSSCMS网站管理系统 版权所有",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_frame_link",
+        "value": "https:\/\/www.bosscms.net\/",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_frame_title",
+        "value": "BOSSCMS框架",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_information",
+        "value": "",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_login_bgimg",
+        "value": "",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_login_captcha",
+        "value": "0",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_login_errnum",
+        "value": "6",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_login_errtime",
+        "value": "3600",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_login_link",
+        "value": "",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_login_title",
+        "value": "管理员登录",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_logout_time",
+        "value": "28888",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_theme",
+        "value": "default",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_theme_bgcolor",
+        "value": "",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_title",
+        "value": "BOSSCMS网站管理系统",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_remove_advert",
+        "value": "1",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "admin_remote_market",
+        "value": "1",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "area_rule_folder",
+        "value": "[folder]-[area]",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "area_rule_home",
+        "value": "zq-[area]",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "captcha_appid",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "captcha_appkey",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "captcha_id",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "captcha_key",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "mail_content",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "mail_host",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "mail_password",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "mail_port",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "mail_recipient",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "mail_title",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "mail_user",
+        "value": "",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "mail_user",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "page_cache_time",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "sitemap_open",
+        "value": "0",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "sitemap_auto_update",
+        "value": "1",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "sitemap_type",
+        "value": "xml",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "sms_id",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "sms_key",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "sms_sign",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "sms_template",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "sms_tel",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "window_full",
+        "value": "0",
+        "parent": "0",
+        "type": "1"
+    },
+    {
+        "name": "ueditor_catchimage",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "upload_extension",
+        "value": "[\".jpg\",\".png\",\".jpeg\",\".gif\",\".mp4\",\".mp3\",\".pdf\",\".doc\",\".xls\",\".xlsx\",\".bmp\",\".csv\",\".ico\",\".JPG\"]",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "upload_maxsize",
+        "value": "2",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "upload_rename",
+        "value": "1",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "upload_repeat",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "upload_web_allow",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+	{
+        "name": "user_sequence",
+        "value": "",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "rule_extension",
+        "value": ".html",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "rule_filename",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "rule_lang",
+        "value": "-[lang]",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "rule_lang_sign",
+        "value": "0",
+        "parent": "0",
+        "type": "0"
+    },
+    {
+        "name": "rule_pages",
+        "value": "-page[pages]",
+        "parent": "0",
+        "type": "0"
+    }
+]
